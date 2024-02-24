@@ -1,0 +1,46 @@
+version: '3.9'
+services:
+  # PHP-FPM Service
+  php-fpm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - $APP_VOLUMES_SRC:/var/www/html  
+    depends_on:
+      - mysql-db  
+
+  # NGINX Service
+  nginx:
+    build:
+      context: .
+      dockerfile: ./nginx/Dockerfile
+    volumes:
+      - $APP_VOLUMES_SRC:/var/www/html 
+    ports:
+      - "$NGINX_PORT:80"
+    depends_on:
+      - php-fpm  
+      - mysql-db 
+
+  # MySQL Database Service
+  mysql-db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: test_database
+      MYSQL_USER: root
+      MYSQL_PASSWORD: password
+    ports:
+      - "$MYSQL_PORT:3306"  
+
+  # PHPMyAdmin Service
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql-db 
+    ports:
+      - "8081:80" 
+    environment:
+      PMA_HOST: mysql-db
+      MYSQL_ROOT_PASSWORD: password 
