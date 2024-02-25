@@ -1,3 +1,4 @@
+<?php include('config.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-   <h1>Test docker php project</h1>
+   <?php echo SITE_URL; ?>
+
+   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
 </body>
 </html>

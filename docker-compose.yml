@@ -6,9 +6,13 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - $APP_VOLUMES_SRC:/var/www/html  
+      - $APP_VOLUMES_SRC:/var/www/html
+    env_file:
+      - .env
     depends_on:
-      - mysql-db  
+      - mysql-db
+    networks:
+      - qr_app_network
 
   # NGINX Service
   nginx:
@@ -22,6 +26,8 @@ services:
     depends_on:
       - php-fpm  
       - mysql-db 
+    networks:
+      - qr_app_network
 
   # MySQL Database Service
   mysql-db:
@@ -29,10 +35,12 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: test_database
-      MYSQL_USER: root
+      MYSQL_USER: qr
       MYSQL_PASSWORD: password
     ports:
-      - "$MYSQL_PORT:3306"  
+      - "$MYSQL_PORT:3306"
+    networks:
+      - qr_app_network 
 
   # PHPMyAdmin Service
   phpmyadmin:
@@ -43,4 +51,21 @@ services:
       - "8081:80" 
     environment:
       PMA_HOST: mysql-db
-      MYSQL_ROOT_PASSWORD: password 
+      MYSQL_ROOT_PASSWORD: password
+    networks:
+      - qr_app_network
+
+  #Mail services
+  # mail-app:
+  #   build: 
+  #     context: /media/rightmo/Others/Project/docker/mail/vendor/laravel/sail/runtimes/8.3
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "8083:80" 
+  #   networks:
+  #     - qr_app_network
+
+
+networks:
+    qr_app_network:
+        external: true
