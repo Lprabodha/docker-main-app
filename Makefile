@@ -9,3 +9,7 @@ app: network
 network:
 	docker network inspect qr_app_network >/dev/null 2>&1 || \
 	docker network create --driver bridge qr_app_network
+
+down:
+	docker-compose down --remove-orphans
+	cd ../mail/ && ./vendor/bin/sail stop
