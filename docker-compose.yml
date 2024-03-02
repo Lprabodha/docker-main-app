@@ -54,7 +54,7 @@ services:
 
     restart: always
     ports:
-      - 8081:80
+      - 8082:80
     networks:
       - qr_app_network
 
@@ -69,14 +69,14 @@ services:
   #     - qr_app_network
 
   #Scanned.page Services
-  sacnned-page:
-    build:
-      context: ../test-react
-      dockerfile: Dockerfile
-    ports:
-      - "3000:3000" 
-    networks:
-      - qr_app_network
+  # sacnned-page:
+  #   build:
+  #     context: ../test-react
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000" 
+  #   networks:
+  #     - qr_app_network
 
 networks:
     qr_app_network:
