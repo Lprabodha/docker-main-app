@@ -1,0 +1,342 @@
+.switchPlanModal .title-container:not(:lang(en)){
+    width: calc(100% - 80px);
+}
+#SwitchPlanModal .plan-card .package-subheader:not(:lang(en)){
+    width: calc(229px - 50px);
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.15;
+    text-align: center;
+}
+.switchPlan-modal-body .sp-buy-btn:not(:lang(en)){
+    width: max-content;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+}
+.mobile-plan-cards .sp-plan-card .radio-check:not(:lang(en)){
+    min-width: 20px;
+}
+.switchPlanModal .sp-plan-card .plan-price:not(:lang(en)),
+.mobile-plan-cards .sp-plan-card .discounted-price:not(:lang(en)){
+    white-space: nowrap;
+}
+.sp-modal-body .sp-buy-btn:not(:lang(en)){
+    width: max-content;
+    padding-left: 16px;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+.switchPlanModal .modal-content:not(:lang(en)){
+    /* height: auto; */
+    /* max-height: 90vh; */
+}
+.switchPlanModal .title:not(:lang(en)){
+    line-height: 1.05;
+}
+.switchPlanModal .modal-content .modal-header .sub-title:not(:lang(en)){
+    font-size: 16px;
+    letter-spacing: -0.2px;
+}
+.section1 .switchPlan-modal-footer:not(:lang(en)){
+    font-size: 15px;
+    letter-spacing: -0.4px;
+}
+.switchPlanModal .section1 .switchPlan-modal-body:not(:lang(en)){
+    margin-bottom: 20px;
+}
+.section1 .switchPlan-modal-body .sp-discount-area:not(:lang(en)){
+    width: max-content;
+}
+@media only screen and (max-width:1580px) and (min-height:720px){
+    @media only screen and (min-width:1440px){
+        .switchPlanModal .modal-content:not(:lang(en)){
+            zoom: 0.94;
+        }
+    }
+}
+@media only screen and (max-width:575.98px){
+    .sp-modal-body .sp-buy-btn:not(:lang(en)){
+        width: 100%;
+    }
+}
+@media only screen and (max-width:575.98px) and (min-height:770px) {
+    #SwitchPlanModal .modal-dialog:not(:lang(en)) {
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+        height: auto !important;
+    }
+}
+@media only screen and (max-width: 1280.98px) and(min-width: 1200px) {
+    .switchPlanModal .modal-dialog:not(:lang(en)) {
+        max-width: 1080px;
+        height: 95%;
+    }
+}
+@media only screen and (max-width:1024px) and (max-height:1292px) and (min-height:951px){
+    .switchPlanModal .section1 .switchPlan-modal-body:not(:lang(en)){
+        zoom: 0.85;
+    }
+
+}
+@media only screen and (max-width:800.95px){
+    .switchPlanModal .title-container:not(:lang(en)){
+        width: 100% ;
+    }
+    .switchPlanModal .section1:not(:lang(en)),
+    .switchPlanModal .section2:not(:lang(en)) {
+        max-height: 100% !important;
+        height: 100%!important;
+    }
+    .switchPlanModal .section3:not(:lang(en)) {
+        max-height: 70vh !important;
+        height: 70vh !important;
+    }
+}
+@media  only screen and (max-width:425px) ,
+    screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3),
+    screen and (max-width:575px) and (max-height:932px){
+    .switchPlanModal .modal-content .sp-modal-close:not(:lang(en)) {
+        right: -16px !important;
+        top: -5px !important;
+    }
+}
+@media only screen and (max-width: 1200.98px) and (min-width: 990px){
+    @media  (min-height:800px){
+        .switchPlanModal .modal-dialog:not(:lang(en)) {
+            height: 90% ;
+            max-width: 95%;
+        }
+        
+    }
+    .switchPlanModal .modal-dialog:not(:lang(en)) {
+        max-width: 95%;
+    }
+}
+@media(max-width:1099.98px){
+    .switchPlanModal .modal-dialog:not(:lang(en)) {
+        max-width: 95%;
+        height: auto ;
+    }
+    @media  (max-height:767px){
+        .switchPlanModal .section1:not(:lang(en)),
+        .switchPlanModal .section2:not(:lang(en)) {
+            justify-content: flex-start;
+            height: 100% !important;
+            max-height: 100% !important;
+        }
+
+        .switchPlanModal .section3:not(:lang(en)) {
+            max-height: 70vh !important;
+            height: 70vh !important;
+        }
+    }
+}
+@media only screen and (max-width:1366px) and (max-height:932px){
+    .switchPlanModal .modal-content:not(:lang(en)) {
+        height: 90%;
+    }
+}
+@media  only screen and (max-width:425px) ,
+    screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3),
+    screen and (max-width:575px) and (max-height:932px){
+
+    /* .switchPlanModal .section1:not(:lang(en)), .switchPlanModal .section2:not(:lang(en)), .switchPlanModal .section3:not(:lang(en)) {
+        max-height: 100%;
+        height: auto !important;
+    } */
+
+}
+@media only screen and (max-width: 800px) {
+    .mobile-plan-cards .sp-plan-card > div > div:not(.prices-sec):not(:lang(en)){
+        /* min-width: 200px; */
+        align-items: flex-start !important;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-card > div:not(:lang(en)){
+        margin-top: 10px !important;
+        margin-bottom: 8px !important;
+        column-gap: 8px;
+        align-items: flex-start !important;
+
+    }
+    .mobile-plan-cards > div:nth-child(3) > .sp-plan-card > div:not(:lang(en)){
+        height: auto !important;
+    }
+    .mobile-plan-cards > div:nth-child(3) > .sp-plan-card:not(:lang(en)){
+        padding-top: 8px !important;
+    }
+    .mobile-plan-cards .sp-plan-card:not(:lang(en)){
+        padding-top: 16px !important;
+        padding-bottom: 8px !important;
+    }
+    .mobile-plan-cards .sp-plan-card .plan-name:not(:lang(en)),
+    .mobile-plan-cards .sp-plan-card .invoice-label:not(:lang(en)){
+        line-height: 1.05;
+    }
+    .mobile-plan-cards .sp-plan-card .prices-sec:not(:lang(en)){
+        margin-top: 0 !important;
+    }
+    .section1 .switchPlan-modal-body #step1GoBtn:not(:lang(en)){
+        text-align: center;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:1366px) and (min-height:950px){
+    .switchPlanModal .modal-content:not(:lang(en)) {
+        height: auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 1300.98px) {
+    @media only screen and (min-width:480px){
+        .section2 .sp-plan-card > div:nth-child(1) > .plan-name:not(:lang(en)){
+            max-width: 270px;
+        }
+    }
+}
+@media only screen and (max-width: 1280.98px) {
+    .switchPlan-modal-body .sp-buy-btn:not(:lang(en)) {
+        width: max-content;
+        padding: 5px 10px !important;
+        font-size: 17px;
+        display: flex !important;
+        align-items: center;
+        height:40px;
+    }
+}
+
+@media only screen and (max-width: 989.5px){
+
+    .switchPlanModal .title-container h3.title:not(:lang(en)){
+        font-size: 26px;
+    }
+    .switchPlanModal .title-container:not(:lang(en)){
+        width: calc(100% - 00px);
+    }
+    .switchPlanModal .current-package-header:not(:lang(en)) {
+        padding: 0px 0px 27px 0px;
+    }
+}
+
+@media only screen and (min-width:1360px) and (max-height:932px){
+    .switchPlanModal .modal-dialog:not(:lang(en)) {
+        max-width: 1280px;
+        height: 90vh;
+    }
+    .switchPlanModal .section1:not(:lang(en)) , 
+    .switchPlanModal .section2:not(:lang(en)) , 
+    .switchPlanModal .section3:not(:lang(en)) {
+        max-height: unset !important;
+        /* height: unset !important; */
+    }
+    .switchPlanModal .modal-content:not(:lang(en)){
+        height: auto;
+    }
+    
+}
+@media only screen and (min-width:800px){
+    .switchPlanModal .package .plan-card:not(:lang(en)){
+        height: 100%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+    .section1 .switchPlan-modal-body .buy-btn-area:not(:lang(en)){
+        margin-bottom: 8px;
+    }
+    .section1 .switchPlan-modal-body .sp-container:not(:lang(en)){
+        width: 100%;
+        justify-content: center;
+    }
+    .section1 .switchPlan-modal-body .sp-container .package:not(:lang(en)){
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .section1 .switchPlan-modal-body .sp-container .package:nth-child(1) .sp-plan-btn:lang(sv){
+        line-height: 0.9;
+        padding: 5px 8px;
+        max-width: 120px;
+
+    }
+}
+
+@media only screen and (min-width:825px){
+    .switchPlanModal .buy-btn-area .sp-buy-btn:not(:lang(en)){
+        margin-top: 8px;
+    }
+    .switchPlanModal .buy-btn-area .sp-buy-btn:lang(id){
+        margin-top: 20px;
+    }
+}
+@media only screen and (max-width:825.5px){
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading:not(:lang(en)){
+        margin-bottom: 0px !important;
+    }
+    .switchPlanModal .buy-btn-area .sp-buy-btn:not(:lang(en)){
+        margin-top: 5px;
+    }
+    .switchPlanModal .buy-btn-area .sp-buy-btn:lang(id){
+        margin-top: 15px;
+    }
+  
+   
+}
+@media only screen and (min-width:1200px){
+    .buy-btn-area .top-hr:not(:lang(en)) {
+        margin-bottom: 0px !important;
+    }
+}
+
+@media only screen and (max-width:910px){
+    .section1 .switchPlan-modal-body .sp-plan-btn:not(:lang(en)) {
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:479.5px){
+    .section1 .switchPlan-modal-body .sp-plan-card > div > div:not(:lang(en)){
+        align-items: flex-start !important;
+    }
+    
+    .section2 .sp-plan-card > div > h3:not(:lang(en)) {
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+    .section2 .sp-plan-card > div > div:not(:lang(en)) {
+        /* text-align: right !important;
+        margin-left: auto; */
+    }
+    .section2 .sp-plan-card > div:not(:lang(en)){
+        /* flex-direction: column;
+        align-items: flex-start !important; */        
+    }
+   
+    .section2 .sp-plan-card > div:nth-child(1):not(:lang(en)){
+        flex-direction: column !important;
+        justify-content: center !important;
+        column-gap: 32px !important;
+        
+    }
+    .section2 .sp-plan-card > div:not(:nth-child(1)):not(:lang(en)){
+        align-items: flex-start !important;
+        zoom: 0.9;
+        column-gap: 8px;
+    }
+}
+@media only screen and (max-width:359.5px){
+    .section2 .sp-plan-card .total-plan-label:not(:lang(en)){
+        font-size: 18px;
+    }
+    .section2 .sp-plan-card > div:nth-child(1) > h3:lang(en),
+    .section2 .sp-plan-card > div:nth-child(2) > h3:lang(en) {
+        text-align: left !important;
+        width: 120px;
+    }
+    .section2 .sp-plan-card > div:nth-child(1) > div:lang(en),
+    .section2 .sp-plan-card > div:nth-child(2) > div:lang(en) {
+        text-align: right !important;
+    }
+}

@@ -1,0 +1,232 @@
+:root {
+  --primary-green-1: #28c254;
+  --mark-btn-bg-hover: #28c2541c;
+  --toggle-bg: #28c25457;
+  --white: #ffff;
+  --time-border: #767c8354;
+  --hour-field-bg: #fafafa;
+  --primary-red: #fe4256;
+  --primary-red-hover-1: #c1394726;
+  --hr-color: rgba(0,0,0,0.05);
+  --swiper-theme-color: #28c254;
+  --blue: #28c254;
+  --social-bg: #fafafa;
+  --icon-color:#767C83;
+}
+
+.link-container {
+  padding: 0px 10px;
+  padding-bottom: 10px;
+}
+
+.productAccodian:first-child {
+  margin-top: 0px;
+}
+
+.paraheading {
+  color: #220e27;
+  font-size: 18px;
+  /* font-family: Lato, sans-serif !important; */
+  font-weight: 600;
+  line-height: 22px;
+  margin: 0 0 9px;
+}
+
+.productAccodian {
+  margin-top: 29px;
+  background-color: var(--social-bg);
+  border-radius: 5px;
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+
+.links-delete-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links-up-down {
+  padding-right: 10px;
+}
+
+.link-option-btn {
+  background-color: white;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-green-1);
+}
+
+.link-icon-delete {
+  color: var(--primary-red);
+  font-size: 24px;
+}
+
+.link-delete-btn {
+  border: 1px solid var(--primary-red);
+}
+
+.link-delete-btn:hover {
+  cursor: pointer;
+  background-color: var(--primary-red-hover-1);
+  transition: 0.2s;
+}
+
+.link-order-up,
+.link-order-down {
+  /* border: 1px solid var(--time-border);
+  -webkit-text-fill-color: var(--icon-color); */
+  border: 1px solid var(--primary-green-1);
+  -webkit-text-fill-color: var(--primary-green-1);
+}
+
+.links-up-down-wrap {
+  gap: 10px;
+  flex-direction: row-reverse;
+  
+}
+
+.links-up-down-wrap .link-option-btn {
+  padding: 10px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.links-up-down-wrap .link-option-btn::after {
+  position: absolute;
+  /* content: ""; */
+  width:2px;
+  height:16px;
+  background-color: #DBDBDB;
+  right: 0;
+}
+
+.link-icon-down,
+.link-icon-up {
+  font-size: 18px;
+  display: block;  
+}
+
+.link-icon-down {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(90deg);
+}
+
+.link-icon-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)rotate(-90deg);
+}
+.link-preview .accordian-wrp{
+  padding: 0;
+  border-radius: 8px;
+}
+.link-preview .accordian-wrp .link-section-wrap{
+  padding: 10px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #DFDFDF;
+  border-radius: 8px 8px 0 0;
+}
+.link-preview .accordian-wrp .collapse{
+  padding: 10px;
+}
+.link-preview .accordian-wrp .link-section-wrap .link-btn-accordian{
+  min-height: 40px;
+}
+
+#acc_listInfo .invalid_err{
+  position: unset;
+}
+
+/* -----------Responsive-Area------------ */
+
+@media(max-width:768.98px){
+  .link-option-btn.link-touch-add-btn{
+      color: var(--primary-green-1);
+      -webkit-text-fill-color: var(--primary-green-1);
+      background-color: var(--mark-btn-bg-hover);
+      transition: 0.2s;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .link-btn-accordian {
+    flex: 0 0 44%;
+    max-width: 65%;
+  }
+
+  .link-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4px !important;
+  }
+
+  .links-delete-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .paraheading {
+    height: 100%;
+  }
+
+
+  .link-icon-delete {
+    font-size: 18px;
+  }
+
+  /* .link-btn-accordian{
+    min-width: 85px;
+    max-width: 85px !important;
+  } */
+
+  .link-button-full-wrap{
+    flex: 0 100%;
+    max-width: 50%;
+    padding-left: 8px;
+  }
+
+  .link-delete-btn{
+    height: 38px;
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .link-button-full-wrap{
+    justify-content: flex-end !important;
+  }
+}
+
+@media (max-width: 400.98px) {
+  .link-btn-accordian {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+}
+
+@media(min-width:576px){
+  .link-order-up:hover,
+  .link-order-down:hover {
+    color: var(--primary-green-1);
+    -webkit-text-fill-color: var(--primary-green-1);
+    background-color: var(--mark-btn-bg-hover);
+    transition: 0.2s;
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 575.98px) {
+  .links-delete-wrap{
+    margin-right: 10px;
+  }
+}

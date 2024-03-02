@@ -1,0 +1,11 @@
+.formcolorPalette-2 {
+  padding: 0px 2px !important;
+}
+
+/* -----------------Responsive-Area---------------- */
+
+@media (max-width: 768px) {
+  .formcolorPalette-2 {
+    max-width: 90px !important;
+  }
+}

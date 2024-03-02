@@ -1,0 +1,267 @@
+:root {
+  --primary-green-1: #28c254;
+  --mark-btn-bg-hover: #28c2541c;
+  --toggle-bg: #28c25457;
+  --white: #ffff;
+  --time-border: #767c8354;
+  --hour-field-bg: #fafafa;
+  --primary-red: #fe4256;
+  --primary-red-hover-1: #c1394726;
+  --hr-color: rgba(0,0,0,0.05);
+  --swiper-theme-color: #28c254;
+  --blue: #28c254;
+  --social-bg: #fafafa;
+}
+
+.contact-form-group {
+  justify-content: center;
+  padding-right: 3px;
+}
+.menu-contact-info-wrp #addWeb{
+  opacity: 0;
+  visibility: hidden;
+  
+}
+.web-form-group {
+  justify-content: center;
+  padding-right: 14px;
+}
+
+.web-field-full-wrap {
+  padding: 0 23px;
+}
+
+.contact-input-field-wrap {
+  background-color: var(--social-bg);
+  border-radius: 5px;
+  margin-bottom: 5px;
+  justify-content: center;
+}
+
+.add-on-phone {
+  background-color: var(--social-bg);
+  border-radius: 5px;
+  margin-top: 15px;
+  padding-bottom: 1px;
+}
+
+.add-on-phone {
+  border: 1px solid rgba(0,0,0,0.05);
+}
+.add-phone-area-wrap,
+.add-email-area-wrap {
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: var(--social-bg);
+  padding-bottom: 15px;
+}
+
+.add-phone-btn,
+.add-email-btn {
+  border: 1px solid var(--primary-green-1);
+  background-color: var(--white);
+  padding: 13px 14px;
+  border-radius: 5px;
+}
+
+.hide-web {
+  display: none;
+}
+
+.add-phone-btn-active {
+  border: 1px solid var(--primary-green-1);
+  background-color: var(--primary-green-1);
+  padding: 8px 10px;
+  border-radius: 5px;
+  animation: fadeInAnimation ease 0.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.add-phone-btn-active .plus-mark {
+  color: var(--white);
+}
+
+.contact-delete-btn {
+  border: 1px solid var(--primary-red);
+  background-color: var(--white);
+  padding: 12px 12px;
+  border-radius: 5px;
+}
+
+.contact-delete-btn .delete-mark {
+  font-size: 22px;
+  color: var(--primary-red);
+}
+
+.add-email-btn:hover,
+.add-phone-btn:hover {
+  background-color: var(--mark-btn-bg-hover);
+  transition: 0.2s;
+}
+.contact-delete-btn:hover{
+  background-color: rgba(254,66,86,.1);
+  transition: .3s;
+}
+
+.contact-subheading {
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  height: 100%;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+}
+
+.delete-contact-btn-wrap {
+  margin: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0px;
+  margin-top: 4px;
+}
+
+.contact-hr {
+  width: 100%;
+  border: 1px solid var(--hr-color);
+  display: none;
+  margin-bottom: 0px;
+}
+
+.contact-field-wrap .invalid_err {
+  left: 0;
+  bottom: -22px;
+}
+
+/* -------------Responsive Area------------------ */
+
+@media only screen and (max-width: 768.98px) and (min-width: 576px)  {
+ .delete-contact-btn-wrap{
+  margin-top: 25px;
+ }
+}
+
+@media (max-width: 575.98px) {
+  .contact-field-full-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+  }
+
+  .contact-field-full-wrap .lable-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .web-block-wrap .contact-field-full-wrap.web-field-full-wrap .contact-field-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+  .contact-field-full-wrap .contact-field-wrap {
+    flex: 0 0 85%;
+    max-width: 85%;
+    margin-bottom: 5px;
+  }
+
+  .delete-contact-btn-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    margin-top: 3px;
+    margin-bottom: 0 !important;
+  }
+
+  .contact-delete-btn {
+    position: absolute;
+    right: 3%;
+    bottom: 28px;
+    padding: 11px 11px;
+  }
+
+  .add-phone-btn-area,
+  .add-email-btn-area {
+    padding-right: 0px;
+  }
+
+  .add-phone-btn-area,
+  .add-email-btn-area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .web-form-group {
+    padding-right: 0px;
+  }
+
+  .web-block-wrap {
+    padding: 0px 10px;
+  }
+}
+.contact-subheading {
+  /* width: 110px; */
+}
+@media (max-width: 375.98px) {
+  .contact-subheading {
+    font-size: 16px;
+  }
+
+  .add-phone-btn-active {
+    padding: 5px 7px;
+    border-radius: 2px;
+  }
+
+  .add-phone-btn-area,
+  .add-email-btn-area {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .add-phone-btn,
+  .add-email-btn {
+    padding: 9px 10px;
+  }
+
+  .web-block-wrap .contact-field-full-wrap.web-field-full-wrap .contact-field-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .contact-field-full-wrap .contact-field-wrap {
+    flex: 0 0 80%;
+    max-width: 80%;
+    margin-bottom: 5px;
+  }
+
+  .contact-delete-btn {
+    right: 5%;
+  }
+}

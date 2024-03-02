@@ -1,0 +1,315 @@
+/* Pdf Uploader End */
+.upload-main-wrp {
+    /* background-color: red; */
+}
+
+.upload-main-wrp .collapseInner>div.dropzone,
+.upload-main-wrp .collapseInner .custom-upload>div.dropzone {
+    border-color: #28c254 !important;
+    background-color: rgba(40, 194, 84, 0.05) !important;
+}
+
+.upload-main-wrp .collapseInner .dropzone .dz-button {
+    min-width: 200px;
+    height: 50px;
+    background-color: #28c254 !important;
+    color: #fff !important;
+    border-radius: 4px;
+    font-weight: 700 !important;
+    position: relative;
+    margin-top: 90px;
+}
+
+.upload-main-wrp .collapseInner .dropzone .dz-button::after {
+    position: absolute;
+    content: '\e94c';
+    font-size: 50px;
+    font-family: 'qr-icons' !important;
+    top: -50%;
+    left: 50%;
+    color: #28c254;
+    transform: translate(-50%, -90%);
+    font-weight: 400;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 1px solid;
+}
+
+.upload-main-wrp .collapseInner .dz-preview .dz-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #fff, #fff) !important;
+    /* background-color: #fff !important; */
+}
+
+.upload-main-wrp .collapseInner .dz-preview .dz-image img {
+    width: 80px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.upload-main-wrp .collapseInner div#custom-dropzone-preview,
+.upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    border: 2px solid rgb(40, 194, 84, 0.1) !important;
+}
+
+.upload-main-wrp .collapseInner div#custom-dropzone-preview::-webkit-scrollbar-thumb,
+.upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview::-webkit-scrollbar-thumb {
+    background-color: #767c83;
+}
+
+.upload-main-wrp .collapseInner .custom-upload {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.upload-main-wrp .collapseInner .invalid_err {
+    position: absolute;
+    margin-top: 0 !important;
+    padding: 2px 8px;
+    /* background-color: #fe425624; */
+    border-radius: 4px;
+    bottom: -35px;
+}
+
+.images-upload-main-wrp .collapseInner .invalid_err {
+    bottom: unset;
+    margin-top: 3px !important;
+}
+
+.mp3-upload-main-wrap .collapseInner .invalid_err {
+    bottom: -10px;
+}
+
+.upload-main-wrp .collapseInner div#custom-dropzone-preview .dz-preview .dz-remove,
+.upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview .dz-preview .dz-remove {
+    padding: 0 0 0 11px;
+    font-weight: 600;
+    font-size: 14px;
+    /* opacity: 0.5; */
+
+}
+
+.upload-main-wrp .dz-preview:hover .hover-effect-icon::before {
+    font-family: 'qr-icons';
+    content: "\e910";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    background: linear-gradient(to right, var(--primary-blue-1) 0%, var(--primary-blue-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    font-size: 40px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+
+.upload-main-wrp div#custom-dropzone-preview .dz-remove,
+.upload-main-wrp div#custom-dropzone-preview .dz-remove:hover {
+    padding-left: 18px !important;
+    background: linear-gradient(to right, var(--primary-blue-1) 0%, var(--primary-blue-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    border: 1px solid transparent;
+}
+
+
+.dz-remove .dz-remove-icon::before {
+    font-family: 'qr-icons';
+    content: "\e91e";
+    background: linear-gradient(to right, var(--primary-blue-1) 0%, var(--primary-blue-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: -3px;
+    font-size: 17px;
+    top: -3px;
+}
+
+
+.upload-main-wrp .collapseInner div#custom-dropzone-preview .dz-preview:hover .dz-remove,
+.upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview .dz-preview:hover .dz-remove {
+    opacity: 1;
+}
+
+.upload-main-wrp .collapseInner div#custom-dropzone-preview .dz-preview:hover,
+.upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview .dz-preview:hover {
+    /* border-color: #fe4256; */
+    border-color: #bfbfbf;
+}
+
+.upload-main-wrp .collapseInner .checkbox-wrapper {
+    background-color: #fff;
+    justify-content: flex-start;
+}
+
+
+.upload-main-wrp .collapseInner .checkbox-wrapper .passwordlabel {
+    background-color: #f7f7f7;
+    color: #68676ccc;
+    font-size: 13px;
+    transition: color 0.2s ease-in-out;
+    /*    */
+    font-weight: 600;
+    line-height: 18px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border-radius: 4px;
+}
+
+#custom-dropzone-preview {
+    display: flex;
+}
+
+/* Pdf Uploader End */
+/* ---------------------------------- */
+/* Images Upload Start */
+.upload-main-wrp.images-upload-main-wrp .collapseInner div#custom-dropzone-preview {
+    justify-content: flex-start;
+    margin-top: 5px;
+}
+
+.upload-main-wrp.images-upload-main-wrp .collapseInner .checkbox-wrapper .roundCheckbox input:disabled+label {
+    background-color: #e2e2e2;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.menu-block-main-wrp label {
+    pointer-events: none;
+}
+
+/* .upload-main-wrp.images-upload-main-wrp .collapseInner .dropzone-previews .dz-preview:hover{
+    border-color: #fe4256;
+} */
+
+.upload-edit-wrap {
+    border: 1px solid #c3c3c3;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: -13px;
+    right: -13px;
+    z-index: 50;
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+.upload-edit-wrap .image-edit-icon::before {
+    font-family: 'qr-icons';
+    content: "\e910";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    background: linear-gradient(to right, var(--primary-blue-1) 0%, var(--primary-blue-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    margin-left: 1px;
+    font-size: 17px;
+}
+
+.upload-edit-wrap .update-image-file {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    appearance: none;
+    opacity: 0;
+}
+
+.dropzone .dz-preview:hover {
+    z-index: 50 !important;
+}
+
+/* Images Upload End */
+@media (min-width: 1200px) {
+
+    .touch-detect {
+        display: none;
+    }
+
+
+    .upload-main-wrp .collapseInner div#custom-dropzone-preview .dz-preview:hover .dz-remove::before,
+    .upload-main-wrp .collapseInner .custom-upload div#custom-dropzone-preview .dz-preview:hover .dz-remove::before {
+        /* font-weight: 400; */
+        opacity: 1;
+        transition: 0.4s;
+
+    }
+}
+
+@media (max-width: 1199.95px) {
+    .touch-detect {
+        width: 120px;
+        height: 130px;
+        position: absolute;
+        top: 28px;
+        z-index: 99999;
+    }
+
+    .touch-detect.touched.t2x,
+    .touch-detect.touched {
+        width: 0;
+        height: 0;
+        z-index: -9999;
+    }
+
+    .upload-main-wrp .collapseInner div#custom-dropzone-preview .touch-detect.touched~.dz-preview .dz-remove::before {
+        opacity: 1;
+        transition: 0.4s;
+
+    }
+
+    .upload-main-wrp .collapseInner div#custom-dropzone-preview .dz-preview .dz-remove {
+        padding-left: 20px !important;
+        font-size: 14px;
+    }
+
+    .touch-detect.touched~.dz-preview {
+        /* background-color: red;; */
+    }
+
+    .dz-remove .dz-remove-icon::before {
+        left: 0px;
+        top: 1px;
+    }
+}
+
+
+@media(max-width:576.98px) {
+
+    #acc_nameOfQrPdf .dz-remove,
+    #acc_nameOfMp3 .dz-remove {
+        height: 28px;
+        margin: 2px auto;
+        position: absolute;
+        bottom: 4%;
+        transition: 0.4s ease-in-out;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

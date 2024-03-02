@@ -1,0 +1,37 @@
+.section-faq {
+    margin-top: 0px ;
+    background-color: white ;
+    padding-top: 0px;
+}
+
+.-section-description {
+    margin-bottom: 10px;
+}
+
+.section-faq .-container .termsContain .termsDetail h2{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 15px !important;
+    margin-top: 15px !important;
+}
+
+.section-faq .-container .termsContain .termsDetail h3{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px !important;
+}
+
+.section-faq .-container .termsContain .termsDetail p{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.section-faq .-container .termsContain .termsDetail i{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+.sub-content-7-wrap .sub-content-heading {
+    text-decoration: underline;
+    font-size: 19px;
+}

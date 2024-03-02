@@ -1,0 +1,347 @@
+/* .vcard-info-main-wrp */
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord {}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord {
+    position: relative;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn {
+    min-height: 50px;
+    width: calc(100% - 50px);
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .custom-add-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.custom-check-field-wrp {
+    background-color: #fff;
+    justify-content: flex-start;
+    padding-left: 0;
+}
+
+.custom-check-field-wrp>label {
+    background-color: #f7f7f7;
+    color: #68676ccc;
+    font-size: 13px;
+    transition: color 0.2s ease-in-out;
+    /*    */
+    font-weight: 600;
+    line-height: 18px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    border-radius: 4px;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord {
+    position: relative;
+}
+
+.info-block-main-wrp.vcard-info-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse {
+    position: relative;
+}
+
+.info-block-main-wrp.vcard-info-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse.show::after {
+    background-color: var(--hr-color);
+
+}
+
+.info-block-main-wrp.vcard-info-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse::after {
+    background-color: transparent;
+    position: absolute;
+    content: "";
+    width: 97%;
+    height: 1px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.vcard-add-btn {
+    background-color: #28c254;
+    color: #fff;
+    width: 36px !important;
+    height: 36px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.vcard-add-btn svg {
+    margin-right: 0 !important;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord,
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord:hover {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse .collapseInner {
+    padding-top: 10px;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord {
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* overflow: hidden; */
+    border-radius: 3px !important;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn span.custom-accodian-heading {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 6px;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn.collapsed .toggle-icon-wrap {
+    transform: rotate(0deg);
+    transition: 0.2s;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn.collapsed {
+    background-color: #FAFAFA;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn:not(.collapsed) {
+    background-color: #FAFAFA;
+    border-radius: 3px 3px 0 0;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord button.accodianBtn:not(.collapsed) .toggle-icon-wrap {
+    transform: rotate(90deg);
+    transition: 0.2s;
+}
+
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse.show .addRowButton .outlineBtn,
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse.show .addRowButton,
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse .addRowButton .outlineBtn,
+.info-block-main-wrp .custom-accodian.sub-accordion.disabled-accord .collapse .addRowButton {
+    background-color: white;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .fieldLabel {
+    margin-top: 4px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp {
+    gap: 8px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper {
+    width: 60px;
+    position: absolute;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper button.apto-trigger-dropdown {
+    padding: 0 24px 0 8px;
+    position: relative;
+    border: 0;
+    min-height: 46px;
+    width: 60px;
+    top: 2px;
+    left: 2px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper button.apto-trigger-dropdown span.drp-icon {
+    font-size: 24px;
+    margin-top: 3px;
+    display: block;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper .dropdown-menu button {
+    display: flex;
+    align-items: center;
+    /* width: 139px; */
+    border-radius: 4px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper .dropdown-menu button:focus,
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper .dropdown-menu button:hover {
+    background-color: #28c254;
+    color: white;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper .dropdown-menu {
+    padding: 5px 0px 5px 5px !important;
+    left: 0;
+    width: 100%;
+    min-width: 200px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper .dropdown-menu button span.drp-icon {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 8px;
+
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper button.apto-trigger-dropdown::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background-color: #eaeaec;
+    right: -4px;
+    top: 14px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp .apto-dropdown-wrapper button.apto-trigger-dropdown::after {
+    position: absolute;
+    content: "\e903";
+    font-family: 'qr-icons' !important;
+    right: 8px;
+    top: 15px;
+    /* transform: rotate(90deg); */
+    font-size: 12px;
+
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp {
+    position: relative;
+}
+
+.vcard-surname-wrap .input-with-icon::before {
+    top: 45px;
+
+}
+
+.vcard-surname-wrap .input-with-icon .input-icon {
+    top: 43px;
+}
+
+.input-with-icon,
+.input-with-icon {
+    position: relative;
+}
+
+.input-with-icon .input-icon,
+.input-with-icon .input-icon {
+    position: absolute;
+    top: 40px;
+    left: 15px;
+    font-size: 24px;
+    color: #767C83;
+}
+
+.input-with-icon input.form-control,
+.input-with-icon input.form-control {
+    padding-left: 64px !important;
+}
+
+.input-with-icon:before,
+.input-with-icon:before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 20px;
+    background-color: #eaeaec;
+    left: 50px;
+    top: 42px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp.input-with-icon-drop input {
+    padding-left: 74px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .label-input-wrp {}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .delete-btn {
+    position: relative;
+    min-width: 45px;
+    min-height: 45px;
+    border: 1px solid #fe4256;
+    background-color: rgba(254, 66, 86, 0.01);
+    border-radius: 4px;
+    font-size: 18px;
+    color: #fe4256;
+    margin-bottom: 3px;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .delete-btn:hover {
+    background-color: rgba(254, 66, 86, 0.1);
+    transition: 0.3s;
+}
+
+.vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .delete-btn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -48%);
+    font-size: 22px;
+}
+
+.add-label-icon {
+    font-size: 26px !important;
+}
+
+.icon-text-wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon-text-wrap .icon-dropdown-text {
+    font-family: 'GT Walsheim Pro' !important;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: -4px;
+    color: var(--grey-dark);
+    width: 71px;
+}
+
+@media(max-width:768.98px) {
+    .vcard-surname-wrap {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575.5px) {
+    .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp {
+        flex-wrap: wrap;
+    }
+
+    .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .apto-dropdown-wrapper {
+        width: 60px;
+    }
+
+    .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .label-input-wrp {
+        flex-grow: 1;
+    }
+
+    .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .data-input-wrp {
+        width: calc(100% - 60px) !important;
+    }
+
+    @media (max-width: 539.5px) {
+        .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .apto-dropdown-wrapper {
+            width: 50px;
+            flex: 0 0 53px;
+        }
+
+        .vcard-info-main-wrp .vcard-contact-info .form-fileds-wrp .apto-dropdown-wrapper button.apto-trigger-dropdown {
+            padding: 0 20px 0 4px;
+        }
+    }
+}

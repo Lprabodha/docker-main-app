@@ -1,0 +1,833 @@
+/* --------My Account Start------- */
+:root {
+  --input-field-border: #eaeaec;
+  --input-field-border-hover: #96949c;
+  --input-field-icons: #767c83;
+  --update-button-bg: #25b533;
+  --update-button-bg-hover: #1d8c28;
+  --cancel-button-bg: #767c8327;
+  --nav-item-border: #dee2e6;
+  --white: #fff;
+  --black: #000;
+  --delete-btn-bg: #fe4256;
+  --delete-btn-hover-bg: #e43b4d;
+  --container-border: #dee2e6;
+  --dark-black: #220e27;
+  --input-field-font-color: #68676c;
+}
+
+.accountTabbing {
+  min-height: 100%;
+}
+
+.primaryBigButton:hover {
+  background-color: var(--update-button-bg-hover);
+  color: var(--white);
+}
+
+.headingName .myaccount-title {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.my-account .navLinkBtn {
+  color: #210e2580;
+  border: 2px solid transparent;
+  display: block;
+  padding: 6px 16px;
+  height: 40px;
+  font-size: 15px;
+  min-width: 200px;
+
+  font-weight: 700;
+  line-height: 26px;
+  transition: all 0.2s ease-in-out;
+}
+
+.my-account .mobile-nav-btn {
+  display: none;
+}
+
+.my-account .desktop-nav-btn {
+  display: block;
+}
+
+.my-account .navLinkBtn:hover {
+  color: #220e27;
+}
+
+/* .my-account .nav-item {
+  margin-right: 2px !important;
+} */
+
+.my-account .navLinkBtn.active {
+  color: var(--primary-green-1);
+  border: var(--white);
+  background-color: var(--white);
+}
+
+.my-account .active_item {
+  color: var(--primary-green-1);
+  border: 1px solid var(--white);
+  background-color: var(--white);
+}
+
+.my-account .nav-item {
+  overflow: hidden;
+  color: var(--font-grey-dark-1);
+  margin-right: 15px;
+}
+
+.my-account .border_style {
+  border: 1px solid var(--nav-item-border);
+}
+
+.my-account .not_active {
+  background-color: #f5f8fb !important;
+  color: var(--font-grey-dark-1);
+}
+
+.my-account .nav-item:active {
+  color: var(--primary-green-1);
+  transition: not_active;
+}
+
+.nav .border_round {
+  border-radius: 5px 5px 0px 0px;
+}
+
+.my-account .nav-item:last-child {
+  margin-right: 0;
+}
+
+.my-account .nav {
+  padding-top: 20px;
+  border-bottom: none;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow: hidden;
+}
+
+.my-account .contactDetail {
+  border-radius: 0px 8px 0px 0px;
+}
+
+.my-account .deleteCard {
+  margin-top: 20px !important;
+  border-radius: 8px 8px 8px 8px;
+}
+
+.my-account .language-card {
+  border-radius: 0px 0px 8px 8px;
+}
+
+.my-account .fullCard {
+  padding: 30px 40px;
+  border: 1px solid var(--container-border);
+}
+
+.my-account .accountCardDetail {
+  background-color: var(--white);
+  box-shadow: rgb(205 209 224) 0px 4px 6px 0px;
+  margin: 0px;
+}
+
+.my-account .accountCardDetail h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  line-height: 29px;
+  min-width: 276px;
+}
+
+.my-account .delete-title {
+  font-size: 24px !important;
+}
+
+.my-account .accountCardDetail .accountCardDetailRow {
+  padding: 26px 102px 39px 28px;
+}
+
+.my-account .accountCardDetail .form-group .formWidth {
+  width: 100px;
+  margin-right: 17px;
+}
+
+.my-account .accountCardDetail .form-group .formMiWidth {
+  /* min-width: 264px; */
+}
+
+.my-account .accountCardDetail .accountCardDetailBtn {
+  display: flex;
+  padding: 0px 16px;
+  justify-content: flex-start;
+}
+
+.my-account .accountCardDetail .accountDeleteBtn {
+  display: flex;
+  padding: 20px;
+  float: right;
+}
+
+.my-account .accountCardDetail .accountCardDetailRow {
+  padding: 28px 20px 23px;
+  flex-direction: column;
+}
+
+.my-account .accountCardDetail .form-group .formMiWidth {
+  min-width: unset;
+  padding-right: 52px;
+}
+
+.my-account .navLinkBtn {
+  min-width: unset;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* .custom-accodian .collapseInner .form-control, */
+.my-account .accountCardDetail .form-control {
+  padding: 0 15px;
+  min-height: 50px;
+  /* border: none; */
+  border: 1px solid var(--input-field-border);
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+
+  width: 100%;
+  position: relative;
+  padding-left: 65px;
+}
+
+.my-account-form-group .form-control {
+  border-radius: 0px 2px 2px 0px !important;
+}
+
+.custom-accodian .collapseInner .form-control::placeholder,
+.my-account .accountCardDetail .form-control::placeholder {
+  color: #b4b4b4;
+}
+
+.contactPage .textarea-control {
+  min-height: 100px !important;
+  border-radius: 5px;
+  padding: 10px 15px;
+  resize: none;
+}
+
+.custom-accodian .collapseInner .form-control:hover,
+.my-account .accountCardDetail .input_field:hover,
+.taxCardDetailRow .input_field:hover {
+  border-color: var(--input-field-border-hover);
+}
+
+.custom-accodian .collapseInner .form-control:focus,
+.my-account .accountCardDetail .form-control:focus {
+  border-color: var(--input-field-border);
+}
+
+.my-account .headDes {
+  color: #96949c;
+  margin-bottom: 24px;
+}
+
+.my-account .btn-update {
+  color: var(--white);
+  background-color: var(--update-button-bg);
+  min-width: 120px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.my-account .btn-update:hover {
+  background-color: var(--update-button-bg-hover);
+  color: var(--white);
+}
+
+.my-account .cancel_btn {
+  color: var(--input-field-icons);
+  background-color: var(--cancel-button-bg);
+  min-width: 120px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  line-height: 31px;
+}
+
+.my-account .deleteBtn {
+  color: var(--white);
+  min-width: 180px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  line-height: 31px;
+  padding: 13px 17px;
+}
+
+.my-account .delete-btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.my-account .deleteBtn .delete-btn-font-color {
+  color: var(--white);
+}
+
+.accountCardDetail .deleteBtn .deleteIcon {
+  font-size: 25px;
+  margin: auto;
+  color: var(--white);
+  margin-right: 5px;
+}
+
+.my-account .deleteCard .deleteBtn {
+  background-color: var(--delete-btn-bg);
+}
+
+.my-account .deleteCard .deleteBtn:hover {
+  background-color: var(--delete-btn-hover-bg) !important;
+  transition: 0.3s;
+}
+
+.my-account .accountCardDetail .accountSaveButton,
+.form-group .accountSaveButton,
+.taxCardDetailRow .accountSaveButton,
+.accountCardDetail .cancel_btn,
+.primaryBigButton {
+  width: unset;
+  max-width: unset;
+}
+
+.accountCardDetail .cancel_btn:hover {
+  background-color: var(--input-field-border-hover);
+  color: var(--white);
+}
+
+.billing-page,
+.my-account-wrp {
+  padding-top: 36px;
+}
+
+.custom-container {
+  width: auto;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+
+.taxCardDetailRow .help_icons_field {
+  padding: 0px 16px;
+  min-height: 50px;
+  border-right: none;
+  border-spacing: 5px;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+
+  position: absolute;
+  top: 67%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+
+.accountCardDetailRow .input_icons_field,
+.taxCardDetailRow .input_icons_field {
+  padding: 6px 15px;
+  border-right: 1px solid var(--container-border);
+  border-spacing: 5px;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+
+  width: max-content;
+  position: absolute;
+  top: 68%;
+  left: 17px;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.accountCardDetail .show_password {
+  position: relative;
+  padding-right: 15px;
+  min-height: 50px;
+  border: none;
+  box-shadow: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.accountCardDetail .password_check {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  cursor: pointer;
+  opacity: 0;
+}
+
+/* ---------icons--------- */
+
+.accountCardDetailRow .eye_on {
+  display: none;
+  font-size: 25px;
+  margin: auto;
+  color: var(--input-field-icons);
+}
+
+.accountCardDetailRow .input_icon,
+.taxCardDetailRow .input_icon {
+  font-size: 25px;
+  margin: auto;
+  color: var(--input-field-icons);
+}
+
+.accountCardDetail .icon-hash {
+  font-size: 20px;
+}
+
+.accountCardDetailRow .input_field,
+.taxCardDetailRow .input_field {
+  border: 1px solid var(--input-field-border);
+  transition: background-color, border-color 0.25s ease-in-out;
+}
+
+.accountCardDetail .taxCardDetailRow .positionSvg {
+  position: relative;
+  top: 13px;
+}
+
+.my-account .tax-full-wrap {
+  border-radius: 0px 8px 8px 8px;
+  margin-bottom: 30px;
+}
+
+.my-account .track-full-wrap {
+  border-radius: 0px 8px 8px 8px;
+}
+
+.accountCardDetail .taxCardDetailRow .companyTypeGroup {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 0px 27px;
+}
+
+.accountCardDetail .taxCardDetailRow .companyTypeGroup .companyItem {
+  width: calc(50% - 8px);
+  position: relative;
+}
+
+.accountCardDetail .companyItem .companyTypeButton {
+  border: 2px solid transparent;
+  font-size: 13px;
+
+  font-weight: 700;
+  color: #210e2580;
+  transition: all 0.2s ease-in-out;
+}
+
+.accountCardDetail .taxCardDetailRow .companyTypeGroup .companyItem .radioButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  opacity: 0;
+  z-index: 5;
+}
+
+.accountCardDetail .companyItem .companyTypeButton {
+  background-color: var(--input-field-border);
+}
+
+.accountCardDetail .taxCardDetailRow .companyTypeGroup .companyItem .radioButton:checked~.companyTypeButton {
+  border-color: var(--update-button-bg) !important;
+  background-color: var(--background-green);
+  color: var(--dark-black);
+}
+
+.accountCardDetail .taxCardDetailRow .companyTypeGroup .companyItem .radioButton:hover+.companyTypeButton {
+  border-color: var(--input-field-border-hover);
+  color: var(--dark-black);
+  transition: all 0.2s ease-in-out;
+}
+
+.accountCardDetail .tax {
+  scale: 95%;
+}
+
+.accountCardDetailRow .form-group:last-child {
+  /* margin-bottom: 0 !important; */
+}
+
+.accountCardDetail .taxCardDetailRow {
+  padding: 23px 19px;
+}
+
+.accountCardDetail .btn.dropdown-toggle.btn-light {
+  background: transparent;
+  min-width: 264px;
+  border: 2px solid #eaeaec;
+  border-radius: 50px;
+  min-height: 50px;
+}
+
+/* .custom-accodian .collapseInner .form-group label, */
+.my-account .accountCardDetail .form-group label,
+.companyTypeGroup .companyItem label {
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--input-field-font-color);
+  font-weight: 600;
+  margin-bottom: 6px;
+  white-space: pre-wrap;
+}
+
+/* ---------Tooltip for tax ---------------- */
+
+.tax-tooltip {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  margin-left: -113px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.tax-tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  top: -4px;
+  left: 46%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.help_icons_field:hover .tax-tooltip {
+  top: 44px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  z-index: 10;
+}
+
+.help_icons_field:hover .tax-tooltip,
+.help_icons_field:hover .tax-tooltip::before {
+  background-color: var(--update-button-bg-hover);
+  color: #ffffff;
+}
+
+label.error {
+  color: red !important;
+  position: absolute;
+  bottom: -25px;
+}
+
+.my-account-form-group {
+  position: relative;
+}
+
+.my-account-form-group .icon-position {
+  top: 52%;
+}
+
+.my-account-form-group #password-error {
+  margin-bottom: 27px;
+}
+
+.my-account-form-group .tax-icon-position {
+  left: 4px;
+}
+
+/* -----------------Responsive Area-------------- */
+
+@media (min-width: 992px) {
+  .accountCardDetail .tax-btn-area {
+    padding: 0px 34px !important;
+  }
+}
+
+@media (max-width: 990px) {
+  .headingName .myaccount-title {
+    margin-left: 12px;
+    margin-bottom: 20px;
+  }
+
+  .accountTabbing {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .myaccount-nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav {
+    justify-content: center;
+    padding-top: 0px !important;
+    background-color: var(--white);
+    border-radius: 25px 25px 25px;
+    width: max-content !important;
+  }
+
+  .nav .active_item {
+    border-radius: 25px 25px 25px;
+  }
+
+  .nav .nav-item .active {
+    background-color: var(--update-button-bg) !important;
+    color: var(--white);
+  }
+
+  .nav .nav-item {
+    border-radius: 25px 25px 25px;
+    border: none !important;
+    width: auto;
+    margin-right: 0px;
+  }
+
+  .nav .nav-item:first-child {
+    margin-right: 5px;
+  }
+
+  .nav .not_active {
+    background-color: var(--white) !important;
+  }
+
+  .my-account .nav-item:active {
+    background-color: var(--update-button-bg) !important;
+  }
+
+  .language-card {
+    margin-top: 20px !important;
+  }
+
+  .my-account .accountCardDetail {
+    /* margin-bottom: 20px; */
+    border-radius: 8px 8px 8px 8px;
+    margin: 0px 20px 20px 20px;
+  }
+
+  .accountCardDetailRow .input_icon,
+  .taxCardDetailRow .input_icon {
+    font-size: 20px;
+  }
+
+  .accountCardDetail .deleteBtn .deleteIcon {
+    font-size: 20px;
+  }
+
+  .my-account .fullCard {
+    padding: 0px 5px;
+    padding-bottom: 10px;
+  }
+
+  .accountCardDetail .taxCardDetailRow {
+    padding: 10px 2px;
+  }
+
+  .my-account .accountCardDetail .tax-btn-area {
+    padding: 0px 15px !important;
+  }
+
+  .my-account .accountCardDetail .id-update-btn-area {
+    padding: 5px 4px;
+  }
+
+  .my-account .accountButton {
+    margin-top: 25px;
+  }
+
+  .my-account .accountCardDetail .accountCardDetailBtn {
+    padding: 0px 8px;
+  }
+
+  .my-account .fullCard {
+    border: none;
+  }
+
+  .my-account .deleteBtn {
+    padding: 6px 12px;
+  }
+
+  .my-account .delete-title {
+    font-size: 16px;
+  }
+
+  .my-account .accountCardDetail .accountCardDetailBtn {
+    padding: 0px 8px;
+  }
+
+  .my-account .fullCard {
+    border: none;
+  }
+
+  .my-account .deleteBtn {
+    padding: 6px 12px;
+  }
+
+  .my-account .delete-title {
+    font-size: 16px;
+  }
+
+  .tax-tooltip {
+    margin-left: -192px;
+  }
+
+  .tax-tooltip::before {
+    left: 77%;
+  }
+}
+
+@media (max-width: 960px) {
+
+  .accountCardDetailRow .input_icons_field,
+  .taxCardDetailRow .input_icons_field {
+    left: 0px;
+  }
+
+  .email-field {
+    margin-top: 15px;
+  }
+
+  .accountCardDetailRow .form-group,
+  .accountCardDetail .taxCardDetailRow .form-group {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .mobile-icon-position {
+    top: 66% !important;
+  }
+
+  .my-account-form-group #password-error {
+    margin-bottom: 7px;
+  }
+
+  .my-account .accountCardDetail .tax-btn-area {
+    padding: 0px 3px !important;
+  }
+
+  .my-account .accountCardDetail .accountCardDetailBtn {
+    padding-left: 0px !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .taxCardDetailRow .address,
+  .taxCardDetailRow .email,
+  .accountCardDetail .country_select {
+    width: 100%;
+  }
+
+  .my-account .accountCardDetail .accountDeleteBtn {
+    display: flex;
+    float: left;
+    padding: 14px 19px;
+  }
+
+  .accountCardDetail .deleteCard {
+    padding-bottom: 0px !important;
+  }
+
+  .my-account .accountCardDetail .tax-btn-area {
+    padding: 0px 4px !important;
+  }
+
+  .tax-tooltip {
+    margin-left: -192px;
+  }
+
+  .tax-tooltip::before {
+    left: 77%;
+  }
+}
+
+@media (max-width: 578px) {
+  .my-account .desktop-nav-btn {
+    display: none;
+  }
+
+  .my-account .mobile-nav-btn {
+    display: block;
+    font-size: 14px !important;
+  }
+
+  .nav .nav-item {
+    /* width: 120px; */
+  }
+}
+
+@media (max-width: 420px) {
+  .accountCardDetailRow .form-group .input_field {
+    scale: 102%;
+  }
+
+  .my-account .accountCardDetail .accountCardDetailRow {
+    padding: 28px 10px 10px;
+  }
+
+  .my-account .mobile-nav-btn {
+    display: block;
+    font-size: 12px !important;
+  }
+
+  .language-icon {
+    top: 50% !important;
+  }
+
+  .accountDeleteBtn {
+    padding-left: 10px !important;
+  }
+
+  .my-account .accountCardDetail .tax-btn-area {
+    padding: 0px 4px !important;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .nav .nav-item,
+  .navLinkBtn {
+    min-width: 100px !important;
+    margin-right: -4px;
+  }
+}
+
+@media (max-width: 332px) {
+  .my-account .mobile-nav-btn {
+    font-size: 12px !important;
+  }
+}
+
+/* ------------my Account End ---------- */

@@ -1,0 +1,1703 @@
+/* OQG3-827 : New popup in dashboard (Switch plan) */
+.switchPlanModal{
+    backdrop-filter: blur(0.8px);
+    background-color: #00000075;
+    opacity: 0;
+    transition: 0.5s;
+}
+.switchPlanModal .modal-dialog{
+    max-width: 65%;
+    /* height: 94%; */
+    height: auto;
+    justify-content: center;
+}
+.switchPlanModal .modal-content{
+    border-radius: 12px;
+    width: 90%;
+    height: 75%;
+}
+.switchPlanModal .modal-content .modal-header .sub-title{
+    width: 95%;
+    font-size: 19px;
+    line-height: 1.4;
+}
+.switchPlanModal .section1{
+    min-width: 100px;
+}
+.switchPlanModal .title-container{
+    width: 66%;
+}
+.switchPlanModal .title{
+    font-weight:bolder;
+    font-size: 30px;
+}
+.switchPlanModal .title span{
+    color:var(--primary-green-1);
+}
+.switchPlanModal .section1 .switchPlan-modal-body{
+    margin-top: 15px;
+}
+.switchPlanModal .section1 .switchPlan-modal-body .plan-card-container{
+    width: 90%;
+}
+
+.switchPlan-modal-body .sp-buy-btn{
+    width: 196px;
+    padding: 6px 0px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.switchPlan-modal-body .sp-buy-btn-fill,
+.sp-modal-body .sp-buy-btn-fill{
+    background-color: var(--update-button-bg);
+    color: var(--white);
+}
+.switchPlan-modal-body .sp-buy-btn-fill:hover,
+.sp-modal-body .sp-buy-btn-fill:hover{
+    box-shadow: 0px 10px 15px var(--btn-box-shadow-bg);
+    transition: 0.5s;
+}
+.switchPlan-modal-body .sp-buy-btn-outline,
+.sp-modal-body .sp-buy-btn-outline{
+    border: 2px solid var(--update-button-bg);
+    color: var(--update-button-bg);
+}
+.switchPlan-modal-body .sp-buy-btn-outline:hover,
+.sp-modal-body .sp-buy-btn-outline:hover{
+    background-color: var(--update-button-bg);
+    color: var(--white);
+    box-shadow: 0px 10px 15px var(--btn-box-shadow-bg);
+    transition: 0.5s;
+}
+.section1 .switchPlan-modal-body .sp-plan-btn{
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 150px;
+    min-width: unset;
+    padding: 5px 20px;
+    font-weight: 600;
+    font-size: 17px;
+}
+.section1 .switchPlan-modal-body .sp-plan-btn-outline{
+    color: var(--input-field-font-color);
+    border: 1px solid var(--input-field-font-color);
+}
+.section1 .switchPlan-modal-body .sp-container{
+    width: 95%;
+}
+/* .section1 .switchPlan-modal-body .sp-plan-btn-outline:hover{
+    background-color: var(--update-button-bg);
+    color: var(--white);
+    border: 1px solid var(--white);
+    transition: 0.5s;
+} */
+.section1 .switchPlan-modal-body .sp-plan-btn-fill{
+    background-color: var(--update-button-bg);
+    color: var(--white);
+}
+.section1 .switchPlan-modal-body .sp-discount-area{
+    background-color: var(--light-bg);
+    padding: 10px 10px;
+    position: relative;
+    width: 75%;
+    /* margin-left: 40px;
+    margin-right: 40px; */
+}
+.switchPlanModal .sp-discount-area .discount-detail {
+    margin-top: 3px;
+    padding-left: 10px;
+    font-size: 19px;
+    font-weight: 600;
+    background: -webkit-linear-gradient(var(--discount-color-1),
+                    var(--discount-color-2));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+}
+
+.switchPlanModal .sp-discount-area .present-icon-bg {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(to right, var(--discount-color-1), var(--discount-color-2)) border-box;
+    border: 2px solid transparent;
+    padding: 5px 4px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.switchPlanModal .sp-discount-area .present-icon-bg span {
+    background-image: linear-gradient(45deg, var(--discount-color-1), var(--discount-color-2));
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    border: 1px solid transparent;
+}
+
+.switchPlanModal .sp-discount-area .present-icon::after {
+    background: -webkit-linear-gradient(var(--discount-color-1),
+        var(--discount-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.switchPlanModal .sp-discount-area .present-icon {
+    font-size: 11px;
+    background: -webkit-linear-gradient(var(--discount-color-1),
+        var(--discount-color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 6px;
+}
+.section1 .switchPlan-modal-body .sp-package-header{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section1 .switchPlan-modal-body .sp-package-header .card-hr{
+    width: 87%;
+}
+.section1 .switchPlan-modal-body .buy-btn-area{
+    padding: 0px !important;
+}
+.sp-package-header .sp-price-area{
+    margin-top: 5px;
+}
+.sp-package-header .sp-price-area .sp-arrow-right{
+    background-image: url('../../images/sp-modal/arrow-right.png');
+    width: 115px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sp-package-header .sp-price-area .sp-brush-line,
+.sp-modal-body .sp-plan-card .sp-brush-line,
+.switchPlan-modal-body .sp-plan-card .sp-brush-line{
+    background-image: url('../../images/sp-modal/brush-line.png');
+    width: 145px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.sp-modal-body .sp-plan-card .sp-brush-line-middle,
+.switchPlan-modal-body .sp-plan-card .sp-brush-line-middle{
+    transform: translate(-40%,-50%);
+}
+.section1 .switchPlan-modal-footer .sp-footer-desc{
+    padding-left: 58px;
+    padding-right: 58px;
+    font-size: 15px;
+}
+.switchPlanModal .modal-content .sp-modal-close{
+    font-size: 30px;
+    position: fixed;
+    right: 22%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+}
+.switchPlanModal .section2 .sp-modal-body{
+    gap: 40px;
+}
+.section2 .sp-modal-body .sp-plan-card,
+.switchPlan-modal-body .sp-modal-body .sp-plan-card{
+    width: 60%;
+    border: 3px solid var(--primary-green-1);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.section2 .sp-modal-body .sp-discount-area{
+    background: var(--light-bg);
+    padding: 15px 35px;
+    position: absolute;
+    z-index: 10;
+    border-radius: 10px;
+    top: -35px;
+    right: 160px;
+}
+.sp-modal-body .sp-buy-btn{
+    width: 196px;
+    padding: 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px !important;
+}
+.section1{ opacity: 1;}
+.section2{ opacity: 0;}
+.section3{ opacity: 0;}
+
+.mobile-plan-cards{
+    gap: 30px;
+}
+
+.mobile-plan-cards .sp-discount-area{
+    position: absolute !important;
+    padding: 7px 16px !important;
+    border-radius: 8px;
+    top: -20px;
+    right: -13px;
+    z-index: 10;
+}
+.mobile-plan-cards .sp-plan-card{
+    padding: 5px 8px 5px 7px !important;
+    border: 2px solid #c5c8cb !important;
+}
+.mobile-plan-cards .sp-plan-card-active{
+    border: 2px solid var(--primary-green-1) !important;
+}
+.mobile-plan-cards .sp-plan-card .plan-name{
+    font-size: 15px;
+}
+.mobile-plan-cards .sp-plan-card .discounted-price {
+    font-size: 19px;
+}
+.mobile-plan-cards .sp-plan-card .plan-price {
+    font-size: 15px;
+}
+.mobile-plan-cards .sp-plan-card .sp-brush-line {
+    width: 100px !important;
+    height: 25px !important;
+}
+.mobile-plan-cards .sp-plan-card .sp-brush-line-middle {
+    transform: translate(-50%,-50%) !important;
+}
+.mobile-plan-cards .sp-plan-card .radio-check{
+    background-color: var(--white);
+    border: 2px solid var(--grey-dark);
+    border-radius: 100%;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+}
+
+.mobile-plan-cards .sp-plan-card .radio-check-active{
+    border-color: var(--primary-green-2);
+    background-color: var(--primary-green-1);
+}
+.mobile-plan-cards .sp-plan-card .radio-check:after{
+    border: 2px solid var(--white);
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 2px;
+    opacity: 1;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+.mobile-plan-cards .sp-plan-card .prices-sec{
+    margin-top: 20px;
+}
+.mobile-plan-cards .sp-plan-card .invoice-label{
+    font-size: small;
+}
+
+.switchPlanModal .switchPlan-modal-body .package .annual-full-card {
+    position: relative;
+    background-image: url(../../images/billing-and-price/Subtract-mobile-green-ug.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 320px;
+}
+
+.switchPlanModal .switchPlan-modal-body .package-header-topHeading{
+    font-weight: 600;
+    font-size: 20px;
+    /* padding-left: 30px; */
+    /* margin-bottom: 56px; */
+}
+
+.section2 .modal-header {
+    margin-top: 15px !important;
+}
+
+.switchPlanModal .section1 .new-package-header-heading{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    gap: 0px;
+    flex-direction: column-reverse;
+    margin-top: 9px;
+    font-size: 27px;
+    font-weight: 700;
+}
+.switchPlanModal .section1 .new-package-header-heading .strike-price{
+    position: relative;
+    color: #212529;
+    text-align: center;
+    font-size: 18px;
+    opacity: 0.5;
+    white-space: nowrap;
+}
+.switchPlanModal .section1 .new-package-header-heading .strike-price::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../images/billing-and-price/black-friday/brush-line.png);
+    height: 100%;
+    /* width: calc(100% + -150px); */
+    width: 100%;
+    background-size: 225px 90%;
+    z-index: 10;
+    top: 0px;
+    background-position: center center;
+    left: 50%;
+    transform: translateX(-50%) rotate(3deg);
+    background-repeat: no-repeat;
+}
+.switchPlanModal .section1 .new-package-header-heading .shown-price{
+    position: relative;
+    color: #212529;
+    text-align: center;
+    font-size: 24px;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
+
+.switchPlanModal .section2 .discounted-price{
+    font-size: 20px;
+}
+.switchPlanModal .section2 .plan-price{
+    font-size: 16px;
+    opacity: 0.5;
+}
+.switchPlanModal .section2 .total-price{
+    font-size: 25px;
+}
+.section2 .sp-modal-body .sp-plan-card .sp-brush-line {
+    width: 190px;
+    transform: translate(-35%,-48%);
+}
+
+.switchPlanModal .sp-plan-card .plan-price{
+    position: relative;
+    text-align: center;
+}
+
+.switchPlanModal .sp-plan-card .plan-price::before{
+    content: '';
+    position: absolute;
+    background-image: url(../../images/billing-and-price/black-friday/brush-line.png);
+    height: 100%;
+    /* width: calc(100% + -150px); */
+    width: 100%;
+    background-size: 225px 90%;
+    z-index: 10;
+    top: 0px;
+    background-position: center center;
+    left: 50%;
+    transform: translateX(-50%) rotate(3deg);
+    background-repeat: no-repeat;
+}
+
+.switchPlanModal .current-package-header{
+    margin-top: 38px;
+    padding: 0px 0px 25px 0px;
+    font-size: 24px;
+}
+
+.section1 .switchPlan-modal-footer {
+    padding-bottom: 15px;
+}
+
+.switchPlanModal .sw-price{
+    text-wrap: nowrap;
+}
+
+.switchPlanModal .section1,
+.switchPlanModal .section2,
+.switchPlanModal .section3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 701px;
+    height: 701px !important;
+}
+
+.switchPlanModal .annual-full-card .sp-plan-btn:focus{
+    box-shadow: none;
+}
+
+.current-sw-plan-btn{
+    padding: 5px 0px;
+}
+
+@media (min-width: 2560px) {
+    .switchPlanModal .modal-content {
+        width: 70%;
+        height: 62%;
+    }
+    .section1 .switchPlan-modal-body .sp-container {
+        width: 95%;
+    }
+    .section2 .sp-modal-body .sp-discount-area {
+        right: 235px;
+    }
+    .switchPlanModal .modal-content .sp-modal-close {
+        right: 28%;
+    }
+    .switchPlanModal .plan-card .package-header-heading {
+        font-size: 26px;
+    }
+    .switchPlanModal .plan-card .package-header-heading.-chd {
+        padding-left: 0px;
+        font-size: 24px;
+    }
+    .switchPlanModal .plan-card .package-subheader.-chd {
+        padding-left: 0px;
+    }
+    .sp-package-header .sp-price-area .disPrice.-chd {
+        font-size: 18px;
+    }
+    .switchPlanModal .package-header.-chd {
+        margin-top: 59px !important;
+        margin-bottom: 59px !important;
+    }
+    .sp-modal-body .sp-plan-card .sp-brush-line-middle.-chd, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line-middle.-chd {
+        transform: translate(-24%,-50%);
+    }
+    .sp-package-header .sp-price-area .sp-brush-line.-chd, 
+    .sp-modal-body .sp-plan-card .sp-brush-line.-chd, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line.-chd {
+        width: 170px;
+    }
+    .switchPlanModal .package-header {
+        margin-left: 2rem!important;
+    }
+}
+
+@media only screen and (max-width:1920px) and (min-height:971px){
+    .section1 .modal-header {
+        padding: 5px;
+        gap: 15px !important;
+    }
+    .switchPlanModal .title {
+        font-size: 34px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        font-size: 17px;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 15px !important;
+        margin-bottom: 0px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header {
+        padding-top: 38px;
+    }
+    .section1 .switchPlan-modal-body .buy-btn-area {
+        padding: 15px 12px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width:1600px) {
+    .switchPlanModal .title {
+        font-size: 31px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        font-size: 16px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 17px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-size: 17px;
+    }
+    .switchPlanModal .plan-card .package-header-heading {
+        font-size: 24px;
+    }
+    .switchPlanModal .package-header{
+        padding-top: 28px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 30px;
+        padding: 0px 0px 25px 0px;
+    }
+}
+
+@media only screen and (min-width:1440px) and (min-height:1000px) {
+    .switchPlanModal .modal-content {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:1580px) and (min-height:720px){
+    .switchPlanModal .title {
+        font-size: 27px;
+    }
+    .switchPlanModal .section1 .modal-header {
+        gap: 10px !important;
+        padding: 5px;
+    }
+    .switchPlanModal .title-container {
+        width: 61%;
+    }
+    .switchPlanModal .package .plan-card {
+        padding: 0px;
+    }
+    .section1 .switchPlan-modal-body .sp-container .package > div {
+        scale: 95% !important;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 15px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 25px;
+        height: 25px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 15px;
+    }
+    .sp-package-header .sp-price-area {
+        margin-top: 8px;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header {
+        padding-top: 40px;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-btn {
+        top: -25px;
+        padding: 4px 15px;
+        font-size: 15px;
+    }
+    .sp-package-header .sp-price-area .sp-arrow-right {
+        height: 33px;
+    }
+    .plan-card .package-subheader {
+        margin-top: 1px !important;
+        font-size: 15px;
+    }
+    .switchPlanModal .modal-content {
+        height: 94%;
+    }
+    .switchPlanModal .modal-dialog {
+        max-width: 74%;
+        height: 92%;
+        /* height: auto; */
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        width: 91%;
+        font-size: 15px;
+    }
+    .switchPlanModal .package-header {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0px !important;
+    }
+    .switchPlan-modal-body .sp-buy-btn {
+        font-size: 17px;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 35px;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 15px !important;
+    }
+    .section2 .modal-header {
+        margin-top: 15px !important;
+        gap: 15px !important;
+    }
+    .switchPlanModal .section2 .sp-modal-body {
+        margin-top: 0px !important;
+    }
+    .sp-modal-body .sp-buy-btn {
+        width: 250px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        /* margin-bottom: 42px !important; */
+        font-size: 15px;
+    }
+    .switchPlanModal .plan-card .package-header-heading {
+        font-size: 25px;
+    }
+    .switchPlanModal .section1 .new-package-header-heading .shown-price {
+        font-size: 22px;
+    }
+    .switchPlanModal .section1 .new-package-header-heading .strike-price {
+        font-size: 16px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package .annual-full-card {
+        height: 285px;
+    }
+    .switchPlanModal .package-header {
+        padding-top: 15px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 34px ;
+        padding: 0px 0px 28px 0px;
+        font-size: 22px !important;
+    }
+    .switchPlanModal .sp-discount-area{
+        justify-content: center;
+        width: unset !important;
+    }
+}
+
+@media only screen and (max-width: 1498px) {
+/* @media only screen and (max-width: 1475px) { */
+    .switchPlanModal .modal-dialog {
+        max-width: 73%;
+        height: 93%;
+    }
+    .switchPlanModal .modal-content {
+        width: 100%;
+        height: 87%;
+    }
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        padding: 10px 10px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .switchPlanModal .title {
+        font-size: 32px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        font-size: 17px;
+    }
+    .switchPlanModal .modal-content .modal-header {
+        gap: 1rem!important;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .section1 .switchPlan-modal-body .sp-container .package > div{
+        /* scale: 90% !important; */
+        scale: 0.95 !important;
+    }
+    .switchPlanModal .modal-content {
+        width: 100%;
+        height: auto;
+    }
+    .switchPlanModal .title-container {
+        width: 65%;
+    }
+    .switchPlanModal .title {
+        font-size: 30px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        width: 90%;
+        font-size: 15px;
+    }
+    .switchPlanModal .section1 .modal-header{
+        gap: 10px !important;
+        padding: 10px;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 20px;
+    }
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        padding: 10px 17px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 30px;
+        height: 30px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 18px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 17px;
+    }
+    .sp-package-header .sp-price-area .disPrice{
+        font-size: 22px;
+    }
+    .switchPlanModal .plan-card .package-header-heading {
+        font-size: 21px;
+        padding-left: 0px;
+    }
+    .switchPlanModal .plan-card .package-subheader {
+        padding-left: 0px;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-btn {
+        top: -15px;
+        padding: 5px 20px;
+    }
+    .section2 .sp-modal-body .sp-plan-card,
+    .section1 .switchPlan-modal-body .sp-plan-card {
+        width: 60%;
+        padding: 20px;
+    }
+    .section2 .sp-modal-body .sp-discount-area {
+        padding: 10px 30px;
+        top: -25px;
+        right: 135px;
+    }
+    .switchPlanModal .modal-content .sp-modal-close {
+        font-size: 23px;
+        right: 269px;
+        width: 32px;
+        height: 32px;
+    }
+    .switchPlanModal .package-header {
+        margin-top: 5px !important;
+        /* margin-bottom: 19px !important; */
+        /* margin-bottom: 28px !important; */
+        /* margin-left: 2rem!important; */
+    }
+    .switchPlanModal .plan-card .package-header-heading.-chd {
+        font-size: 22px;
+    }
+    .sp-package-header .sp-price-area .disPrice.-chd {
+        font-size: 18px;
+    }
+    .sp-package-header .sp-price-area .position-relative >h5.-chd {
+        font-size: 15px;
+    }
+    .sp-modal-body .sp-plan-card .sp-brush-line-middle.-chd, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line-middle.-chd {
+        transform: translate(-24%,-50%);
+    }
+    .sp-package-header .sp-price-area .sp-brush-line.-chd, 
+    .sp-modal-body .sp-plan-card .sp-brush-line.-chd, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line.-chd {
+        width: 170px;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 0px !important;
+    }
+    .section1 .switchPlan-modal-footer > p:nth-child(1) {
+        margin-bottom: 10px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header {
+        padding-top: 40px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 30px;
+        padding: 0px 0px 24px 0px;
+    }
+}
+
+@media only screen and (max-width:1366px) and (max-height:932px){
+    .switchPlanModal .modal-dialog {
+        max-width: 75%;
+        height: 91%;
+    }
+    .switchPlanModal .package {
+        max-width: 290px;
+    }
+    .switchPlanModal .package-header {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        padding-top: 20px;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 5px !important;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 5px;
+    }
+    .switchPlanModal .modal-content {
+        /* height: 100%; */
+        height: 84%;
+    }
+    .section1 .switchPlan-modal-footer .sp-footer-desc {
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        padding: 10px 10px;
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-btn {
+        top: -15px !important;
+    }
+    .switchPlanModal .section1 .new-package-header-heading .shown-price {
+        font-size: 23px;
+    }
+    .switchPlanModal .section1 .new-package-header-heading .strike-price {
+        font-size: 18px;
+    }
+    .switchPlanModal .switchPlan-modal-body .package .annual-full-card {
+        height: 290px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 34px;
+        padding: 0px 0px 27px 0px;
+        font-size: 23px !important;
+    }
+}
+
+@media only screen and (max-width: 1320.98px) and (min-width: 1280px) and (max-height: 932px) {
+    .switchPlanModal .current-package-header {
+            margin-top: 28px !important;
+            padding: 0px 0px 27px 0px;
+            font-size: 23px !important;
+    }
+}
+
+@media only screen and (max-width: 1320.98px) and (min-width: 1280px) and (min-height: 932px) {
+    .switchPlanModal .current-package-header {
+        margin-top: 25px;
+    }
+}
+
+@media only screen and (max-width:1366px) and (max-height:719.98px) {
+    .switchPlanModal .switchPlan-modal-body .package .annual-full-card {
+        height: 315px;
+    }
+
+    .switchPlanModal .current-package-header {
+        margin-top: 36px;
+        padding: 0px 0px 24px 0px;
+    }
+}
+
+@media only screen and (min-width:1200px) and (max-height:767.98px) {
+    .switchPlanModal .modal-content {
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1280.98px) {
+    .section1 .switchPlan-modal-body .sp-plan-btn {
+        padding: 5px 12px;
+        font-size: 14px;
+        top: -25px;
+    }
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        padding: 10px 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 15px !important;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 30px;
+        height: 30px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 18px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 15px;
+    }
+    .switchPlanModal .plan-card .package-header-heading {
+        font-size: 21px;
+    }
+    .sp-package-header .sp-price-area .position-relative >h5 {
+        font-size: 14px;
+    }
+    .sp-package-header .sp-price-area .disPrice {
+        font-size: 20px;
+    }
+    .sp-package-header .sp-price-area .sp-brush-line, .sp-modal-body .sp-plan-card .sp-brush-line, .switchPlan-modal-body .sp-plan-card .sp-brush-line {
+        width: 137px;
+        transform: translate(-45%,-50%);
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 20px;
+    }
+    .switchPlanModal .title-container {
+        width: 75%;
+    }
+    .switchPlanModal .title {
+        font-size: 28px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        width: 99%;
+        font-size: 15px;
+    }
+    .section1 .switchPlan-modal-body .sp-container {
+        width: 100%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .section1 .switchPlan-modal-footer .sp-footer-desc {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 14px;
+    }
+    .switchPlanModal .modal-dialog {
+        max-width: 70%;
+        height: 95%;
+    }
+    .switchPlan-modal-body .sp-buy-btn {
+        width: 155px;
+        padding: 5px 0px;
+        font-size: 16px;
+    }
+    .plan-card .buy-btn-area {
+        padding: 15px 5px;
+    }
+    .sp-package-header .sp-price-area .sp-arrow-right {
+        width: 100px;
+        height: 33px;
+    }
+    .sp-package-header .sp-price-area {
+        margin-top: 10px;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header {
+        padding-top: 35px;
+    }
+    /* .sp-package-header .package-header {
+        margin-top: 36px !important;
+    } */
+    .section2 .sp-modal-body .sp-discount-area {
+        padding: 15px 30px;
+        top: -31px;
+        right: 125px;
+    }
+    .switchPlanModal .modal-content .sp-modal-close {
+        right: 17%;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 36px;
+        padding: 0px 0px 27px 0px;
+    }
+    .current-sw-plan-btn {
+        padding: 4px 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1280.98px) and (min-height: 932px) {
+    .switchPlanModal .current-package-header {
+        margin-top: 30px;
+        padding: 0px 0px 27px 0px;
+    }
+}
+
+@media only screen and (max-width: 1200.98px) and (min-width: 990px){
+    #SwitchPlanModal .annual-full-card{
+        min-height: 300px;
+        height: auto;
+    }
+    .switchPlanModal .modal-content {
+        height: 80%;
+        /* height: 92%; */
+    }
+    .switchPlanModal .modal-dialog {
+        height: 93%;
+        max-width: 77%;
+    }
+    .switchPlanModal .package-header {
+        margin-top: 34px !important;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-size: 18px;
+        margin-bottom: 16px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header .card-hr {
+        margin-bottom: 1rem !important;
+    }
+    .switchPlanModal .package-header {
+        margin-top: 0px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header {
+        padding-top: 40px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 28px;
+        padding: 0px 0px 27px 0px;
+    }
+    .switchPlanModal .buy-btn-area .sp-buy-btn{
+        margin-top: 20px;
+    }
+
+    @media(max-height:870px){
+        .switchPlanModal .modal-content {
+            height: 88%;
+        }
+    }
+
+    @media(max-height:799.98px) {
+        .switchPlanModal .modal-content {
+            height: 100% !important;
+        }
+    }
+
+    @media(max-height:932.98px) {
+        .switchPlanModal .current-package-header {
+            margin-top: 26px;
+        }
+    }
+}
+
+@media(max-width:1099.98px){
+    .switchPlanModal .modal-dialog {
+        height: 93%;
+        max-width: 82%;
+    }
+}
+
+@media only screen and (max-width: 1079.98px) and (min-width: 990px) {
+    .switchPlanModal .modal-content {
+        height: auto;
+        /* height: 92%; */
+    }
+}
+
+@media only screen and (max-width: 1200.98px) and (max-height: 719.98px) {
+    .switchPlanModal .buy-btn-area .sp-buy-btn {
+        margin-top: 15px;
+    }
+}
+
+/* i pad */
+@media only screen and (max-width:1024px) and (max-height:950px){
+    .switchPlanModal .modal-content {
+        height: 82%;
+    }
+    .switchPlanModal .modal-dialog {
+        max-width: 91%;
+    }
+}
+
+@media only screen and (max-width:1366px) and (min-height:950px){
+    .switchPlanModal .modal-content {
+        height: auto;
+    }
+}
+
+/* @media only screen and (max-width:1100px) and (min-width:911px){
+    .switchPlanModal .modal-content {
+        height: 62% !important;
+    }
+
+    .switchPlanModal .section2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+} */
+
+/* ----DP */
+
+@media only screen and (max-width:1024px) and (max-height:1292px) and (min-height:951px) and (orientation: landscape){
+    .switchPlanModal .modal-content {
+            height: 72% !important;
+    }
+}
+
+@media only screen and (max-width:1024px) and (max-height:1292px) and (min-height:951px){
+    .switchPlanModal .modal-dialog {
+        max-width: 90% !important;
+    }
+    .switchPlanModal .modal-content {
+        height: auto !important;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-btn {
+        top: -10px ;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 20px ;
+    }
+    .section2 .modal-header {
+        margin-top: 0px ;
+    }
+    .switchPlanModal .section2 .sp-modal-body {
+        margin-top: 0px !important;
+    }
+    .section2 .sp-modal-body .sp-plan-card, 
+    .section1 .switchPlan-modal-body .sp-plan-card {
+        width: 70% ;
+    }
+    .section2 .sp-modal-body .sp-discount-area {
+        right: 75px ;
+    }
+    .sp-modal-body .sp-buy-btn {
+        width: 245px ;
+    }
+    .sp-package-header .package-header {
+        margin-top: 0px !important;
+        margin-bottom: 0px !important;
+        margin-left: 0rem!important;
+    }
+    .package {
+        max-width: 240px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-container {
+        width: 95%;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 15px !important;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-size: 15px;
+        margin-bottom: 10px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-package-header .card-hr {
+        margin-bottom: 1rem !important;
+    }
+    .switchPlanModal .package-header {
+        padding-top: 18px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 34px !important;
+        padding: 0px 0px 28px 0px;
+    }
+}
+
+@media only screen and (max-width: 990.98px) and (max-height: 719.98px) {
+    .switchPlanModal .current-package-header {
+        margin-top: 19px !important;
+        padding: 0px 0px 27px 0px;
+    }
+}
+
+@media only screen and (max-width: 990.98px){
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        padding: 7px 5px;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 14px;
+    }
+
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 14px;
+    }
+
+    .sp-package-header .sp-price-area .disPrice {
+        font-size: 17px;
+    }
+
+    #SwitchPlanModal .plan-card .package-subheader {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 0 !important;
+    }
+
+    .sp-package-header .sp-price-area .sp-arrow-right {
+        width: 75px;
+        height: 29px;
+    }
+
+    /* .sp-package-header .package-header {
+        margin-bottom: 60px !important;
+    } */
+
+    .switchPlanModal .current-package-header {
+        /* margin-top: -9px;
+        padding: 0px 0px 27px 0px; */
+        margin-top: 26px;
+        padding: 0px 0px 27px 0px;
+    }
+
+    .switchPlanModal .buy-btn-area .sp-buy-btn {
+        margin-top: 25px;
+    }
+
+    @media(min-height:932px) {
+        .switchPlanModal .current-package-header {
+            margin-top: 21px;
+        }
+
+        .switchPlanModal .buy-btn-area .sp-buy-btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 910.98px){
+    .sp-package-header .sp-price-area .disPrice {
+        font-size: 13px;
+    }
+    /* .sp-package-header .package-header {
+        margin-bottom: 57px !important;
+    } */
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        width: auto;
+    }
+
+    .switchPlanModal .modal-content {
+        height: 77.5%;
+        padding-top: 5px;
+    }
+
+    .switchPlanModal .modal-dialog {
+        max-width: 91%;
+    }
+}
+
+@media(max-width:899.98px){
+    .section1 .switchPlan-modal-body .sp-container .package>div {
+            scale: 100% !important;
+    }
+
+    .section1 .switchPlan-modal-body .sp-container {
+        gap: 8px;
+    }
+
+    .switchPlanModal .package .annual-full-card-wrapper {
+        border-radius: 24px;
+    }
+}
+
+@media only screen and (max-width: 875.98px){ 
+    .switchPlanModal .modal-content {
+        height: 84%;
+        padding-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 825.98px) and (max-height:930px){
+    .sp-package-header .package-header {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+    .switchPlanModal .modal-dialog {
+        max-width: 92% !important;
+    }
+    .switchPlanModal .switchPlan-modal-body .package-header-topHeading {
+        font-size: 14px;
+        margin-top: 18px !important;
+    }
+    .switchPlanModal .modal-content {
+        height: auto !important;
+    }
+    .switchPlanModal .switchPlan-modal-body .package .annual-full-card {
+        height: 270px;
+    }
+    .switchPlanModal .package-header {
+        padding-top: 10px;
+    }
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        width: auto;
+    }
+    .switchPlanModal .buy-btn-area .sp-buy-btn {
+        margin-top: 11px;
+        height: 37px;
+    }
+    .switchPlanModal .current-package-header {
+        margin-top: 30px !important;
+        padding: 0px 0px 27px 0px;
+    }
+
+    @media(max-width: 990.98px) {
+        .switchPlanModal .current-package-header {
+            margin-top: 26px;
+            padding: 0px 0px 27px 0px;
+        }
+    }
+}
+
+@media only screen and (max-width: 825.98px) and (min-height:930px) {
+    .switchPlanModal .current-package-header {
+            margin-top: 25px !important;
+    }
+
+    .switchPlanModal .buy-btn-area .sp-buy-btn {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .sp-container{
+        display: none !important;
+    }
+    .mobile-plan-cards{
+        display: flex !important;
+    }
+    .switchPlanModal .title-container {
+        width: 90%;
+    }
+    .switchPlanModal .title {
+        font-size: 25px;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        width: 100%;
+        font-size: 15px;
+    }
+    .switchPlanModal .section1 .modal-header {
+        gap: 15px !important;
+        margin-top: 10px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 15px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 25px;
+        height: 25px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 14px;
+    }
+    .mobile-plan-cards .sp-discount-area {
+        padding: 5px 15px !important;
+        top: -19px;
+        right: 0px;
+        width: auto;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-card > div{
+        margin-top: 0px !important;
+    }
+    .section1 .switchPlan-modal-body .sp-plan-card{
+        border-radius: 10px;
+    }
+    .section1 .switchPlan-modal-body #step1GoBtn{
+        width: 88% !important;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 20px;
+    }
+    .section1 .switchPlan-modal-footer .sp-footer-desc {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .section2 .sp-modal-body .sp-plan-card, 
+    .section1 .switchPlan-modal-body .sp-plan-card {
+        width: 88%;
+        padding: 15px;
+    }
+    .section2 .sp-modal-body .sp-discount-area {
+        padding: 8px 15px;
+        top: -21px;
+        right: 0px;
+    }
+    .section2 .sp-plan-card .plan-name {
+        font-size: 20px;
+    }
+    .section2 .sp-plan-card .total-plan-label {
+        font-size: 20px;
+    }
+    .section2 .sp-plan-card > div:nth-child(1) {
+        margin-top: 10px;
+    }
+    .switchPlanModal .modal-content .sp-modal-close {
+        font-size: 22px;
+        right: 130px;
+        top: 0px !important;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 15px !important;
+    }
+    .switchPlanModal .modal-content {
+        height: auto !important;
+    }
+
+    .section1 .switchPlan-modal-body .sp-discount-area {
+        margin-top: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 699.98px) and (min-width: 576px) {
+    .switchPlanModal .modal-content {
+        scale: 97%;
+        padding-top: 26px;
+    }
+}
+
+@media only screen and (max-width:575.98px) and (max-height:799.98px) {
+    .switchPlanModal .modal-content {
+        scale: 90%;
+    }
+}
+
+@media only screen and (max-width:575.98px) and (min-height:932px){
+    .switchPlanModal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .switchPlanModal .section1,
+    .switchPlanModal .section2,
+    .switchPlanModal .section3 {
+        max-height: 90vh;
+        height: 90vh !important;
+    }
+}
+
+@media only screen and (max-width:575.98px) and (min-height:740px) {
+    #SwitchPlanModal .modal-dialog {
+        margin-top: 18px !important;
+        margin-bottom: 18px !important;
+    }
+}
+
+@media only screen and (max-width:575.98px) and (min-height:770px) {
+    #SwitchPlanModal .modal-dialog {
+        margin-top: auto !important;
+        margin-bottom: auto !important;
+        height: 100%;
+        max-width: 100% !important;
+    }
+}
+
+@media  only screen and (max-width:425px) ,
+    screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3),
+    screen and (max-width:575px) and (max-height:932px){
+
+    .switchPlanModal .section1, .switchPlanModal .section2, .switchPlanModal .section3 {
+        max-height: 730px;
+        height: 730px !important;
+    }
+
+    .switchPlanModal .modal-dialog {
+        max-width: 100% !important;
+    }
+    .switchPlanModal .modal-content::-webkit-scrollbar{
+        display: none;
+    }
+    .switchPlanModal .modal-content {
+        height: auto !important;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        overflow-y: hidden !important;
+    }
+    .switchPlanModal .title-container {
+        width: 100%;
+    }
+    .switchPlanModal .title {
+        font-size: 17px;
+    }
+    .section2 .modal-header .sub-title {
+        width: 116% !important;
+        font-size: 14px !important;
+    }
+    .switchPlanModal .modal-content .modal-header .sub-title {
+        width: 110%;
+        font-size: 12px;
+    }
+    .section2 .sp-modal-body .sp-plan-card ,
+        .section1 .switchPlan-modal-body .sp-plan-card{
+        width: 98% !important;
+        padding: 20px 15px 5px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--primary-green-1);
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 25px;
+        height: 25px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 15px;
+    }
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 15px;
+    }
+    .section2 .sp-modal-body .sp-discount-area {
+        padding: 5px 10px;
+        border-radius: 8px;
+        top: -18px;
+        right: -10px;
+    }
+    .sp-plan-card .plan-name,
+    .sp-plan-card .total-plan-label{
+        font-size: 20px;
+    }
+    .sp-plan-card .total-price{
+        font-size: 22px;
+    }
+    .sp-plan-card .total-price-footer{
+        font-size: 12px;
+    }
+    .sp-plan-card .plan-price{
+        font-size: 15px;
+    }
+    .sp-modal-body .sp-plan-card .sp-brush-line-middle,
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line-middle {
+        transform: translate(-42%,-50%);
+    }
+    .sp-package-header .sp-price-area .sp-brush-line,
+    .sp-modal-body .sp-plan-card .sp-brush-line,
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line {
+        width: 110px;
+        height: 25px;
+    }
+    .sp-plan-card .discounted-price{
+        font-size: 17px;
+    }
+    .section2 .btn-footer,
+    .section3 .btn-footer{
+        width: 100%;
+    }
+    .section2 .add-to-cart,
+    .section3 .add-to-cart{
+        width: 100%;
+        border-radius: 5px !important;
+    }
+    .switchPlanModal .modal-content .sp-modal-close {
+        font-size: 12px;
+        right: -16px !important;
+        top: -6px !important;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 30px !important;
+    }
+    .section1 .switchPlan-modal-footer .sp-footer-desc {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 12px;
+    }
+    .section1 .switchPlan-modal-footer > p:nth-child(1){
+        font-size: 12px;
+    }
+    .mobile-plan-cards .sp-discount-area {
+        right: -10px;
+        width: auto !important;
+    }
+    .section1 .switchPlan-modal-footer {
+        margin-top: 15px !important;
+    }
+
+    .switchPlanModal .modal-content {
+        scale: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    #SwitchPlanModal .modal-dialog{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media(max-width:374.98px){
+    .switchPlanModal .title {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .switchPlanModal .sp-discount-area .discount-detail {
+        font-size: 12px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg {
+        width: 22px;
+        height: 22px;
+    }
+    .switchPlanModal .sp-discount-area .present-icon-bg span {
+        font-size: 13px;
+    }
+    .mobile-plan-cards .sp-discount-area {
+        padding: 5px 10px !important;
+        top: -17px;
+        right: -10px;
+    }
+    .mobile-plan-cards .sp-plan-card .prices-sec{
+        margin-top: 15px;
+    }
+    .mobile-plan-cards .sp-plan-card .invoice-label{
+        font-size: 11px;
+    }
+    .mobile-plan-cards .sp-plan-card .discounted-price {
+        font-size: 15px;
+    }
+    .mobile-plan-cards .sp-plan-card .plan-name {
+        font-size: 13px;
+    }
+    .mobile-plan-cards .sp-plan-card .plan-price {
+        font-size: 13px;
+    }
+    .mobile-plan-cards .sp-plan-card .sp-brush-line-middle {
+        transform: translate(-39%,-49%) !important;
+    }
+    .mobile-plan-cards .sp-plan-card .sp-brush-line {
+        width: 90px !important;
+    }
+    .section2 .sp-modal-body .sp-plan-card, 
+    .section1 .switchPlan-modal-body .sp-plan-card {
+        width: 100%;
+    }
+    .mobile-plan-cards .sp-plan-card .plan-name-section > small{
+        font-size: 10px;
+    }
+    .switchPlanModal .section1 .title {
+        font-size: 16px;
+    }
+    .switchPlanModal .section1 .modal-header {
+        gap: 12px !important;
+    }
+    .switchPlanModal .section1 .switchPlan-modal-body {
+        margin-top: 10px;
+    }
+    .switchPlanModal .section2 .title {
+        font-size: 21px;
+    }
+    .section2 .modal-header .sub-title {
+        font-size: 13px !important;
+    }
+    .sp-plan-card .plan-name, 
+    .sp-plan-card .total-plan-label {
+        font-size: 15px;
+    }
+    .sp-plan-card .discounted-price {
+        font-size: 18px;
+    }
+    .sp-plan-card .plan-price {
+        font-size: 13px;
+    }
+    .sp-modal-body .sp-plan-card .sp-brush-line-middle, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line-middle {
+        transform: translate(-40%,-50%);
+    }
+    .sp-package-header .sp-price-area .sp-brush-line, 
+    .sp-modal-body .sp-plan-card .sp-brush-line, 
+    .switchPlan-modal-body .sp-plan-card .sp-brush-line {
+        width: 90px;
+    }
+    .section2 .sp-modal-body .sp-plan-card, .section1 .switchPlan-modal-body .sp-plan-card {
+        padding: 15px 10px 5px 10px;
+    }
+}
+
+@media(min-width:1200px) and (min-height:760px){
+    .switchPlanModal .modal-content {
+        height: auto;
+    }
+}
+
+@media (min-width:800px){
+    .switchPlanModal .modal-content {
+        height: auto;
+    }
+
+    .switchPlanModal .modal-dialog {
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width:800px) and (min-height:650px) and (max-height:768px){
+    .switchPlanModal .modal-content {
+       scale: 90%;
+    }
+
+    .switchPlanModal .modal-dialog {
+        margin: auto;
+    }
+}

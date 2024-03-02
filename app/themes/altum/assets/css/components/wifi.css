@@ -1,0 +1,7 @@
+/* ----------Responsive-Area------------- */
+
+@media (max-width: 768.98px) {
+  .wifi-info-main-wrp .step-form-group {
+    margin-bottom: 22px;
+  }
+}

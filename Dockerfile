@@ -1,5 +1,5 @@
 # Add PHP-FPM base image
-FROM php:8.2-fpm
+FROM php:8.0-fpm
 
 WORKDIR /var/www/html
 
@@ -7,7 +7,7 @@ WORKDIR /var/www/html
 # To connect to MySQL, add mysqli
 RUN apt-get update && \
     apt-get install -y libpng-dev && \
-    docker-php-ext-install pdo pdo_mysql gd
-
+    docker-php-ext-install mysqli && docker-php-ext-enable mysqli
+    
 EXPOSE 80
 

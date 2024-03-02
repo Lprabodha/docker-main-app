@@ -1,0 +1,1065 @@
+/* -----------Qr code tooltip Start------------- */
+
+.col-right-inner .prev-wrap:hover,
+.qr-prev-btn-hover:hover {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.qr-code-btn-tooltip {
+  position: fixed;
+  width: 500px;
+  font-size: 15px;
+  background-color: #707070;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-weight: 500 !important;
+  /* margin-left: -113px; */
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 99999;
+  right: 22%;
+  top: 1%;
+  left: 59%;
+  transform: translate(60px, -3px);
+  scale: 90%;
+}
+
+.qr-code-btn-tooltip .tooltip-con-1,
+.qr-code-btn-tooltip .tooltip-con-3 {
+  line-height: 1.15;
+}
+
+.qr-code-btn-tooltip .tooltip-con-2 {
+  margin-top: 5px;
+  line-height: 1.15;
+}
+
+.qr-code-btn-tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  top: 83px;
+  left: 43%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 9999;
+  background-color: #707070;
+  color: #ffffff;
+}
+
+.enabled-qr-btn::before {
+  top: 42px;
+}
+
+.enabled-qr-btn {
+  top: 5.5%;
+  left: 62%;
+}
+
+/* -----------Qr code tooltip End------------- */
+
+
+button.no-files {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.col-right .col-right-inner {
+  /* max-width: 410px; */
+}
+
+.mb-frame-inner {
+  background-image: url(../../images/iphone.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 320px;
+  /* height: 555px; */
+  height: 638px;
+  padding: 15px 14px 2px 12px;
+  z-index: 2;
+  position: relative;
+  /* 	max-width: 288px; */
+  border-radius: 40px;
+  flex-direction: column;
+}
+
+.mb-frame-inner.desktop-frame-inner.card {
+  background-color: transparent;
+}
+
+.mb-frame {
+  position: relative;
+  /* display: flex; */
+  align-items: center;
+  padding: 18px 0px 0;
+  border-radius: 8px;
+  flex-direction: column;
+  /*background-color: #96949C;*/
+}
+
+.mui-style-1aio0y8 {
+  overflow: hidden;
+  display: flex;
+  width: 200px !important;
+  border: 2px solid #28c155;
+  border-radius: 100px;
+  min-height: unset;
+  padding: 2px;
+  margin: 0 auto;
+}
+
+.mui-style-1aio0y8:not(:lang(en)) {
+  width: max-content !important;
+
+}
+
+.square-btn:hover {
+  color: #28c155;
+}
+
+.mui-style-1l4w6pd {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+
+.mui-style-1l4w6pd .nav {
+  background-color: transparent;
+}
+
+.square-btn {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 5px 15px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  text-transform: none;
+  white-space: nowrap;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-btn.active {
+  background-color: #28c155;
+  border-radius: 50px;
+  color: #ffffff;
+}
+
+.mui-style-22nrau {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  border-radius: 0px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  max-width: 360px;
+  min-width: 90px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  white-space: normal;
+  text-align: center;
+  flex-direction: column;
+  min-height: unset;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #28c254;
+  padding: 6px 18px;
+  text-transform: none;
+}
+
+.mobile-preview-block button.mui-style-22nrau:disabled {
+  color: #767C83;
+
+}
+
+.btn.btn-close.exitPreview {
+  height: 40px;
+  padding: 2px 16px
+}
+
+.tab-content.mb-frame .default-preview-text {
+  display: block;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.qr-code-btn-tooltip-wrap:hover .qr-code-btn-tooltip {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+@media(max-width:1536px) {
+  .tab-content.mb-frame .default-preview-text {
+    font-size: 22px;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1536px) {
+  .card.mb-frame-inner .card {
+    height: calc(100% + 15px);
+    top: -10px;
+    width: calc(100% - 2px);
+  }
+
+  .mb-frame-inner .card {
+    border-radius: 38px;
+    margin-top: 4px !important;
+    margin-bottom: 0px !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  .mui-style-1aio0y8 {
+    width: 192px !important;
+    /* display: none !important; */
+  }
+
+  .mui-style-1aio0y8:lang(fr) {
+
+    width: fit-content !important;
+    /* display: none !important; */
+  }
+
+  .mui-style-1aio0y8.hidden-preview-qr {
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+
+  .direct-pdf-qr-preview {
+    width: 104px !important;
+  }
+
+  .mui-style-22nrau {
+    padding: 6px 16px;
+  }
+
+  .mb-frame {
+    padding-top: 10px;
+  }
+
+  .col-right.active {
+    display: flex;
+    justify-content: center;
+  }
+
+  #overlayPre.active-preview {
+    opacity: 0.8 !important;
+    display: block !important;
+  }
+
+  .col-right {
+    /* max-width: 410px; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1040;
+  }
+
+  .custom-row {
+    min-height: calc(100vh - 72px);
+  }
+
+  @media only screen and (max-width: 480px) {
+    #previewModel {
+      transform: translate(-50%, 0%);
+    }
+  }
+
+  @media (min-width: 960px) {
+    .mb-frame-inner.desktop-frame-inner {
+      margin: 0 auto;
+    }
+
+    .card.mb-frame-inner .card {
+      border-radius: 30px;
+    }
+
+    .mb-frame {
+      padding: 18px 0px 0;
+    }
+
+    .col-right {
+      top: 35%;
+    }
+  }
+
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .col-right {
+    flex: unset;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+
+  .col-right-inner .btn-close {
+    display: none;
+  }
+
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {
+  @media (max-width:575px) and (max-height:932px) {
+    .col-right.customScrollbar {
+      height: 100vh;
+      padding-bottom: 0;
+    }
+
+    .mb-frame {
+      padding: 5px 20px 0;
+    }
+  }
+
+}
+
+/* Chrome */
+/* safari */
+@media not all and (min-resolution: 0.001dpcm) {
+  @media (max-width: 575px) and (max-height: 932px) {}
+}
+
+/* safari */
+
+@media (max-width: 575px) and (min-height: 896px) and (max-height: 932px) {
+  .mb-frame-inner.desktop-frame-inner {
+    width: 360px;
+    height: 720px;
+    aspect-ratio: 360/720;
+  }
+
+  .col-right-inner .tab-content,
+  .col-right-inner .tab-content .tab-pane {
+    /* height: 100%; */
+  }
+
+  .card.mb-frame-inner .card {
+    top: -3px;
+    height: calc(100% - 18px);
+    width: calc(100% - 17px);
+    max-width: 100%;
+  }
+
+  .mb-frame-inner.desktop-frame-inner.card,
+  .mb-frame-inner.desktop-frame-inner .card {
+    border-radius: 40px;
+  }
+
+  .mb-frame-inner.desktop-frame-inner .card::after {
+    background-size: 280px;
+    left: 0;
+  }
+
+  .mb-frame-inner .iphone-line.mobile-qr {
+    bottom: 29px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 575px) and (min-height: 812px) and (max-height: 895.8px) {
+  .mb-frame-inner.desktop-frame-inner {
+    width: 320px;
+    height: 640px;
+    aspect-ratio: 320/640;
+  }
+
+  .card.mb-frame-inner .card {
+    top: -5px;
+    height: calc(100% - 13px);
+    width: calc(100% - 14px);
+    max-width: 100%;
+  }
+
+  .mb-frame-inner .iphone-line.mobile-qr {
+    bottom: 26px;
+    left: -1px;
+  }
+
+  .mb-frame-inner.desktop-frame-inner.card,
+  .mb-frame-inner.desktop-frame-inner .card {
+    border-radius: 38px;
+  }
+}
+
+@media (max-width: 575px) and (min-height: 736px) and (max-height: 811.8px) {
+  .mb-frame-inner.desktop-frame-inner {
+    width: 270px;
+    height: 540px;
+    aspect-ratio: 270/540;
+  }
+
+  .card.mb-frame-inner .card {
+    top: -7px;
+    height: calc(100% - 9px);
+    width: calc(100% - 7px);
+    max-width: 100%;
+  }
+
+  .mb-frame-inner.desktop-frame-inner.card,
+  .mb-frame-inner.desktop-frame-inner .card {
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 575px) and (max-height: 736px) and (min-height: 667px) {
+  .col-right .col-right-inner {
+    height: 100%;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  .mb-frame-inner.desktop-frame-inner {
+    width: 270px;
+    height: 540px;
+    aspect-ratio: 270/540;
+  }
+
+  /* .col-right.customScrollbar{
+        padding-top: 30px;
+    } */
+  .card.mb-frame-inner .card {
+    top: -7px;
+    height: calc(100% - 9px);
+    width: calc(100% - 6px);
+    max-width: 100%;
+  }
+
+  .mb-frame-inner.desktop-frame-inner.card,
+  .mb-frame-inner.desktop-frame-inner .card {
+    border-radius: 30px;
+  }
+
+  .mb-frame-inner .iphone-line.mobile-qr {
+    bottom: 24px;
+    left: -1px;
+  }
+}
+
+@media (max-width: 376px) and (max-height: 667px) {
+  .col-right .col-right-inner {
+    /* height: 80vh;
+        padding: 50px 0; */
+    overflow: auto;
+  }
+
+  .mb-frame-inner.desktop-frame-inner {
+    width: 270px;
+    height: 540px;
+    aspect-ratio: 270/540;
+  }
+}
+
+
+
+@media (min-width: 1795px),
+(min-height: 920px) {
+  .col-right-inner.create-view-phone .mb-frame {
+    padding-top: 0px;
+  }
+
+  .col-right-inner .mb-frame {
+    padding-top: 8px;
+  }
+
+  .mb-frame-inner.desktop-frame-inner {
+    width: 338px;
+    height: 677px;
+  }
+
+  .mui-style-1aio0y8 {
+    margin: 0 auto 0px auto;
+  }
+
+  .mb-frame-inner .card {
+    border-radius: 45px;
+  }
+}
+
+@media (max-width: 1794.98px),
+(max-height: 919.98px) {
+  .mui-style-1aio0y8 {
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media (min-width: 1537px) {
+  .card.mb-frame-inner .card {
+    top: -8px;
+    height: calc(100% - 12px);
+    width: calc(100% - 12px);
+  }
+
+  .mb-frame-inner iframe {
+    border-radius: 30px;
+  }
+
+  @media (max-height: 919.98px) {}
+
+  .mb-frame-inner.desktop-frame-inner .card iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 1794.98px),
+  (max-height: 919.98px) {
+    .card.mb-frame-inner .card {
+      top: -7px;
+      height: calc(100% - 8px);
+      width: calc(100% - 4px);
+      border-radius: 40px;
+    }
+
+    .mb-frame-inner .iphone-line.mobile-qr {
+      bottom: 23px;
+      left: -1px;
+    }
+  }
+}
+
+@media (max-width: 1794.98px),
+(max-height: 919.98px) {
+  .mb-frame-inner.desktop-frame-inner {
+    width: 330px;
+    height: 660px;
+  }
+
+  .col-right-inner:not(.create-view-phone) .mb-frame {
+    padding-top: 8px;
+  }
+
+  .col-right-inner.create-view-phone .mb-frame {
+    padding-top: 0px;
+  }
+
+  .mb-frame-inner .card {
+    /* max-width: 283px; */
+  }
+}
+
+@media (max-width: 1536.98px) and (min-height: 576px),
+(max-height: 767.98px) {
+  .mb-frame-inner.desktop-frame-inner {
+    width: 260px;
+    height: 520px;
+    margin: 0 auto;
+  }
+
+  .card.mb-frame-inner .card {
+    top: -9px;
+    height: calc(100% - 6px);
+    width: calc(100% - 4px);
+    /* top: -7px;
+      height: calc(100% - 8px);
+      width: calc(100% - 4px);
+      left: 1px; */
+  }
+
+  .mb-frame-inner .card {
+    border-radius: 30px;
+  }
+
+  .mb-frame-inner .iphone-line.mobile-qr {
+    bottom: 22px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 960px) {
+  .mb-frame-inner.desktop-frame-inner {
+    margin: 0 auto;
+  }
+
+  .col-right {
+    flex: unset !important;
+    width: 100%;
+  }
+
+  @media (min-height: 667px) {
+    .col-right {
+      padding-top: 0px;
+    }
+  }
+}
+
+@media (max-width: 575px) and (max-height: 932px) {
+  @media (min-height: 667px) {
+    .col-right .col-right-inner {
+      height: 100%;
+      max-width: max-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media (max-width: 1199.98px) and (min-width: 430px) {
+  .col-right {
+    padding-top: 52px;
+  }
+}
+
+/* Iphone Hacks */
+@media not all and (min-resolution:.001dpcm) {}
+
+@supports (-webkit-touch-callout: none) {
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+  /* Small Start*/
+  /* Iphone 8,7 */
+  @media only screen and (device-width : 375px) and (device-height : 667px) and (-webkit-device-pixel-ratio : 2) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 250px;
+      height: 500px;
+      aspect-ratio: 1/2;
+    }
+
+    .col-right {
+      padding-top: 4px;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .mb-frame {
+      padding-top: 8px;
+    }
+
+    .col-right-inner {
+      padding-bottom: 20px;
+    }
+  }
+
+  /* Iphone 8,7 Plus Start*/
+  @media only screen and (device-width : 414px) and (device-height : 736px) and (-webkit-device-pixel-ratio : 3) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 240px;
+      height: 480px;
+      aspect-ratio: 1/2;
+    }
+
+    .col-right {
+      padding-top: 5px;
+    }
+
+    .mb-frame {
+      padding-top: 8px;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {}
+
+  }
+
+  /* Iphone 8,7 Plus End*/
+  /* Small End*/
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+  /* Medium Start  */
+  /* Iphone 11, XR Start*/
+  @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 290px;
+      height: 580px;
+      aspect-ratio: 1/2;
+    }
+
+    .mb-frame {
+      padding: 12px 0 0;
+    }
+
+    .preview-head {
+      padding-bottom: 0;
+    }
+
+    .col-right {
+      padding-top: 15px;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {}
+
+  }
+
+  /* Iphone 11, XR End*/
+
+  /* Iphone X, XS , 11 Pro,13 Mini, 12 Mini, Start*/
+  @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 250px;
+      height: 500px;
+      aspect-ratio: 1/2;
+    }
+
+    .card.mb-frame-inner .card {
+      top: -9px;
+      height: calc(100% - 8px);
+      width: calc(100% - 3px);
+    }
+
+    .mb-frame {
+      padding: 12px 0 0;
+    }
+
+    .preview-head {
+      padding-bottom: 0;
+    }
+
+    .col-right {
+      padding-top: 8px;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {}
+
+
+  }
+
+  /* Iphone X, XS , 11 Pro,13 Mini, 12 Mini, End*/
+  /* Medium End  */
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+  /* Large  Start*/
+  /* Iphone 13, 13 Pro , 12, 12 Pro - Start*/
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 270px;
+      height: 540px;
+      aspect-ratio: 1/2;
+    }
+
+    .card.mb-frame-inner .card {
+      top: -7px;
+      height: calc(100% - 11px);
+      width: calc(100% - 6px);
+    }
+
+    .col-right {
+      padding-top: 4px;
+    }
+
+    .preview-head {
+      padding-bottom: 10px;
+    }
+
+    .mb-frame {
+      padding: 8px 0 0;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {}
+  }
+
+  /* Iphone 13, 13 Pro , 12, 12 Pro - End*/
+
+  /* Iphone XS Max, 11 Pro Max Start*/
+  @media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) {
+
+    .mb-frame-inner.desktop-frame-inner {
+      width: 290px;
+      height: 580px;
+      aspect-ratio: 1/2;
+    }
+
+    .col-right {
+      padding-top: 4px;
+    }
+
+    .preview-head {
+      padding-bottom: 10px;
+    }
+
+    .mb-frame {
+      padding: 8px 0 0;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {
+      left: 98%;
+    }
+  }
+
+  /* Iphone XS Max, 11 Pro Max End*/
+
+  /* Iphone 14 Pro Max, 13 Pro Max, 12 Pro Max Start*/
+  @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+    .mb-frame-inner.desktop-frame-inner {
+      width: 305px;
+      height: 610px;
+      aspect-ratio: 1/2;
+    }
+
+    .col-right {
+      padding-top: 2px;
+    }
+
+    .preview-head {
+      padding-bottom: 10px;
+    }
+
+    .mb-frame {
+      padding: 6px 0 0;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {
+      left: 98%;
+    }
+  }
+
+  @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+
+    .mb-frame-inner.desktop-frame-inner {
+      width: 305px;
+      height: 610px;
+      aspect-ratio: 1/2;
+    }
+
+    .col-right {
+      padding-top: 2px;
+    }
+
+    .preview-head {
+      padding-bottom: 10px;
+    }
+
+    .mb-frame {
+      padding: 6px 0 0;
+    }
+
+    .mui-style-1aio0y8 {
+      margin: 0 60px;
+    }
+
+    .col-right-inner .btn-close.btn-x {
+      left: 98%;
+    }
+
+  }
+
+  /* Iphone 14 Pro Max, 13 Pro Max, 12 Pro Max End*/
+  /* Large  End*/
+  /* ++++++++++++++++++++++++++++++++++++++++ */
+}
+
+/* Iphone Hacks */
+#qr-code-wrap svg:not([id]) {
+  max-width: 100%;
+  height: auto;
+}
+
+@media(-webkit-device-pixel-ratio:1.5) {
+  .mb-frame-inner.desktop-frame-inner {
+    scale: 1;
+    transform-origin: top
+  }
+
+  .mui-style-1aio0y8 {
+    scale: 1;
+    transform-origin: top
+  }
+}
+
+#statusMsg {
+  width: calc(100% - 20px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  bottom: 0;
+  line-height: 1.25;
+  position: relative;
+  transform: translateX(-50%);
+  left: 47%;
+}
+
+#statusMsg .alert {
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px;
+  margin-bottom: 0;
+  border-radius: 3px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1199.5px) {
+  #qr-code-wrap.active {
+    padding-bottom: 10px;
+    padding-top: 35px;
+  }
+
+  #statusMsg {
+    width: calc(100% - 15px);
+    transform: translateX(-50%);
+    left: 47%;
+  }
+
+  #statusMsg .alert {
+    font-size: 9.99px;
+    padding: 4px 0px;
+  }
+}
+
+@media (max-width:1440px) {
+  #statusMsg {
+    width: calc(100% - 10px);
+    transform: translateX(-49%);
+  }
+
+  #statusMsg .alert {
+    font-size: 10px;
+    padding: 4px 0px;
+  }
+}
+
+
+
+@media (-webkit-device-pixel-ratio: 1.5) {
+  @media (max-width: 1794.98px),
+  (max-height: 919.98px) {
+    .preview-head {
+      padding-bottom: 23px;
+    }
+
+    .mb-frame-inner.desktop-frame-inner {
+      width: 291px;
+      height: 582px;
+      scale: 1;
+      transform-origin: top;
+    }
+
+    .radio-btn-group .input-container .desc {
+      line-height: 1.25;
+    }
+
+    .radio-btn-group .input-container .icon {
+      font-size: 16px;
+    }
+
+    .radio-btn-group .input-container img {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 0;
+    }
+
+    .input-container .qr-card-img-wrap {
+      padding: 12px;
+      margin-bottom: 6px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .radio-btn-group .input-container {
+      height: 184px;
+      padding: 10px 14px;
+    }
+
+    .mb-frame {
+      padding-top: 3px !important;
+    }
+  }
+
+  .mui-style-1aio0y8 {
+    scale: 0.8;
+    transform-origin: top;
+  }
+}
+
+/* -----------Qr code tooltip Responsive Start------------- */
+
+@media(max-width:1800px) {
+  .qr-code-btn-tooltip::before {
+    left: 50%;
+  }
+}
+
+@media(max-width:1536.98px) {
+  .qr-code-btn-tooltip::before {
+    left: 61%;
+  }
+}
+
+@media(max-width:1400.98px) {
+  .qr-code-btn-tooltip::before {
+    left: 65%;
+  }
+}
+
+@media(max-width:1380px) {
+  .qr-code-btn-tooltip {
+    left: 53%;
+  }
+
+  .qr-code-btn-tooltip::before {
+    left: 85%;
+  }
+}
+
+@media(max-width:1199px) {
+  .qr-code-btn-tooltip {
+    display: none !important;
+  }
+
+  .qr-code-btn-tooltip::before {
+    display: none;
+  }
+}
+
+/* -----------Qr code tooltip Responsive End------------- */

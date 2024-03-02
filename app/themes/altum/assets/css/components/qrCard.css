@@ -1,0 +1,920 @@
+/* QR Code Cards Listing Card start */
+
+/* --Static-qr-css------ */
+.qr-scans-count-wrp .scan-wifi-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+  width: 82px;
+  margin-left: 12px;
+  font-size: small;
+}
+
+.static-icon-wrap {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.static-tooltip {
+  position: absolute;
+  top: 0;
+  width: 275px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-weight: 500 !important;
+  margin-left: -113px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 5;
+}
+
+.static-tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: 46px;
+  left: 46%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.static-icon-wrap:hover .static-tooltip {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.static-icon-wrap:hover .static-tooltip,
+.static-icon-wrap:hover .static-tooltip::before {
+  background-color: #707070;
+  color: #ffffff;
+}
+
+/* --Static-qr-css-end----- */
+
+/* qr-status-and-tooltip-css */
+
+.qr-image-info .lockSvg {
+  top: -23px;
+  left: -18px;
+  color: #220e27;
+  width: 28px;
+  height: 28px;
+  padding: 5px;
+  position: absolute;
+  background: #fddf37;
+  border-radius: 50%;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 10;
+}
+
+.qr-image-info .pauseIcon {
+  top: -23px;
+  left: -18px;
+  color: #220e27;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  position: absolute;
+  background: #D9D9D9;
+  border-radius: 50%;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 10;
+}
+
+.qr-image-info .deleteIcon {
+  top: -23px;
+  left: -18px;
+  color: #220e27;
+  width: 24px;
+  height: 24px;
+  padding: 6px;
+  position: absolute;
+  background: #E04F5F;
+  border-radius: 50%;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  z-index: 10;
+}
+.qr-image-info .deleteIcon:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 16px;
+  left: 4px;
+  background-color: white;
+}
+.qr-status-tooltip {
+  position: absolute;
+  top: 0;
+  left: 58px;
+  transform: translateY(-125px);
+  width: 282px;
+  font-size: 12px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  font-weight: 500 !important;
+  margin-left: -113px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 5;
+}
+
+.qr-status-icon-wrap:hover .qr-status-tooltip {
+  top: 30px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.qr-status-icon-wrap:hover .qr-status-lock-tooltip {
+  top: 10px;
+}
+
+.qr-status-icon-wrap:hover .qr-status-lock-tooltip:lang(fr) {
+  top: -10px;
+}
+
+.qr-status-icon-wrap {
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.qr-status-tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -4px;
+  left: 18%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.qr-status-icon-wrap:hover .qr-status-tooltip,
+.qr-status-icon-wrap:hover .qr-status-tooltip::before {
+  background-color: #707070;
+  color: #ffffff;
+}
+/* qr-status-and-tooltip-css-END */
+
+
+.qrCode-card > div {
+  align-items: center;
+  margin: auto;
+}
+
+button.qrSmallBtn.qrnameSaveBtn {
+  padding: 2px 4px;
+  height: 32px;
+  border-radius: 16px;
+}
+
+.editQrField:focus {
+  border-color: var(--primary-green-1) !important;
+}
+
+div.qrcode-card-wrapper:not(:first-child) .qrCode-check,
+div.qrcode-card-wrapper:not(:first-child) .qrCode-card {
+  margin-top: 15px;
+}
+
+.qrCode-card.selected {
+  box-shadow: rgb(205 209 224) 0px 4px 6px 0px;
+  border-color: var(--primary-green-2);
+}
+
+.qrCode-card {
+  padding: 16px;
+  min-height: 108px;
+  width: calc(100% - 45px);
+  transition: all 0.2s ease-in-out 0s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--white);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: var(--white);
+  margin-left: 5px;
+  box-shadow: #e5e7eb 0 4px 6px 0
+}
+
+.qrcode-card-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.qrcode-card-wrapper .qrCode-check {
+  margin-right: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+  position: relative;
+  top: -8px;
+}
+
+.qrcode-card-wrapper .qrCode-check,
+.qrcode-card-wrapper .qrCode-check .roundCheckbox input[type="checkbox"],
+.qrcode-card-wrapper .qrCode-check .roundCheckbox {
+  width: 24px;
+  height: 24px;
+}
+
+#qrCodeListing .qrCode-card .qr-image-with-check .qrCode-check {
+  position: relative;
+}
+
+#qrCodeListing .qrCode-card .qr-image-with-check {
+  display: flex;
+}
+
+#qrCodeListing .qrCode-card .qr-image-with-check .qr-image-info .qrCode-info {
+  margin-left: 8px;
+}
+
+#qrCodeListing .qrCode-card .qr-info-wrp .qrCode-info2 .qr-label span.icon {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+#qrCodeListing .qrCode-card .qr-info-wrp .qrCode-info2 .qr-label,
+#qrCodeListing .qrCode-card .qr-info-wrp .qrCode-info2 .qr-label a {
+  display: flex;
+  align-items: center;
+}
+
+#qrCodeListing .qrCode-card .qr-info-wrp .qrCode-info2 .qr-label a {
+  color: var(--primary-green-1);
+}
+
+#qrCodeListing .qrCode-card .qr-image-with-check .qr-image-info {
+  display: flex;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right a.detail-btn {
+  width: 132px;
+  /* margin-right: 4px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  height: 40px;
+  font-weight: 400;
+  line-height: 0;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.kebab-button {
+  color: var(--white);
+  background: linear-gradient(90deg,
+      var(--primary-green-1) 0%,
+      var(--primary-green-2) 100%);
+  min-width: 40px;
+  height: 40px;
+  padding: 0;
+  /* margin-right: 12px; */
+  transition: all 0.2s ease-in-out;
+  border-radius: 4px;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.kebab-button.downloadBtn {
+  margin-right: 4px;
+  background: linear-gradient(90deg,
+      var(--outline-btn-bg) 0%,
+      var(--outline-btn-bg) 100%);
+  border: 1px solid var(--primary-green-1);
+  color: var(--primary-green-1);
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.detail-btn.disabled {
+  margin-right: 4px;
+  width: 132px;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.detail-btn.disabled,
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.kebab-button.disabled,
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.downloadBtn.disabled {
+  opacity: 0.65;
+  background: linear-gradient(90deg,
+      var(--grey-btn-bg) 0%,
+      var(--grey-btn-bg) 100%);
+  border: 1px solid var(--grey-dark-1);
+  color: var(--grey-dark-1);
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.kebab-button:not(.downloadBtn) svg {
+  transform: rotate(90deg);
+}
+
+#qrCodeListing .qrCode-card .qr-image-with-check .qr-image-info .qrCode-image {
+  width: 64px;
+  min-width: 64px;
+  /* border: 2px solid rgb(254, 142, 62); */
+  cursor: pointer;
+  height: 64px;
+  display: flex;
+  background: white;
+  align-items: center;
+  margin-right: 0px;
+  border-radius: 4px;
+  justify-content: center;
+  background-color: var(--light-bg);
+  padding: 6px;
+  position: relative;
+}
+
+#qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info {
+  display: flex;
+  align-items: center;
+}
+
+#qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info label {
+  margin-bottom: 0px;
+  padding: 8px;
+  aspect-ratio: 1/1;
+  min-width: 50px;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+}
+
+#qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info>span,
+#qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info label span {
+  background: linear-gradient(to right,
+      var(--primary-blue-1) 0%,
+      var(--primary-blue-2) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info label span {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin-top: 3px;
+}
+
+.roundCheckbox label {
+  background-color: var(--white);
+  border: 2px solid var(--grey-dark);
+  border-radius: 8px;
+  cursor: pointer;
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+.roundCheckbox label:after {
+  border: 2px solid var(--white);
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 5px;
+  opacity: 0;
+  position: absolute;
+  top: 6px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.roundCheckbox input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.roundCheckbox input[type="checkbox"]:checked+label {
+  border-color: var(--primary-green-2);
+  background-color: var(--primary-green-1);
+}
+
+.roundCheckbox input[type="checkbox"]:checked+label:after {
+  opacity: 1;
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .dropdown-menu-right a.dropdown-item span.dropmenu-icon,
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .dropdown-menu-right button.dropdown-item span.dropmenu-icon {
+  font-size: 18px;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: var(--grey-bg-2);
+}
+
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .dropdown-menu-right a.dropdown-item span.text,
+#qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .dropdown-menu-right button.dropdown-item span.text {
+  font-size: 16px;
+}
+
+.qrCode-card .qrCode-info button.qrnameChange a {
+  color: var(--primary-green-1);
+}
+
+/* .scan-info:hover, */
+.scan-info:hover label {
+  background-color: #25b5332b !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.scan-info:hover .scan-text,
+.scan-info:hover label span {
+  background: linear-gradient(to right,
+      var(--primary-green-1) 0%,
+      var(--primary-green-2) 100%) !important;
+  -webkit-text-fill-color: transparent !important;
+  -webkit-background-clip: text !important;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qr-actions-dropdown-wrp .right .downloadBtn {
+  width: 131px;
+}
+.qr-actions-dropdown-wrp .right .downloadBtn:not(:lang(en)) {
+  width: max-content;
+  min-width: 150px;
+}
+
+.restore-icon-wrap {
+  padding: 1px;
+  width: 24px;
+  border-radius: 2px;
+  background-color: var(--grey-bg-2);
+}
+
+.restore-icon-wrap .restore-icon {
+  display: flex !important;
+  place-content: center;
+  font-size: 20px;
+}
+
+.delete-btn span {
+  color: var(--primary-red-1);
+}
+
+.last-qr-code{
+  position: relative;
+}
+
+.last-qr-code .qr-actions-dropdown-wrp .right.show .last-qr-dropdown-btn,
+.last-qr-code .qr-actions-dropdown-wrp .right.show .last-qr-dropdown-btn{
+  top: -254px !important;
+  left: auto !important;
+  transform: unset !important;
+}
+
+.last-qr-code .qr-actions-dropdown-wrp .right.show .deleted-dropdown{
+    top: -213px !important;
+    left: auto !important;
+    transform: unset !important;
+}
+
+.qr-card-link{
+  display: inline-block !important;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.qr-card-link .icon-global,
+.qr-card-link .icon-redirect{
+  position: relative;
+  top: 4px;
+}
+
+/* Media */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .qr-actions-dropdown-wrp {
+    padding-right: 0;
+  }
+
+  .qr-info-wrp {
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1300.98px) {
+  .qr-image-with-check {
+    padding-left: 0;
+    width: 230px;
+  }
+
+  .qrCode-card>div {
+    justify-content: space-between;
+  }
+
+  .qr-info-wrp {
+    margin-left: -35px;
+    scale: 88%;
+  }
+
+  .qr-scans-count-wrp {
+    scale: 85%;
+    margin-left: -19px;
+  }
+
+  .qrCode-card {
+    padding: 12px 8px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .qrCode-card>div {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1199px) {
+  .qrCode-card>div {
+    /* align-items: flex-start; */
+    position: relative;
+  }
+
+  .qrCode-card>div::after {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-grey);
+    content: "";
+  }
+
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp,
+  #qrCodeListing .qrCode-card .qr-image-with-check {
+    padding-bottom: 24px;
+  }
+
+  #qrCodeListing .qrCode-card .qr-image-with-check {
+    order: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-info-wrp {
+    order: 2;
+  }
+
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp {
+    order: 1;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp {
+    order: 3;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1399.98px) {
+  .qr-image-with-check {
+    width: 250px;
+  }
+
+  .qr-scans-count-wrp {
+    padding-right: 0px;
+  }
+
+  .qrCode-card {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 1400px) {
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info {
+    flex-direction: column-reverse;
+  }
+
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp .scan-info label {
+    margin-left: 0;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .detail-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .detail-icon {
+    display: block;
+    font-size: 26px;
+    /* width: 24px; */
+  }
+
+  .detail-text {
+    display: none;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right a.detail-btn {
+    width: 40px;
+  }
+
+  .qr-actions-dropdown-wrp .right .detail-btn {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+}
+
+@media (min-width: 576.98px) and (max-width: 767.98px) {
+  .qrCode-card {
+    padding: 10px 3px;
+  }
+
+  .qr-image-with-check {
+    padding-left: 8px;
+  }
+
+  .qr-info-wrp {
+    padding-left: 4px;
+  }
+
+  .qr-actions-dropdown-wrp {
+    padding-right: 7px;
+  }
+
+  .download-icon {
+    /* display: none; */
+  }
+
+  .download-text {
+    margin: 0 !important;
+  }
+
+  .qr-info-wrp {
+    scale: 93%;
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 576px) {
+  button.qrSmallBtn.qrnameSaveBtn {
+    min-height: 32px;
+    height: unset;
+  }
+
+  .qr-status-icon-wrap:hover .qr-status-lock-tooltip {
+    top: 25px !important;
+  }
+  .qr-status-icon-wrap:hover .qr-status-lock-tooltip:not(:lang(en)) {
+    top: 10px !important;
+  }
+  .qr-status-icon-wrap:hover .qr-status-tooltip {
+    top: 44px;
+  }
+
+  .qr-card-status-with-tooltip .qr-status-tooltip{
+    left: 0;
+    transform: translate(33%, -120px);
+  }
+
+  .qr-card-status-with-tooltip .qr-status-tooltip::before{
+    left: 7%;
+  }
+
+  .qr-image-info .lockSvg,
+  .qr-image-info .pauseIcon,
+  .qr-image-info .deleteIcon {
+    top: -3px;
+    left: -13px;
+    width: 21px;
+    height: 21px;
+  }
+
+  .qr-image-info .lockSvg {
+    padding: 2px 2px;
+  }
+
+  .qr-image-info .pauseIcon {
+    font-size: 13px;
+  }
+
+  .qr-image-info .deleteIcon:after {
+    left: 2.4px;
+  }
+
+  .qrCode-card {
+    width: 100%;
+    padding-top: 40px;
+  }
+
+  .qrcode-card-wrapper {
+    display: block;
+  }
+
+  div.qrcode-card-wrapper:not(:first-child) .qrCode-card,
+  div.qrcode-card-wrapper:not(:first-child) .qrCode-check {
+    margin-top: 0;
+  }
+
+  div.qrcode-card-wrapper:not(:last-child) .qrCode-card {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+
+  .qrcode-card-wrapper .qrCode-check {
+    margin-bottom: 0px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+  }
+
+  #qrCodeListing .qrCode-card .qr-image-with-check,
+  #qrCodeListing .qrCode-card .qr-info-wrp,
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp,
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-scans-count-wrp,
+  #qrCodeListing .qrCode-card .qr-image-with-check {
+    padding-bottom: 0;
+  }
+
+  .qrCode-card>div::after {
+    display: none;
+  }
+
+  #qrCodeListing .qrCode-card .qr-info-wrp {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin: 12px 0;
+    border: 1px solid var(--border-grey);
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right a.detail-btn {
+    width: 40px;
+    flex-grow: 0;
+  }
+
+  .btn.btn-with-icon span.download-text {
+    font-size: 18px !important;
+    margin-right: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right .downloadBtn {
+    width: auto;
+    flex-grow: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right .downloadBtn {
+    width: auto;
+    flex-grow: 0;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right .downloadBtn {
+    width: auto;
+    flex-grow: 1;
+  }
+
+  #qrCodeListing .qrCode-card .qr-actions-dropdown-wrp .right button.kebab-button {
+    margin-right: 0;
+  }
+
+  .qr-card-link {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1600.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    margin-left: -18px;
+  }
+}
+
+@media (max-width: 1400.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    flex-direction: column !important;
+    margin-left: -21px;
+  }
+
+  .scan-wifi-info .scan-text {
+    margin-bottom: 3px;
+  }
+
+  .scan-wifi-info .static-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 !important;
+  }
+
+  .static-icon-wrap:hover .static-tooltip {
+    top: 50px;
+  }
+
+  .static-tooltip::before {
+    left: 44%;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    margin-left: 4px;
+  }
+
+  .static-tooltip {
+    margin-left: -200px;
+  }
+
+  .static-tooltip::before {
+    left: 75%;
+  }
+}
+
+@media (max-width: 1050.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    margin-left: 0px !important;
+    width: auto;
+  }
+}
+
+@media (max-width: 768.98px) {
+  .static-tooltip {
+    margin-left: -256px;
+  }
+
+  .static-tooltip::before {
+    left: 96%;
+  }
+}
+
+@media only screen and (max-width: 644px) and (min-width: 576.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    width: 82px;
+    margin-left: -10px !important;
+  }
+}
+
+@media (max-width: 576.98px) {
+  .qr-scans-count-wrp .scan-wifi-info {
+    margin-left: 0px !important;
+    width: auto;
+  }
+
+  .qr-status-tooltip {
+    left: 92px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .btn.btn-with-icon span.download-text {
+    padding-top: 1px;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .static-tooltip {
+    margin-left: -160px;
+  }
+
+  .static-tooltip {
+    width: 200px;
+  }
+
+  .static-tooltip::before {
+    bottom: 65px;
+    left: 84%;
+  }
+
+  .download-icon {
+    font-size: 20px !important;
+  }
+}
+
+/* Media */
+
+/* QR Code Cards Listing Card Endt */

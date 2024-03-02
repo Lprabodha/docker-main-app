@@ -1,0 +1,15 @@
+@font-face {font-family: "GT-Walsheim-Pro";
+    src: url("0abeb2471faeb5269db428b9eac2075e.eot"); /* IE9*/
+    src: url("0abeb2471faeb5269db428b9eac2075e.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("0abeb2471faeb5269db428b9eac2075e.woff2") format("woff2"), /* chrome、firefox */
+    url("0abeb2471faeb5269db428b9eac2075e.woff") format("woff"), /* chrome、firefox */
+    url("0abeb2471faeb5269db428b9eac2075e.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url("0abeb2471faeb5269db428b9eac2075e.svg#GT Walsheim Pro Regular Regular") format("svg"); /* iOS 4.1- */
+  }
+
+@font-face {
+    font-family: 'Aspire';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Aspire'), url('AspireDemibold-YaaO.ttf') format('truetype');
+}

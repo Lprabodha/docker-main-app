@@ -1,0 +1,1576 @@
+/* ------Feedback Modal CSS-------- */
+:root {
+    --feedback-text-color: #716c6c;
+    --feedback-bg: #eefaf2;
+}
+
+.feedback-modal .feedback-modal-content {
+    padding: 10px;
+}
+
+.feedback-modal .modal-content {
+    position: relative;
+}
+
+.feedback-modal .modal-content .feedback-modal-close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+}
+
+.feedback-modal-content .feedback-header-wrap .feedback-title {
+    font-size: 20px;
+    color: #000;
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 0.1mm;
+}
+
+.feedback-modal-content .feedback-header-wrap .feedback-subtitle {
+    color: var(--feedback-text-color);
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap:hover{
+    cursor: pointer;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap{
+    position: relative;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio] {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio]:checked + .green-checkbox::after{
+    content: '';
+    /* border: 1px solid #25b533; */
+    /* background-color: #25b533; */
+    content: '\e91a';
+    font-family: qr-icons !important;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio] + .green-checkbox{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio] + .green-checkbox::before {
+    content: '';
+    border: 1px solid #b5a3a3;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio]:checked+.green-checkbox::before {
+    border: 1px solid #25b533 !important;
+    background-color: #25b533;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-green-1);
+    background-color: var(--feedback-bg);
+    margin-bottom: 8px;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio]:hover{
+    cursor: pointer;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-card-wrap {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-card-wrap .feedback-text-wrap .feedback-text  {
+    padding-left: 0px;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-card-wrap .feedback-text-wrap {
+    padding-left: 8px;
+}
+
+.feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-card-wrap .feedback-text-wrap .feedback-text {
+    color: var(--feedback-text-color);
+}
+
+.feedback-modal-content .feedback-text-area-wrap .feedback-text-area-header .feedback-text-area-title {
+    color: var(--feedback-text-color);
+    font-size: 13px;
+    font-weight: 600;
+
+}
+
+.feedback-modal-content .feedback-submit-wrap .feedback-submit-btn {
+    background-color: var(--primary-green-1);
+    color: #fff;
+    padding: 8px 45px;
+}
+
+.feedback-modal-content .text-area-wrap #customFeedback::placeholder {
+    font-size: 12px;
+}
+
+#customFeedback:disabled {
+    background-color: #e9ecef;
+    opacity: 0.5;
+}
+
+.feedback-modal-content .feedback-submit-wrap .feedback-submit-btn:disabled {
+    background-color: #d7d7d7;
+    opacity: 0.8;
+}
+
+
+/* ------Feedback Modal CSS End-------- */
+
+/* --------- Promo 1 --------- */
+
+#feedbackModal .promo1-modal-dialog {
+    max-width: 800px;
+}
+
+#feedbackModal .promo-modal-content-wrap {
+    padding: 25px;
+}
+
+#feedbackModal .promo1-modal-dialog .promo1-modal-content {
+    /* height: 500px; */
+    padding: 0px 25px 0px 25px;
+}
+
+#feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-heading {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+#feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-subheading {
+    padding: 18px 15px 0px 15px;
+    display: block;
+    font-size: 17px;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card {
+    border: 2px solid var(--primary-green-1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 20px 12px;
+    position: relative;
+}
+#feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card:lang(en) {
+    align-items: center;
+}
+
+#feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .promo-plan-card .plan-price-wrap{
+    justify-content: flex-start;
+
+}
+#feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card .plan-price-wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#feedbackModal .promo1-modal-content:not(.payment-method) .promo-plan-wrap {
+    margin-top: 32px;
+    position: relative;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-title {
+    font-size: 24px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1;
+}
+
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-subtitle {
+    color: var(--feedback-text-color);
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .plan-price-wrap .plan-full-price {
+    color: var(--feedback-text-color);
+    font-weight: 600;
+    text-decoration: line-through;
+    text-align: right;
+    font-size: 18px;
+}
+#feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .plan-price-wrap .plan-full-price {
+    font-size: 16px;
+
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .plan-price-wrap .plan-discount-price {
+    font-weight: 600;
+    font-size: 23px;
+    text-align: right;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right, var(--discount-color-1), var(--discount-color-2)) border-box;
+    border: 2px solid transparent;
+    padding: 5px 4px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap .discount-icon {
+    background-image: linear-gradient(45deg, var(--discount-color-1), var(--discount-color-2));
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    border: 1px solid transparent;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-text {
+    background-image: linear-gradient(45deg, var(--discount-color-2), var(--discount-color-1));
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    border: 1px solid transparent;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f8fb;
+    width: fit-content;
+    padding: 8px 27px;
+    border-radius: 8px;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    /* bottom: -20px; */
+    height: max-content;
+    z-index: 9;
+    margin-right: 10px;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .offer-description-wrap .offer-description {
+    padding: 8px;
+}
+
+#feedbackModal .promo1-modal-content .promo-plan-wrap .offer-description-wrap .offer-description .offer-description-text {
+    font-size: 14px;
+}
+
+#feedbackModal .promo1-modal-content .offer-description-wrap {
+    padding-bottom: 25px;
+}
+
+#feedbackModal .promo1-modal-content .promo-bottom-offer-full-wrap {
+    position: relative;
+    padding-top: 0px;
+}
+#feedbackModal .promo1-modal-content .promo-bottom-offer-full-wrap::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 82px);
+    height: calc(100% + 16px);
+    background-color: #ddf9e3;
+    z-index: 8;
+    top: 0;
+    left: -41px;
+    border-radius: 0px 0px 5px 5px;
+}
+#feedbackModal .promo1-modal-content .promo-bottom-offer-full-wrap:not(:lang(en))::after{
+    height: calc(100% + 16px);
+}
+#feedbackModal .promo1-modal-content .promo-bottom-wrap {
+    background-color: #ddf9e3;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    /* left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%); */
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px 0px;
+}
+
+#feedbackModal .promo1-modal-content .promo-bottom-wrap .promo-offer-wrap {
+    padding: 20px 0px 10px 0px;
+}
+
+#feedbackModal .promo-offer-wrap .offer-area .offer-promo-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-green-1);
+    text-align: end;
+}
+
+#feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn {
+    background-color: #00b050;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 5px 95px;
+    margin-right: -24px;
+   
+    position: relative;
+    min-width: unset;
+}
+#feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn:not(:lang(en)) {
+    padding: 4px 16px;
+    margin-right: 0px;
+}
+
+
+#feedbackModal .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text {
+    color: var(--feedback-text-color);
+    display: block;
+    text-align: end;
+    margin-right: -19px;
+    padding-top: 15px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#feedbackModal .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text:hover {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#feedbackModal .promo-offer-wrap .vector-img-area {
+    position: relative;
+}
+
+#feedbackModal .promo-offer-wrap .vector-img-wrap {
+    position: absolute;
+    right: 5%;
+    width: 140px;
+    bottom: -26px;
+}
+#feedbackModal .promo3 .promo-offer-wrap .vector-img-wrap {
+    
+}
+#feedbackModal  .promo-offer-wrap .vector-img-wrap:not(:lang(en)) {
+    width: 160px;
+    right: 0%;
+    bottom: -26px;
+}
+
+/* --------- Promo 1 End --------- */
+
+/* --------------- Offer Submit Start-------------- */
+
+#feedbackModal .accept-offer-content {
+    padding: 15px;
+}
+
+#feedbackModal .accept-offer-content .accept-img-wrap>img {
+    width: 100px;
+}
+
+#feedbackModal .accept-offer-content .accept-header-wrap {
+    padding-top: 35px;
+}
+
+#feedbackModal .accept-offer-content .accept-header-wrap .accept-title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#feedbackModal .accept-offer-content .accept-header-wrap .accept-subtitle {
+    padding: 10px 5px;
+    font-size: 17px;
+}
+
+#feedbackModal .accept-offer-content .accept-bottom-full-wrap {
+    padding-top: 50px;
+}
+
+#feedbackModal .accept-offer-content .accept-bottom-full-wrap .accept-bottom-wrap {
+    background-color: #c7f5d19c;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 5px 5px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#feedbackModal .accept-offer-content .accept-bottom-wrap .offer-accept-btn {
+    background-color: #00b050;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px 30px;
+}
+
+/* --------------- Offer Submit End-------------- */
+
+/* ------------Promo 2 model start ---------------- */
+
+#feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-subheading .bold-subheading {
+    color: black;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.1mm;
+}
+
+#feedbackModal .promo1-modal-content .promo-1-header-wrap .promo2-subheading-2 {
+    padding: 5px 15px 0px 15px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-bottom-wrap {
+    background-color: #c7f5d19c;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50%);
+    border-radius: 0px 0px 5px 5px;
+    height: 165px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-accept-offer-title {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-btn-wrap .offer-submit-btn {
+    background-color: #00b050;
+    color: #fff;
+    font-weight: 600;
+    font-size: 29px;
+    padding: 10px 80px;
+    position: relative;
+}
+
+#feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .offer-cancel-text {
+    color: var(--feedback-text-color);
+    display: block;
+    text-align: start;
+    padding-top: 15px;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-offer-full-wrap {
+    padding-top: 36%;
+}
+
+#feedbackModal .promo2 .promo2-img-area > img{
+    position: absolute;
+    top: -115px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area{
+    position: relative;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-btn-full-wrap{
+    position: absolute;
+    top: -90px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-img-area{
+    position: relative;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-details .promo2-offer-text{
+    font-size: 13px;
+    line-height: 18px;
+    display: block;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-details{
+    position: absolute;
+    top: 96px;
+}
+
+#feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-btn-full-wrap .offer-cancel-text:hover{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* ------------Promo 2 model end ---------------- */
+
+/* ----------------Promo 3 model start ----------------- */
+
+#feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .plan-title,
+#feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title
+{
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+#feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title{
+    color: var(--primary-green-1);
+}
+
+#feedbackModal .promo3 .promo-plan-wrap .promo-plan-card{
+    padding: 32px 40px 8px 40px;
+}
+
+#feedbackModal .promo3 .offer-description-wrap .offer-description .offer-description-text{
+    font-size: 14px;
+}
+
+#feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-promo-text{
+    line-height: 26px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+#feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-btn-wrap{
+    justify-content: flex-start;
+}
+
+#feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text{
+    text-align: left;
+}
+
+#feedbackModal .promo3 .promo-bottom-offer-full-wrap{
+    padding-top: 0px;
+}
+#feedbackModal .promo3 .promo-bottom-wrap .vector-img-area .vector-img-wrap:lang(en){
+    bottom: unset;
+}
+#feedbackModal .promo3 .promo-bottom-wrap .vector-img-area .vector-img-wrap:not(:lang(en)){
+    bottom: -160px;
+}
+#feedbackModal .promo3 .promo-bottom-wrap .vector-img-area .vector-img-wrap{
+    position: absolute;
+    top: 10%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    width: 290px;
+
+}
+#feedbackModal .promo1-modal-content .offer-description-wrap .offer-description-text {
+    letter-spacing: 0.1px;
+}
+/* ----------------Promo 3 model end ----------------- */
+
+/* ----------------Promo 1 isdifficulties Start---------------- */
+
+.isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .vector-img-area .vector-img-wrap{
+    display: none;
+}
+
+.isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .vector-img-area .offer-description{
+    display: block !important;
+}
+
+.isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .vector-img-area .offer-description .offer-description-text{
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+}
+
+/* ----------------Promo 1 isdifficulties End---------------- */
+
+.offer-submit-btn:disabled{
+    opacity: 1;
+}
+
+/* ---------------------spiner Start-------------------------- */
+
+.cancel-spinner {
+    display: none;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinner-bulqg1 0.8s infinite linear alternate,
+        spinner-oaa3wk 1.6s infinite linear;
+}
+
+@keyframes spinner-bulqg1 {
+    0% {
+        clip-path: polygon(50% 50%, 0 0, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%);
+    }
+
+    12.5% {
+        clip-path: polygon(50% 50%,
+                0 0,
+                50% 0%,
+                100% 0%,
+                100% 0%,
+                100% 0%,
+                100% 0%);
+    }
+
+    25% {
+        clip-path: polygon(50% 50%,
+                0 0,
+                50% 0%,
+                100% 0%,
+                100% 100%,
+                100% 100%,
+                100% 100%);
+    }
+
+    50% {
+        clip-path: polygon(50% 50%,
+                0 0,
+                50% 0%,
+                100% 0%,
+                100% 100%,
+                50% 100%,
+                0% 100%);
+    }
+
+    62.5% {
+        clip-path: polygon(50% 50%,
+                100% 0,
+                100% 0%,
+                100% 0%,
+                100% 100%,
+                50% 100%,
+                0% 100%);
+    }
+
+    75% {
+        clip-path: polygon(50% 50%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                100% 100%,
+                50% 100%,
+                0% 100%);
+    }
+
+    100% {
+        clip-path: polygon(50% 50%,
+                50% 100%,
+                50% 100%,
+                50% 100%,
+                50% 100%,
+                50% 100%,
+                0% 100%);
+    }
+}
+
+@keyframes spinner-oaa3wk {
+    0% {
+        transform: scaleY(1) rotate(0deg);
+    }
+
+    49.99% {
+        transform: scaleY(1) rotate(135deg);
+    }
+
+    50% {
+        transform: scaleY(-1) rotate(0deg);
+    }
+
+    100% {
+        transform: scaleY(-1) rotate(-135deg);
+    }
+}
+
+/* ---------------------spiner End-------------------------- */
+
+/* payment method css start */
+
+#feedbackModal .promo1-modal-dialog:has(.payment-method.show) {
+    max-width: 1000px;
+}
+
+#feedbackModal .payment-method{
+    padding: 0px !important;
+}
+
+#feedbackModal .modal-content:has(.payment-method.show){
+    padding: 0px;
+    border-radius: 5px;
+}
+
+#feedbackModal .payment-method .payment-method-header-wrap{
+    padding: 5px 0px;
+    background-color: #f0f0f0;
+    border-radius: 5px 5px 0px 0px;
+}
+
+#feedbackModal .modal-content:has(.payment-method.show) .feedback-modal-close{
+    top: 10px;
+}
+
+#feedbackModal .payment-method .payment-method-header-wrap .promo-header-heading{
+    font-size: 28px;
+    font-weight: 500;
+    -webkit-text-stroke: 0.2px #000;
+    -webkit-text-fill-color: black;
+    color: #000;
+}
+
+#feedbackModal .payment-method .payment-method-subheader-wrap .payment-method-subheading{
+    padding: 0px 50px;
+}
+
+#feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap{
+    border: 2px solid var(--primary-green-1);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 25px;
+    margin: 0px 38px 25px 38px;
+}
+
+#feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-header{
+    font-size: 18px;
+    color: var(--feedback-text-color);
+}
+
+#feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-plan{
+    font-size: 18px;
+    -webkit-text-stroke: 0.2px #000;
+    -webkit-text-fill-color: black;
+    color: #000;
+}
+
+#feedbackModal #payment-form-2 .payment-hr{
+    width: 94%;
+    margin: 10px auto;
+    color: #0000006b;
+}
+
+#feedbackModal .payment-details-wrap .due-payment-heading,
+#feedbackModal .payment-details-wrap .sub-update-heading{
+    width: 35%;
+}
+
+#feedbackModal .payment-details-wrap .due-payment-price,
+#feedbackModal .payment-details-wrap .sub-update-plan-heading{
+    width: 65%;
+}
+
+#feedbackModal .payment-method .update-btn{
+    position: relative;
+}
+
+#feedbackModal .payment-method .update-btn .cancel-spinner{
+    top: 20%;
+    left: 47%;
+}
+
+#feedbackModal .payment-method .promo70subheading{
+    width: 80%;
+    margin: auto;
+}
+
+/* payment method css end */
+
+/* -------------Media Query Start------------- */
+
+@media(max-width:800px) {
+    #feedbackModal .promo1-modal-dialog {
+        max-width: 750px;
+    }
+
+    #feedbackModal .promo2 .promo2-img-area>img {
+        top: -96px;
+    }
+
+    #feedbackModal .promo1-modal-dialog .modal-content{
+        /* margin: 8px; */
+    }
+}
+
+@media(min-width:768px){
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text:lang(uk),
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text:lang(ms),
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text:lang(cs){
+        font-size: 24px;
+    } 
+    #feedbackModal .promo1 .promo-offer-wrap .vector-img-area:not(:lang(en)){
+        /* max-width: 160px;
+        margin-left: auto; */
+    }
+    
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-bottom-wrap .offer-area,
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-bottom-wrap .vector-img-area
+    {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-bottom-wrap .vector-img-area{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .isDifficulties .offer-description-wrap{
+        display: none;
+    }
+
+    #feedbackModal .isDifficulties .promo-bottom-offer-full-wrap {
+        padding-top: 0px;
+        margin-top: 32px;
+    }
+
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .offer-area .offer-promo-text {
+        text-align: left !important;
+    }
+
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .offer-area .offer-btn-wrap {
+        justify-content: flex-start !important;
+    }
+
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .offer-area .offer-cancel-text {
+        text-align: left !important;
+        white-space: nowrap;
+    }
+}
+
+@media(max-width:767.98px) {
+
+    .payment-details-wrap .due_payment_price {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title{
+        font-size: 18px;
+    }
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card {
+        padding: 32px 10px 8px 10px;
+    }
+    #feedbackModal .promo-offer-wrap .vector-img-wrap {
+        display: none;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text {
+        text-align: center;
+        color: #000;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap {
+        justify-content: center;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn {
+        margin-right: 0px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text {
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap {
+        padding-top: 20px !important;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap .offer-description-text {
+        font-size: 15px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-wrap .promo2-img-area {
+        display: none;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-btn-full-wrap {
+        position: unset;
+        padding: 15px 0px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-details {
+        position: unset;
+        display: none;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-bottom-wrap {
+        height: unset;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap {
+        padding-top: 140px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .offer-heading-color{
+        color: #00b050;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-btn-wrap .offer-submit-btn {
+        padding: 6px 80px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text .promo-1-text-color{
+        color: var(--primary-green-1);
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-promo-text {
+        line-height: 26px;
+        text-align: center;
+        padding-bottom: 5px;
+        color: var(--primary-green-1);
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-btn-wrap {
+        justify-content: center;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text {
+        text-align: center;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap {
+        padding-top: 10px;
+    }
+
+    .isDifficulties .promo-bottom-offer-full-wrap .promo-offer-wrap .vector-img-area .offer-description {
+        display: none !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency{
+        font-size: 22px !important;
+    }
+
+    .promo2 .cancel-spinner {
+        left: 48%;
+    }
+
+    .promo3 .cancel-spinner {
+        left: 49%;
+    }
+
+    #feedbackModal .payment-details-wrap .sub-update-heading,
+    #feedbackModal .payment-details-wrap .due-payment-heading{
+        width: 50% !important;
+        margin-left: 0px !important;
+    }
+
+    #feedbackModal .payment-details-wrap{
+        margin: 0px 5px 25px 5px !important;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-header {
+        font-size: 17px;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-plan {
+        font-size: 17px;
+    }
+
+    #feedbackModal .payment-method .payment-method-subheader-wrap .payment-method-subheading {
+        padding: 0px 20px;
+    }
+
+    #feedbackModal .payment-method .promo70subheading {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media(max-width:575.98px) {
+
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap:not(:lang(en)) {
+        max-width: 360px;
+        min-width: 274px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .promo-plan-card:not(:lang(en)),
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap .promo-plan-card:not(:lang(en)){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-subheading,
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap .plan-text-wrap .plan-title:not(:lang(en)),
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap .plan-text-wrap .plan-subtitle:not(:lang(en)),
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap .plan-price-wrap .plan-discount-price:not(:lang(en)),
+    #feedbackModal .promo1-modal-content.promo1 .promo-plan-wrap .plan-price-wrap .plan-full-price:not(:lang(en)){
+        text-align: center;
+    }
+    #feedbackModal .promo1-modal-content .offer-description-wrap .offer-description-text,
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-subheading{
+        line-height: 1.35;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-bottom-wrap .promo-offer-wrap .offer-area,
+    #feedbackModal .promo1-modal-content .promo-bottom-wrap{
+        padding: 0px ;
+    }
+    #feedbackModal .promo1-modal-content .promo-bottom-offer-full-wrap::after{
+        width: calc(100% + 32px);
+        left: -16px;
+        height: calc(100% + 16px);
+    }
+    .feedback-modal-content .feedback-header-wrap .feedback-subtitle {
+        font-size: 15px;
+    }
+
+    .feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio] {
+        width: 20px;
+        height: 20px;
+        margin-top: 2px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-text {
+        font-size: 18px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap .discount-icon {
+        font-size: 17px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap {
+        width: 27px;
+        height: 26px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-title {
+        font-size: 24px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-subtitle-wrap {
+        margin-top: 4px;
+    }
+    #feedbackModal .promo1-modal-dialog .promo1-modal-content {
+        padding: 0px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap {
+        padding-top: 20px !important;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap .offer-description-text {
+        text-align: center;
+        display: block;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card {
+        padding: 32px 10px 12px;
+    }
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card:not(:lang(en)) {
+        padding: 32px 12px 12px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap {
+        padding: 8px 14px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-cancel-wrap .offer-cancel-text {
+        font-size: 13px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn,
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-btn-wrap .offer-submit-btn
+    {
+        width: 90%;
+        max-width: max-content;
+        min-width: unset;
+    }
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card .plan-price-wrap:not(:lang(en)){
+        width: 100%;
+        margin-top: 12px;
+        position: relative;
+        text-align: center;
+    }
+    #feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .plan-price-wrap .plan-discount-price:not(:lang(en)),
+    #feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .plan-price-wrap .plan-full-price:not(:lang(en)){
+        text-align: center;
+    }
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card .plan-price-wrap:not(:lang(en))::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgb(37,181,103);
+        background: linear-gradient(120deg, rgba(37,181,103,0) 0%, rgba(38,187,94,1) 50%, rgba(40,194,84,0) 100%);
+    }
+    #feedbackModal .promo2 .promo2-bottom-wrap .promo2-offer-area .promo2-offer-btn-full-wrap {
+        padding: 15px 32px;
+        width: 100%;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .offer-cancel-text {
+        font-size: 13px;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card {
+        padding: 24px 10px 8px 10px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-promo-text {
+        font-size: 19px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn{
+        font-size: 18px;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .plan-title,
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title {
+        font-size: 22px;
+    }
+
+    #feedbackModal .promo3 .promo-1-header-wrap .promo-header-heading{
+        font-size: 21px;
+    }
+
+    #feedbackModal .isDifficulties .promo-1-header-wrap .promo-header-heading {
+        font-size: 24px;
+    }
+
+    #feedbackModal .isDifficulties .promo-1-header-wrap .promo-header-subheading {
+        padding: 18px 15px 0px 15px;
+        display: block;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 19px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 21px !important;
+    }
+
+    .promo3 .cancel-spinner {
+        top: 28%;
+        left: 49%;
+    }
+
+    #feedbackModal .payment-method .payment-method-subheader-wrap .payment-method-subheading {
+        padding: 0px 0px;
+        font-size: 15px;
+    }
+
+    #feedbackModal .payment-method .payment-method-header-wrap .promo-header-heading {
+        font-size: 22px;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-header {
+        font-size: 15px;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-plan {
+        font-size: 15px;
+    }
+
+    #feedbackModal .modal-content:has(.payment-method.show) .feedback-modal-close {
+        top: 5px;
+    }
+
+    #feedbackModal .payment-details-wrap {
+        margin: 0px -8px 25px -8px !important;
+    }
+
+    .payment-method .payment-method-subheader-wrap{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .amount_due{
+        line-height: 17px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: -1px;
+    }
+}
+
+@media only screen and (max-width: 644.98px) and (min-width: 376px) {
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-plan {
+        padding-left: 8px;
+    }
+}
+
+@media(max-width:499.98px){
+    .promo-plan-card .other-offerfull-currency {
+        font-size: 17px !important;
+    }
+
+    .promo-plan-card .other-offer-currency {
+        font-size: 19px !important;
+    }
+
+    .promo-plan-card .other-plan-title{
+        font-size: 21px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 16px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 17px !important;
+    }
+}
+
+@media(max-width:450.98px) {
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-title {
+        font-size: 18px !important;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-subtitle:lang(en) {
+        font-size: 15px;
+    }
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-subtitle:not(lang(en)) {
+        font-size: 20px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-price-wrap .plan-discount-price {
+        font-size: 18px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card {
+        border: 2px solid var(--primary-green-1);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 21px 20px 8px 20px;
+        position: relative;
+        align-items: center;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-subheading {
+        padding: 18px 0px 0px 0px;
+        display: block;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn {
+        font-size: 22px;
+        padding: 5px 24px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-promo-text {
+        font-size: 20px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap {
+        padding-top: 24px !important;
+        padding-bottom: 20px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-text {
+        font-size: 14px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap .discount-icon {
+        font-size: 14px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .special-offer-wrap .offer-icon-wrap {
+        width: 23px;
+        height: 22px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card {
+        padding: 24px 20px 8px 20px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-btn-wrap .offer-submit-btn {
+        font-size: 21px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-accept-offer-title {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-heading {
+        font-size: 24px;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .plan-title,
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title {
+        font-size: 4vw;
+        line-height: 1.01;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card {
+        padding: 30px 20px 8px 20px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-promo-text {
+        font-size: 17px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap {
+        padding-top: 10px;
+    }
+
+    #feedbackModal .isDifficulties .promo-1-header-wrap .promo-header-heading {
+        font-size: 22px;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 15px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 17px !important;
+    }
+
+    .cancel-spinner {
+        width: 20px;
+        height: 20px;
+        top: 29%;
+        left: 47%;
+    }
+
+    .promo3 .cancel-spinner {
+        top: 30%;
+        left: 49%;
+    }
+
+}
+
+@media(max-width:430px){
+    .promo-plan-card .other-offerfull-currency{
+        font-size: 13px !important;
+    }
+
+    .promo-plan-card .other-offer-currency{
+        font-size: 15px !important;
+    }
+
+    .promo3 .promo-plan-card .other-plan-title {
+        font-size: 18px !important;
+    }
+
+    .promo3 .promo-plan-card .other-plan-title .promo3-sec-title{
+        font-size: 16px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 14px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 16px !important;
+    }
+}
+
+@media(max-width:400.98px) {
+    #feedbackModal .promo1-modal-content .offer-description-wrap {
+        padding-top: 20px !important;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #feedbackModal .promo1-modal-content .offer-description-wrap>div {
+        padding: 0px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap .promo2-offer-btn-full-wrap .promo2-btn-wrap .offer-submit-btn {
+        font-size: 19px;
+        padding: 6px 40px;
+    }
+
+    #feedbackModal .promo2 .promo2-bottom-offer-full-wrap {
+        padding-top: 116px;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .plan-title,
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card .plan-text-wrap .plan-title-wrap .promo3-sec-title {
+        font-size: 15px;
+        line-height: 1.01;
+    }
+
+    #feedbackModal .promo3 .promo-plan-wrap .promo-plan-card {
+        padding: 30px 13px 8px 13px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-offer-wrap .offer-area{
+        padding: 0px;
+    }
+
+    .promo-plan-card .other-offerfull-currency {
+        font-size: 11px !important;
+    }
+
+    .promo-plan-card .other-offer-currency {
+        font-size: 13px !important;
+    }
+
+    .promo3 .promo-plan-card .other-plan-title {
+        font-size: 17px !important;
+    }
+
+    .promo3 .promo-plan-card .other-plan-title .promo3-sec-title {
+        font-size: 15px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 13px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 15px !important;
+    }
+
+    #feedbackModal .payment-method .payment-method-header-wrap .promo-header-heading {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:490.98px) {
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-price-wrap .plan-full-price{
+        font-size: 18px;
+    }
+}
+@media(max-width:375.98px) {
+    .feedback-modal .feedback-modal-content {
+        padding: 0px;
+    }
+
+    .feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap {
+        margin-left: -3px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .promo-plan-card {
+        padding: 24px 10px 8px 10px;
+    }
+  
+    #feedbackModal .promo1-modal-content .promo-plan-wrap .plan-text-wrap .plan-subtitle {
+        font-size: 16px;
+    }
+    #feedbackModal .promo1-modal-content.promo3 .promo-plan-wrap .plan-text-wrap .plan-subtitle {
+        font-size: 14px;
+    }
+
+    #feedbackModal .promo-offer-wrap .offer-area .offer-btn-wrap .offer-submit-btn {
+        font-size: 18px;
+        padding: 5px 16px;
+    }
+
+
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-heading {
+        font-size: 23px;
+    }
+
+    #feedbackModal .promo3 .promo-bottom-offer-full-wrap .promo-bottom-wrap .promo-offer-wrap .offer-area .offer-promo-text {
+        font-size: 16px;
+    }
+
+ 
+
+    #feedbackModal .isDifficulties .promo-1-header-wrap .promo-header-heading {
+        font-size: 19px;
+    }
+
+    .feedback-modal-content .feedback-types-wrap .feedback-card-full-wrap .feedback-radio-btn-wrap input[type=radio]:checked+.green-checkbox::after {
+     
+    }
+
+    .promo3 .promo-plan-card .other-plan-title {
+        font-size: 15px !important;
+    }
+
+    .promo3 .promo-plan-card .other-plan-title .promo3-sec-title {
+        font-size: 13px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offerfull-currency {
+        font-size: 12px !important;
+    }
+
+    .promo3 .promo-plan-card .other-offer-currency {
+        font-size: 14px !important;
+    }
+
+    #feedbackModal .payment-details-wrap .sub-update-wrap{
+        flex-direction: row;
+    }
+
+    #feedbackModal .payment-details-wrap .sub-update-plan-heading {
+        width: 51% !important;
+        padding: 0px !important;
+    }
+
+    #feedbackModal .payment-details-wrap .sub-update-wrap .sub-update-heading{
+        padding: 0px !important;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .due_payment_price {
+        padding-left: 16px;
+    }
+
+    #feedbackModal .payment-details-wrap .sub-update-heading{
+        width: 45% !important;
+    }
+
+    #feedbackModal .payment-method .promo-plan-wrap .payment-details-wrap .sub-update-plan-heading .sub_update_plan {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:345.98px) {
+    .feedback-modal-content .feedback-header-wrap .feedback-title {
+        font-size: 18px;
+    }
+
+    #feedbackModal .promo1-modal-content .promo-1-header-wrap .promo-header-heading {
+        font-size: 21px;
+    }
+}
+
+/* -------------Media Query End------------- */

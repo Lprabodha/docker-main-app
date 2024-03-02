@@ -1,0 +1,204 @@
+.menu-block-main-wrp .custom-accodian.sub-accordian button.accodianBtn .section-name{
+    margin-left: 0 ;  
+
+}
+
+.menu-block-main-wrp .menu-product-wrap .custom-accodian.sub-accordian:hover{
+    border-color:transparent ;
+}
+.menu-block-main-wrp .menu-product-wrap .custom-accodian.sub-accordian .productAccodian .custom-accodian.sub-accordian{
+    padding: 0px 12px 0px 24px;
+}
+.menu-block-main-wrp .menu-product-wrap .custom-accodian.sub-accordian .productAccodian .custom-accodian.sub-accordian{}
+
+.custom-accodian.sub-accordian .section-btn{
+    min-height:50px ;
+    justify-content: flex-start;
+    align-items: center;
+}
+.custom-accodian.sub-accordian {
+    border: 0;
+}
+.custom-accodian.sub-accordian .section-btn.product-btn .toggle-icon{
+    background-color: #ffffff;
+}
+.custom-accodian.sub-accordian .section-btn .toggle-icon{
+    width: 32px;
+    height: 32px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    background-color: #f7f7f7;
+    position: relative;
+}
+.custom-accodian.sub-accordian .section-btn .product-name{
+    margin-left: 0;
+    text-align: left;
+}
+.custom-accodian.sub-accordian .section-btn .toggle-icon::before {
+    transform: rotate(90deg);
+    transition: 0.25s;
+    position: absolute;
+    top: 9px;
+    left: 8px;
+
+}
+.custom-accodian.sub-accordian .section-btn.collapsed .toggle-icon::before{
+    transform: rotate(00deg);
+    transition: 0.25s;
+    
+}
+.formCustomBtn.delete-sec-btn{
+    border: 1px solid #fe4256;
+    color: #fe4256;
+}
+.formCustomBtn.delete-sec-btn.delete-product{
+    border: 1px solid transparent;
+    order: 3;
+
+}
+.productActionButtons .delete-product,
+.productActionButtons .product-order-up,
+.productActionButtons .product-order-down{
+    zoom: 0.9;
+}
+.productActionButtons .product-order-up,
+.productActionButtons .product-order-down,
+.formCustomBtn.delete-sec-btn,
+.menuActionButtons .menu-order-up,
+.menuActionButtons .menu-order-down{
+    width: 40px;
+    font-size: 20px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.productActionButtons .product-order-up,
+.productActionButtons .product-order-down{
+    border: 1px solid transparent;
+    color: #28c254;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.productActionButtons .product-order-up::after,
+.productActionButtons .product-order-down::after{
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: #28c254;
+    content: '';
+    right: -1px;
+}
+.menuActionButtons .menu-order-up,
+.menuActionButtons .menu-order-down{
+    border: 1px solid #28c254;
+    color: #28c254;
+
+}
+.menu-product-section:first-child{
+    padding-top: 20px;
+}
+.menu-product-section .product-container .productAccodian{
+    padding: 5px 10px;
+}
+.productActionButtons .product-order-up{
+    margin-right: 0px;
+
+}
+.productActionButtons > div.d-flex{
+    /* flex-direction:; */
+}
+.menuActionButtons .menu-order-up{
+    margin-right: 5px;
+}
+.productActionButtons .product-order-up span,
+.menuActionButtons .menu-order-up span{
+    display: block;
+    transform: rotate(180deg);
+}
+
+.productAccodian .welcome-screen .screen-upload .input-image img{
+    height: auto;
+}
+
+.allerg-block .all_allergens{
+    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(50px, 1fr));
+    column-gap: 45px;
+}
+
+.allergens_checkbox:checked+.check_effect {
+    border: 2px solid #28c254;
+    border-radius: 5px;
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important; 
+    top: 0px;
+    left: 0px;
+    animation: fadeInAnimation ease 0.4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+  .productSectionBtn button.addRowButton,
+  .productAccodianbutton button.addRowButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .productSectionBtn button span.smIcon,
+  .productAccodianbutton button span.smIcon{
+     font-size: 20px;
+    padding-right: 9px;
+  }
+  .product-container div.add_product:not(:first-child) .productAccodian{
+    margin-top: 16px;
+  }
+
+  .productAccodian .product-toggle-btn{
+    flex-grow: 1;
+  }
+
+  .product-image-wrap{
+    pointer-events: auto !important;
+  }
+
+  @media (max-width: 576.98px){
+    .allerg-block .all_allergens{
+        column-gap: 24px;
+    }
+    .menu-block-main-wrp .menu-product-wrap .custom-accodian.sub-accordian .productAccodian .custom-accodian.sub-accordian{
+        padding: 0px 12px 0px 15px;
+    }
+      .menu-block-main-wrp .custom-accodian.sub-accordian button.accodianBtn .product-name.paraheading,
+      .menu-block-main-wrp .custom-accodian.sub-accordian button.accodianBtn .section-name.paraheading{
+          display: flex;
+          align-items: center;
+          max-width: 120px;
+        }
+        .menu-product-wrap .custom-accodian .section-order{
+            zoom: 0.8;
+        }
+        .productActionButtons .delete-product,
+        .productActionButtons .product-order-up,
+        .productActionButtons .product-order-down{
+            zoom: 0.7;
+
+        }
+        .productActionButtons > .d-flex {
+                margin-right: -10%;
+                max-width: 90px;
+                margin-left: 7%;
+        }
+        @media (max-width: 340.98px){
+            .menu-product-wrap .custom-accodian .section-order{
+                margin-left: -5% !important;
+            }
+        }
+  }

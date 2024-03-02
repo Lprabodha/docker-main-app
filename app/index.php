@@ -1,14 +1,21 @@
-<?php include('config.php'); ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-   <?php echo SITE_URL; ?>
+<?php
 
-   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-</body>
-</html>
+header("Access-Control-Allow-Origin: *");
+/* Enabling debug mode is only for debugging / development purposes. */
+const DEBUG = 0;
+
+/* Enabling mysql debug mode is only for debugging / development purposes. */
+const MYSQL_DEBUG = 0;
+
+/* Enabling the file logging will store errors that occur, in the uploads/logs/ folder */
+const LOGGING = 1;
+
+/* Enabling the cache will use file caching where implemented for better performance */
+const CACHE = 0;
+
+/* Only meant for Demo purposes, don't change :) */
+//ALTUMCODE:DEMO const DEMO = 1;
+
+require_once realpath(__DIR__) . '/app/init.php';
+
+$App = new Altum\App();

@@ -1,0 +1,191 @@
+:root {
+  --primary-green-1: #28c254;
+  --mark-btn-bg-hover: #28c2541c;
+  --toggle-bg: #28c25457;
+  --white: #ffff;
+  --time-border: #767c8354;
+  --hour-field-bg: #fafafa;
+  --primary-red: #fe4256;
+  --primary-red-hover-1: #c1394726;
+  --hr-color: rgba(0,0,0,0.05);
+  --swiper-theme-color: #28c254;
+  --blue: #28c254;
+  --social-bg: #fafafa;
+}
+
+.app-full-wrap .app-text {
+  font-size: 20px;
+  color: var(--primary-green-1);
+  padding-top: 15px;
+  display: block;
+  padding-left: 7px;
+}
+
+.app-full-wrap .appLinks {
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 0px 10px 15px;
+  background-color: unset;
+}
+
+.app-btn-wrap {
+  gap: 10px;
+}
+
+.appLink-btn {
+  width: 100%;
+  display: flex;
+  padding: 7px 26px !important;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background-color: var(--social-bg);
+}
+
+.appLink-btn .add-app-btn {
+  border: 1px solid var(--primary-green-1);
+  height: 50px;
+  min-width: 150px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background-color: var(--white);
+  font-size: 17px;
+  font-weight: 600;
+  flex-grow: 1;
+  color: var(--primary-green-1);
+}
+
+.appLink-btn button:hover {
+  background-color: var(--mark-btn-bg-hover);
+  transition: 0.2s;
+}
+
+.app-detail-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-icon-wrap {
+  width: 24%;
+}
+
+.app-icon-wrap .app-icon {
+  /* border: 1px solid black; */
+  width: 35px;
+  height: 35px;
+  margin-right: 16px;
+}
+
+.app-store-text {
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-section {
+  margin-bottom: 15px !important;
+  background-color: var(--social-bg);
+  padding: 12px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+
+.app-btn {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: var(--white);
+  color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+}
+
+.app-btn .app-delete-icon {
+  font-size: 22px;
+}
+
+.app-btn:hover {
+  background-color: var(--primary-red-hover-1);
+  transition: 0.2s;
+}
+
+.socialInput .invalid_err {
+  width: 150px;
+  left: 17px;
+  bottom: -26px;
+}
+
+.app-name-wrap .invalid_err {
+  left: 18px;
+  bottom: unset;
+  margin-top: 48px;
+}
+
+/* -----------Responsive-Area------------ */
+
+@media (max-width: 768.98px) {
+  .appLink-btn {
+    padding: 7px 10px !important;
+  }
+
+  .app-full-wrap .appLinks {
+    padding: 10px 0px;
+    margin: 0px 0px 15px;
+  }
+
+  .app-detail-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .app-icon-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .app-detail-wrap .socialInput {
+    flex: 0 0 92%;
+    max-width: 92%;
+    padding-left: 0;
+  }
+
+  .app-detail-wrap .app-remove-wrap {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 578.98px) {
+  .app-btn-wrap {
+    flex-direction: column;
+  }
+
+  .appLink-btn button {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+
+  .app-detail-wrap .socialInput {
+    flex: 0 0 88%;
+    max-width: 88%;
+  }
+
+  .appLink-btn button:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .app-detail-wrap .socialInput {
+    flex: 0 0 85%;
+    max-width: 85%;
+  }
+}

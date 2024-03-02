@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR.New</title>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display+SC&family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- aos animation css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- owlcarousel css -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- fancy-box CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery js -->
+    <script src="./js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- <header>
+        <div class="container">
+            <nav>
+                <a href="./index.html">
+                    <div class="logo">
+                        <img src="./images/QR.new Logo-03.png" alt="Logo Image">
+                    </div>
+                </a>
+                <div class="hamburger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-hdr" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fas fa-globe"></i>&nbsp; Langauge
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Bulgarian</a>
+                                <a class="dropdown-item" href="#">Croatian</a>
+                                <a class="dropdown-item" href="#">Czech</a>
+                                <a class="dropdown-item" href="#">Danish</a>
+                                <a class="dropdown-item" href="#">Dutch</a>
+                                <a class="dropdown-item" href="#">English</a>
+                                <a class="dropdown-item" href="#">French</a>
+                                <a class="dropdown-item" href="#">German</a>
+                                <a class="dropdown-item" href="#">Greek</a>
+                                <a class="dropdown-item" href="#">Italian</a>
+                                <a class="dropdown-item" href="#">Korian</a>
+                            </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle btn-hdr" type="button"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="fas fa-dollar-sign"></i>&nbsp; Currency
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">AED</a>
+                                <a class="dropdown-item" href="#">AFN</a>
+                                <a class="dropdown-item" href="#">ALL</a>
+                                <a class="dropdown-item" href="#">AMD</a>
+                                <a class="dropdown-item" href="#">ANG</a>
+                                <a class="dropdown-item" href="#">AUD</a>
+                                <a class="dropdown-item" href="#">AZW</a>
+                                <a class="dropdown-item" href="#">BAM</a>
+                                <a class="dropdown-item" href="#">BDT</a>
+                                <a class="dropdown-item" href="#">CLP</a>
+                                <a class="dropdown-item" href="#">GEL</a>
+                            </div>
+                    </li>
+                    <li><a href="qrgenrator/billing">Plan & Price</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
+                    <li><a href="qrgenrator/login">Log In</a></li>
+                    <li><button class="join-button" href="qrgenrator/login">Register</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
+
+    <section class="FAQ">
+        <div class="container">
+            <div class="faq-heading">
+                <h2>FAQs</h2>
+                <p>If you have any questions that you can't answer through our FAQs, don't hesitate to contact our team.
+                </p>
+            </div>
+
+            <div class="accrodian">
+                <div class="accordion">
+                    <button class="accordion__button rmbg">What is QR Code ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Simply put, we can say that the QR code is the natural evolution
+                        of
+                        the barcode. Its name derives from "Quick Response Code", due to the speed at which they can be
+                        scanned. This code allows for easy access to different information through a mobile device.!</p>
+
+
+                    <button class="accordion__button rmbg">What are QR codes useful for? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">They are as useful as all the different types of content they can
+                        offer. In fact, in recent years, this type of code is becoming more widely accepted among all
+                        kinds of people. It's logical, since with just one scan you can access a variety of different
+                        information and even facilitate certain tasks such as connecting to a Wi-Fi network. A QR code
+                        can help you improve the service or product you offer, interact with your customers and promote
+                        your business, among other things.</p>
+
+
+                    <button class="accordion__button rmbg">How many types of QR codes are there ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Many. There are as many types of the different kinds of content
+                        that
+                        may be associated with them. At QRfy, we offer you a tool to create a wide variety of them:
+                        Wi-Fi, website, vCard, PDF, images, videos, apps and menus. And all in the simplest way.</p>
+
+                    <button class="accordion__button rmbg">How do you read a QR Code ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">There are several factors that influence whether a person or
+                        potential
+                        customer can read a QR code, but without a doubt the most important factor is that the
+                        individual who wants to scan the code needs to have a mobile phone. Nowadays, there are many
+                        mobile devices that can read QR codes with the camera itself, by simply pointing the camera at
+                        the code to scan it. If this doesn't work, you may need to download an application designed to
+                        read QR codes. But don't worry! There are several apps that do just this.</p>
+
+                    <button class="accordion__button rmbg">What is the difference between a static
+                        and a dynamic QR Code ? <i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">The biggest difference between the two is that the dynamic QR
+                        code can
+                        be edited even after being printed, and the static one cannot. Therefore, the dynamic QR code
+                        allows us to change both the function and the content at any time and as many times as we want.
+
+                        Another big difference is that dynamic QR code allow you to collect statistics on the scans made
+                        in order to get as much information as possible.</p>
+
+                    <button class="accordion__button rmbg">Can a static QR code be converted to a dynamic one or vise
+                        versa
+                        ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">No, due to the technical differences between each of the codes.
+                    </p>
+
+
+                    <button class="accordion__button rmbg">How can i generate my own QR Code ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">There are different platforms and tools to create your own QR,
+                        but
+                        none like QRfy. With QRfy you not only lets you create custom QR codes, you can also manage and
+                        edit your code, and make an analytical monitoring them.</p>
+
+                    <button class="accordion__button rmbg">Can the reading of QR code fail ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">QR codes also have an error prevention system. Thanks to this
+                        system,
+                        up to 30% of the structure of the QR code can be damaged without affecting its ability to be
+                        read. If the damage is greater, it may be impossible to read.</p>
+
+                    <button class="accordion__button rmbg">How can i design my own QR code ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">With our QR code creator, anyone can create their own.</p>
+
+                    <button class="accordion__button rmbg">Can i customise the text of the QR ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes. As long as the maximum number of characters is respected.
+                    </p>
+
+                    <button class="accordion__button rmbg">Can i change the size of my QR logo ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">No. To avoid errors in the process of reading the QR code, this
+                        option
+                        is not available. But don't worry, we use a standard size so that the logo is easily readable
+                        and doesn't compromise the scan.</p>
+
+                    <button class="accordion__button rmbg">Can i edit my QR code ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes. Within the "My QRs" section, you can see all the QR codes
+                        that
+                        you have created. Just click on the edit button (pencil symbol) to be able to make changes to
+                        your QR.</p>
+
+                    <button class="accordion__button rmbg">Can i check that my QR code is working correctly ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes. We recommend that you always scan the QR code preview with
+                        your
+                        mobile device to check that it's working.</p>
+
+                    <button class="accordion__button rmbg">Why aren't my QR codes working ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">If you are in the trial period or signed to any of our plans,
+                        your
+                        active QR codes should work without problem. If your QR codes do not work, it is most likely to
+                        be due to design elements. Some reading applications and telephone cameras have difficulties in
+                        scanning complexes QR codes. Here are some design elements that must be taken into account: -
+                        Make sure there is a significant contrast between the foreground and the bottom of the QR code.
+                        - Make sure the QR code size is suitable for scanning distance (in general, dynamic QR codes
+                        should not be less than 2 x 2 cm and static QR codes should not be less than 3 x 3 cm). - Make
+                        sure the logo, if you use one, do not obstruct the important elements of the QR code.</p>
+
+                    <button class="accordion__button rmbg">What data is collected in dynamic QR scans ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">You will be able to know the number of total scans, the number of
+                        scans per operating system, the location and the number of unique scans.</p>
+
+                    <button class="accordion__button rmbg">How do i download my QR codes ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">You can download your QR codes from the "My QRs" section or from
+                        within the "Detail" section of each QR. You can download it in the formats that suit you best
+                        (png, jpeg, eps, svg).</p>
+
+                    <button class="accordion__button rmbg">How do i print my QR code ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Once you have downloaded your QR code in the desired format, you
+                        can
+                        print it from your computer. Always make sure to test your QR before printing it to avoid any
+                        mishaps.</p>
+
+                    <button class="accordion__button rmbg">How many plans are there are how are they diffrent ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Today in QRfy we offer 3 plans that give you access to all tools
+                        on
+                        our platform. The difference is in the duration. You also have a 7 -day free trial period to
+                        know the platform.</p>
+
+                    <button class="accordion__button rmbg">Is there an extra charge in addition to the price of the plan
+                        ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">No, we do not have any extra charges beyond the price of the plan
+                        +
+                        VAT. However, your credit card provider may charge a small fee for the transaction. For more
+                        information, contact your bank or credit card provider directly.</p>
+
+                    <button class="accordion__button rmbg">What payment methods does Qr.new accept ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">In QR.new we accept payments with Visa card, Mastercard, American
+                        Express and Master. You can also pay the annual plan by bank transfer.</p>
+
+                    <button class="accordion__button rmbg">Can i chnge or update my payment method ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes. Go to the "My Plans" section and click on "Update Card".</p>
+
+                    <button class="accordion__button rmbg">Where can i update or change my VAT number ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">You can change the VAT number by entering the "Tax Information"
+                        section in the "My Account" area.</p>
+
+                    <button class="accordion__button rmbg">Where can i download my invoice ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">You can get your invoice by clicking the invoice icon in the
+                        "Plans
+                        and payments". You will be asked to fill out a form with tax information. If you have any
+                        problem please write to our support team.</p>
+
+                    <button class="accordion__button rmbg">When can i start using the purchased plan ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">As soon as the payment is made, you can start using all of the
+                        QR.new
+                        tools.
+                    </p>
+
+                    <button class="accordion__button rmbg">How long does my subscription last ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">It will depend on the plan you have signed. We have the following
+                        plans: monthly, quarterly and annual.
+                    </p>
+
+                    <button class="accordion__button rmbg">Is my subscription renewal automatic ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes. Unless the subscription is canceled - at the latest - one
+                        day
+                        before the renewal date, your subscription will renew automatically. The renewal of your
+                        subscription cannot be cancelled once it has been carried out.
+                    </p>
+
+                    <button class="accordion__button rmbg">How do i cancel my subscription ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Canceling your subscription is very easy. You can do it in the
+                        "Billing" section or by clicking here.
+                    </p>
+
+                    <button class="accordion__button rmbg">What happens to my QR codes if my subscription is cancelled
+                        ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Your QR codes won't go anywhere, but you won't be able to access
+                        them
+                        or the collected data until you update your plan. Your QR codes will disappear only if you
+                        delete your QRfy account.
+                    </p>
+
+                    <button class="accordion__button rmbg">Do you offer refunds for unused subscription periods ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">No. Once you have purchased a plan, there is no refund option.
+                        What
+                        you can do is cancel your subscription to prevent it from renewing automatically.
+                    </p>
+
+                    <button class="accordion__button rmbg">How long is the trial period ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">7 days, in which you can try out our QR.new.
+                    </p>
+
+                    <button class="accordion__button rmbg">What type of access does the trial period give me ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Our trial period gives you access to all of our tools. At QRfy,
+                        we
+                        believe that in order to evaluate a service, you must be able to test it out completely.
+                    </p>
+
+                    <button class="accordion__button rmbg">Can the trial period extend ?<i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">We feel it, but the trial period only lasts 7 days. After that
+                        period,
+                        you can continue using the platform by subscribing to one of our plans.
+                    </p>
+
+                    <button class="accordion__button rmbg">Can i use the QR codes generated in the trial period for
+                        commercial purposes ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Yes.
+                    </p>
+
+                    <button class="accordion__button rmbg">Should i cancel the trial period if i am not going to
+                        continue
+                        using the platform ?<i class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">No. The free trial period automatically ends at 7 days. Only
+                        payment
+                        plans can be canceled.
+                    </p>
+
+                    <button class="accordion__button rmbg">What about my QR codes once the trial periods ends ? <i
+                            class="fa fa-plus"></i></button>
+                    <p class="accordion__content rmbg">Your QR codes will be stored for three months once the trial
+                        period
+                        has ended. During that period you will not be able to access them until you hire one of our
+                        plans.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="create">
+                <a href="qrgenrator/qr//" class="create-qr-code">Create QR code &nbsp;<i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <a href="index.html">
+                        <div class="footer-logo">
+                            <img src="./images/footerlogo.png" alt="image">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <h4>Service</h4>
+                    <ul class="footer-menu">
+                        <li><a href="qrgenrator/qr//">Create QR</a></li>
+                        <li><a href="qrgenrator/billing">Plan & Price</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <h4>Company</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Terms of use</a></li>
+                        <li><a href="#">Contract</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">GDPR</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <h4>Help</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Contact Us </a></li>
+                        <li><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <h4>Reviews</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Trust Pilot</a></li>
+                        <li><a href="#">Google</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 pl-0 text-center">
+                    <h4>Get In Touch</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#">Info@gmail.com</a></li>
+                        <li><a href="#">+44 020 7183 5098</a></li>
+                    </ul>
+                    <div class="social-media">
+                        <a href="https://www.facebook.com/official.QR.NEW"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/official_qr.new/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/Official_QRNEW"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/qr-new"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="terms">
+                <p>2022 © QR.New, Uk - ‘QR Code’ is a trademark of DENSO WAVE INCORPORATED</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- bootsrap js -->
+    <script src="./js/bootstrap.min.js"></script>
+
+    <!-- slider js -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- aos js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+    <!-- fancy-box JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+    <script>
+
+        const allButtons = document.querySelectorAll(".accordion__button");
+
+        allButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const btnChild = button.firstElementChild;
+
+                button.nextElementSibling.classList.toggle("active");
+
+                if (btnChild.classList.contains("fa-plus")) {
+                    btnChild.classList.replace("fa-plus", "fa-minus");
+                } else {
+                    btnChild.classList.replace("fa-minus", "fa-plus");
+                }
+            });
+        });
+
+
+    </script>
+
+
+
+</body>
+
+</html>

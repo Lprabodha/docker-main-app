@@ -1,0 +1,36 @@
+Options All -Indexes
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.+)$ index.php?altum=$1 [QSA,L]
+
+<Files debug.log>
+Order allow,deny
+Deny from all
+</Files>
+
+<IfModule mod_expires.c>
+    <filesMatch ".(gif|ico|jpg|jpeg|png|svg|webp)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </filesMatch>
+
+    <filesMatch ".(js|css)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </filesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>    
+    AddType image/svg+xml svg svgz
+    AddEncoding gzip svgz   
+</IfModule>
+
+<FilesMatch "\.(ttf|otf|eot|woff|woff2)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+  </IfModule>
+</FilesMatch>
+

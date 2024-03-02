@@ -1,0 +1,95 @@
+.step-2-tooltip-text{
+    position: absolute;
+    top: 0;
+    width: 275px;
+    font-size: 14px;
+    background: #ffffff !important;
+    color: #ffffff !important;
+    padding: 5px 8px;
+    font-weight: 500 !important;
+    margin-left: -122px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 5;
+  }
+  
+  .step-2-tooltip-text::before {
+    position: absolute;
+    z-index: 10;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff !important;
+    bottom: -5px;
+    left: 48%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .step2-tootltip:hover .step-2-tooltip-text {
+    top: -104px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .step2-tootltip:hover .step-2-tooltip-text,
+  .step2-tootltip:hover .step-2-tooltip-text::before {
+    background-color: #707070 !important;
+    color: #ffffff !important;
+    transition: 0.3s;
+  }
+  
+  .info-tooltip-icon{
+    background: #c9c9ce !important;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 5px;
+    position: relative;
+    display: flex;
+    place-content: center;
+    cursor: pointer;
+    font-family: "GT Walsheim Pro", sans-serif !important;
+  }
+  .info-tooltip-icon::after {
+    content: '?';
+    display: flex;
+    color: white !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400 !important;
+  }
+  .info-tooltip-icon:hover{
+    background: #aeaeb1 !important;
+    box-shadow: #e5e7eb 0 4px 6px 0
+  }
+
+  @media(max-width:800px){
+    .step2-tootltip:hover .step-2-tooltip-text {
+      left: -31px;
+    }
+    .step-2-tooltip-text::before {
+      left: 59%;
+    }
+    /* .info-tooltip-icon{
+      margin-left: 0px;
+    } */
+  }
+
+  @media(max-width:635px){
+    .step2-tootltip:hover .step-2-tooltip-text {
+      left: -120px;
+    }
+    .step-2-tooltip-text::before {
+      left: 91%;
+    }
+    .info-tooltip-icon{
+      margin-left: 10px;
+    }
+  }

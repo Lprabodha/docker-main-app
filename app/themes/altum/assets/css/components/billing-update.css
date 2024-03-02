@@ -1,0 +1,149 @@
+
+.billing-pay-update-wrap .plan-name-wrp .billing-info-title .heading{
+    font-weight: 500;
+    color: var(--dark-black);
+    -webkit-text-stroke-color: var(--dark-black);
+    -webkit-text-stroke-width: 0.5px;
+    padding-left: 0px;
+} 
+
+.billing-pay-update-wrap .card-sub-detail-window{
+    border: none !important;
+}
+
+.billing-pay-update-wrap .plan-content-wrp{
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--container-border);
+}
+
+.billing-pay-update-wrap .cardupdate-detail{
+    padding: 0px 32px;
+}
+
+.billing-pay-update-wrap .billind-update-hr{
+    width: 98%;
+    margin: 15px auto;
+}
+
+.billing-pay-update-wrap .fullCard,
+.billing-pay-update-wrap .accountCardDetailRow{
+    min-height: unset !important;
+}
+
+.billing-pay-update-wrap .plan-content-wrp .subscription .content-description span,
+.billing-pay-update-wrap .plan-content-wrp .validity .content-description span{
+    -webkit-text-stroke-color: #000;
+    -webkit-text-stroke-width: 0.3px;
+}
+
+.billing-pay-update-wrap .card-sub-detail-window {
+    padding: 10px 32px 0px 32px !important; 
+}
+
+@media(max-width:990.98px){
+    .bill-update-alert {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+}
+
+@media(max-width:767.98px){
+    .billing-pay-update-wrap .card-sub-detail-window {
+        padding: 24px 32px 0px 32px !important;
+    }
+
+    .billing-pay-update-wrap .plan-name-wrp .billing-info-title .heading {
+        text-align: center;
+        width: 100%;
+    }
+
+    .billing-pay-update-wrap .plan-title-wrp{
+        padding-bottom: 12px !important;
+    }
+
+    .billing-pay-update-wrap .plan-name-wrp{
+        width: 100%;
+    }
+
+    .billing-pay-update-wrap .billing-info-title{
+        width: 100% !important;
+    }
+
+    .billing-pay-update-wrap .plan-content-wrp .row .content-description {
+        width: unset !important;
+    }
+
+    .billing-pay-update-wrap .plan-content-wrp .row {
+        flex-direction: row !important;
+    }
+
+    .bill-update-alert .bil-des{
+        font-size: 16px;
+    }
+
+    .billing-pay-update-wrap .cardupdate-detail {
+        padding: 0px 32px 15px 32px;
+    }
+}
+
+@media(max-width:575.98px) {
+    .bill-update-btn-wrap {
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        background-color: #fff;
+        padding: 18px 0px;
+        box-shadow: 1px -3.5px 17px 2.5px #e8ecee;
+    }
+
+    .bill-update-alert .triel-des .bil-des1 br {
+        display: none !important;
+    }
+
+    .bill-update-alert .triel {
+        padding: 0px 0px !important;
+    }
+
+    .bill-update-alert .triel .description-wrp {
+        padding-bottom: 0px;
+    }
+
+    .billing-pay-update-wrap .fullCard .content-title span,
+    .billing-pay-update-wrap .fullCard .content-description span {
+        font-size: 16px !important;
+    }
+
+    .bill-update-alert .bil-des {
+        font-size: 14px;
+    }
+
+    .billing-pay-update-wrap .card-sub-detail-window {
+        padding: 24px 18px 0px 18px !important;
+    }
+
+    .billing-pay-update-wrap .cardupdate-detail {
+        padding: 0px 10px 10px 10px;
+    }
+
+    .billing-pay-update-wrap .plan-name-wrp .billing-info-title .heading {
+       font-size: 20px;
+    }
+
+    .billing-pay-update-wrap .plan-content-wrp {
+        padding-bottom: 16px;
+    }
+
+    .billing-pay-update-wrap .accountCardDetailRow{
+        margin-bottom: 100px;
+    }
+
+    .billing-pay-update-wrap .plan-name-wrp{
+        padding-right: 0px;
+    }
+}
+
+@media(max-width:374.98px){
+    .billing-pay-update-wrap .plan-name-wrp .billing-info-title .heading {
+        font-size: 18px;
+    }
+}

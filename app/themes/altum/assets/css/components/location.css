@@ -1,0 +1,248 @@
+:root {
+  --primary-green-1: #28c254;
+  --mark-btn-bg-hover: #28c2541c;
+  --toggle-bg: #28c25457;
+  --white: #ffff;
+  --time-border: #767c8354;
+  --hour-field-bg: #fafafa;
+  --primary-red: #fe4256;
+  --primary-red-hover-1: #c1394726;
+  --hr-color: rgba(0, 0, 0, 0.05);
+  --swiper-theme-color: #28c254;
+  --blue: #28c254;
+  --social-bg: #fafafa;
+}
+
+.couponLocation .couponButtonGroup {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 23px;
+  background-color: var(--white);
+  justify-content: space-between;
+}
+
+.couponLocation .couponButtonGroup .squreBtn {
+  width: calc(33.33% - 6px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* height: 52px; */
+  padding: 14px 10px;
+  border-radius: 3px;
+  flex-direction: row;
+  background-color: #fafafa;
+  font-weight: 400;
+  color: #131D29 !important;
+}
+
+.couponLocation .couponButtonGroup .squreBtn:hover {
+  background-color: var(--mark-btn-bg-hover);
+  transition: 0.2s;
+  border-color: var(--primary-green-1);
+}
+
+.couponLocation .couponButtonGroup .squreBtn.active {
+  color: var(--white) !important;
+  border-color: var(--primary-green-1) !important;
+  background-color: var(--primary-green-1);
+}
+
+.address-btn-area-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: initial;
+}
+
+.address-btn-area-wrap .address-btn {
+  max-width: fit-content;
+  white-space: nowrap;
+}
+
+.outlineBtn {
+  /* min-width: 200px; */
+  /* height: 50px; */
+  color: var(--primary-green-1);
+  border: 1px solid var(--primary-green-1);
+  box-shadow: none;
+  background-color: var(--outline-btn-bg);
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500 !important;
+  border-radius: 4px;
+  padding: 4px 16px;
+  box-shadow: none !important;
+}
+
+.outlineBtn.all-add-btn {
+  font-weight: 500 !important;
+
+}
+
+.outlineBtn:hover {
+  background-color: var(--mark-btn-bg-hover);
+  transition: 0.2s;
+}
+
+.location-area {
+  padding: 5px 12px;
+  border-radius: 10px;
+  margin: 0px 12px;
+  background-color: var(--social-bg);
+}
+
+.location-area .ship-address-wrap {
+  position: relative;
+}
+
+.ship-address-wrap .location-field {
+  position: relative;
+  padding-left: 40px;
+}
+
+.location-area .step-icon-wrap {
+  width: fit-content;
+  /* border: 1px solid red; */
+  padding: 5px;
+  position: absolute;
+  top: 46%;
+  left: 4px;
+}
+
+.step-icon-wrap .step-search {
+  display: flex;
+  font-size: 24px;
+  color: var(--time-border);
+}
+
+.customSwitchToggle {
+  padding-left: 44px;
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.customSwitchToggle .custom-control-label {
+  padding-left: 15px;
+  color: #68676c;
+  font-size: 13px;
+  transition: color 0.2s ease-in-out;
+
+  font-weight: 600;
+  user-select: none;
+  white-space: normal;
+}
+
+.custom-switch input[type="checkbox"] {
+  width: 36px;
+  top: 0px;
+  height: 24px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  border-color: var(--toggle-bg);
+  background: var(--toggle-bg);
+}
+
+.customSwitchToggle .custom-control-input:checked~.custom-control-label::after {
+  background-color: var(--primary-green-1);
+  transform: translateX(-14px);
+}
+
+.manualyBtn {
+  width: 100%;
+  max-width: 160px;
+  /* height: 50px; */
+  min-width: auto;
+  margin-left: 12px;
+  padding: 10px 10px;
+}
+
+.location-area .invalid_err {
+  left: 20px;
+  margin-top: 48px;
+}
+
+/* -------------Responsive-Area------------- */
+
+@media (max-width: 768.98px) {
+  .couponLocation .couponButtonGroup .squreBtn {
+    min-width: unset;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: 10px 10px;
+    width: calc(33.33% - 6px);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .location-area {
+    margin: 0px 0px;
+  }
+
+  .location-area .address-fill {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 10px 0px;
+  }
+
+  .street-field-wrap,
+  .number-postal-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .street-field-wrap {
+    padding-right: 15px !important;
+  }
+
+  .number-postal-wrap {
+    padding-right: 0;
+    padding-left: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .number-postal-wrap .number-full-wrap {
+    width: 100%;
+    margin-top: auto;
+  }
+
+  .location-area .address-full-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .address-full-wrap .address-btn-area-wrap {
+    width: 100%;
+    /* border: 1px solid red; */
+  }
+
+  .address-btn-area-wrap .manualyBtn {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .street-wrap,
+  .city-status-wrap,
+  .counrty-wrap {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+    padding: 0 15px !important;
+  }
+}
+
+@media (max-width: 375.98px) {
+  .couponButtonGroup .squreBtn {
+    font-size: 12px !important;
+    padding: 10px 5px !important;
+  }
+
+  .location-area {
+    padding: 5px 10px;
+    margin: 0px 5px;
+  }
+}

@@ -1,0 +1,948 @@
+.qr-details-date-input:focus,
+.qr-details-date-input {
+  position: relative;
+  background-color: transparent;
+  /* background-color: rgba(0, 255, 255, 0.374); */
+  z-index: 5;
+}
+
+.qr-details-date-input-wrp {
+  position: relative;
+}
+
+.qr-details-date-input-wrp .pickdate {
+  position: absolute;
+  z-index: 14;
+  top: 50px;
+  right: 13%;
+  font-size: 24px;
+}
+
+.qr-details-date-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+.qr-details-date-input::-webkit-calendar-picker-indicator::after {}
+
+.qrDetail .detail-head {
+  margin: 8px 0;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.qrDetail.qr-detail-container {
+  min-height: calc(100vh - 27px);
+  display: flex;
+  flex-direction: column;
+}
+
+.qrDetail.qr-detail-container .detail-card.qr-code-block {
+  flex-grow: 1;
+  align-items: flex-start;
+  padding: 15px;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailBox span span.act-btn-icon {
+  font-size: 20px;
+}
+
+.qrDetail .detail-card .scan-info {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  padding: 8px;
+  background-color: var(--grey-bg-1);
+}
+
+.qrDetail .detail-card .scan-info .count h4 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.qrDetail .detail-card .scan-info .count {
+  background-color: var(--white);
+  min-width: 50px;
+  height: 50px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+}
+
+.qrDetail .detail-card .scan-info span.text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+
+  display: block;
+  color: var(--grey-dark);
+  width: 60px;
+  text-align: left;
+  margin-right: 8px;
+}
+
+.qrDetail .detail-head>span {
+  color: rgb(104, 103, 108);
+  display: flex;
+  font-size: 12px;
+  align-items: center;
+  font-weight: 400;
+  line-height: 20px;
+  margin-right: 36px;
+  margin-bottom: 4px;
+}
+
+.qrDetail .detail-head>span>a {
+  color: var(--primary-green-1);
+}
+
+.qrDetail .detail-head>span>span.icon-qr {
+  font-size: 18px;
+  margin-right: 8px;
+  color: var(--grey-dark);
+}
+
+.qrDetail .detail-card .detail-inner .innerRight .scan-box {
+  width: 100%;
+  padding-top: 4px;
+  text-align: center;
+  border-radius: 8px;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailBox span {
+  color: var(--black);
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 500;
+  display: block;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailBox span:lang(fr) {
+  line-height: 1;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailBox label span {
+  color: var(--primary-green-1);
+  font-size: 12px;
+  line-height: 20px;
+  display: block;
+}
+
+.qrDetail .detail-card .detail-inner .innerRight .scan-box .scanImg {
+  cursor: pointer;
+  display: flex;
+  background: white;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.qrDetail .detail-card .detail-inner .innerRight .scan-box .scanImg img {
+  width: 150px;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 18px 0px 22px 5px;
+}
+
+.qrDetail .detail-card .detail-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.qrDetail .detail-card .detail-inner.qr-code-block {
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+  display: flex;
+  align-items: center;
+  min-width: auto;
+  flex-grow: 1;
+  padding: 8px;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+  max-width: 50%;
+  min-height: 64px;
+}
+
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer:first-child .detailBox:first-child {
+  border-right: 1px solid var(--border-grey);
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer:first-child .detailBox {
+  border-bottom: 1px solid var(--border-grey);
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer:last-child .detailBox:first-child {
+  border-right: 1px solid var(--border-grey);
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailContainer:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.dropdown-group.datepicker-options-wrps {
+  align-items: flex-start;
+}
+
+.datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span {
+  font-size: 16px;
+}
+
+.detail-card.qr-code-block .qrrecord-container .scan-activities .card .cardHeader {
+  padding: 0;
+  display: block;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.datepicker-options-wrps .date-time {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.datepicker-options-wrps .date-time .dateItem>div input {
+  padding-right: 24px;
+  background-color: var(--grey-bg);
+}
+
+.datepicker-options-wrps .date-time .dateItem>.datepicker-parent {
+  position: relative;
+}
+
+.datepicker-options-wrps .date-time .dateItem>.datepicker-parent div.daterangepicker {
+  position: absolute;
+  width: 100%;
+}
+
+.datepicker-options-wrps .date-time .dateItem>.datepicker-parent div.daterangepicker div.ranges>ul,
+.datepicker-options-wrps .date-time .dateItem>.datepicker-parent div.daterangepicker div.ranges {
+  width: 100%;
+}
+
+.datepicker-options-wrps .date-time .dateItem>div span.icon-calendar {
+  position: absolute;
+  font-size: 20px;
+  color: var(--primary-green-1);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.datepicker-options-wrps .date-time label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.datepicker-options-wrps .date-time label {
+  font-size: 14px;
+}
+
+.datepicker-options-wrps .options .export-info {
+  margin-bottom: 8px;
+}
+
+.datepicker-options-wrps .options .options-selector {
+  width: 100%;
+}
+
+.datepicker-options-wrps .options .options-selector .quantity-cstm button.dropdown-toggle {
+  border-radius: 2px;
+  border: 1px solid var(--grey-btn-bg);
+  background-color: var(--grey-bg);
+}
+
+.qrDetail .detail-card.qr-code-block .card-body {
+  padding: 0;
+  width: 100%;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel {
+  margin-top: 3rem;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img {
+  max-width: 300px;
+  position: relative;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img.qr-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  z-index: 99999;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img.qr-center .corners-set {
+  display: none;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set {
+  position: absolute;
+  height: 50px;
+  overflow: hidden;
+  display: block;
+  width: calc(100% + 20px);
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-up {
+  top: -8px;
+  left: -10px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-down {
+  bottom: -5px;
+  left: -10px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set::after,
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set::before {
+  position: absolute;
+  z-index: 1;
+  content: "\e903";
+  font-family: "qr-icons" !important;
+  color: var(--primary-green-1);
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-up::after {
+  transform: rotate(135deg);
+  top: 0;
+  left: 0;
+
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-down::after {
+  transform: rotate(45deg);
+  top: 0;
+  left: 0;
+
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-up::before {
+  transform: rotate(225deg);
+  top: 0;
+  right: 0;
+
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .corners-set.corners-down::before {
+  transform: rotate(315deg);
+  top: 0;
+  right: 0;
+
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .border-set {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  z-index: 1;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .border-set:before,
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .border-set:after {
+  position: absolute;
+  content: "";
+  border-radius: 16px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .border-set:before {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left,
+      var(--primary-blue-1),
+      var(--primary-blue-2));
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img .border-set:after {
+  background-color: var(--white);
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  top: 2px;
+  left: 2px;
+}
+
+.qrDetail .detail-card.qr-code-block .card-body .qr-code-panel .qrcode-detailview .codepannel-img img {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+}
+
+.text-short {
+  display: none;
+}
+
+.text-long {
+  display: block;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block {
+  padding: 0px 16px 16px;
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 2px 9px 0 rgba(var(--card-shadow), 0.25);
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .title-block {
+  padding: 12px 0;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .title-block span {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table thead tr th {
+  background-color: var(--light-bg);
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table thead tr th {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table tbody tr td {
+  /* padding: 4px 10px;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 12px; */
+  border: none;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table thead tr th.opsystem {
+  width: 60%;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table thead tr th.scans {
+  width: 20%;
+}
+
+.scan-by-blocks.qr-detail-view .scan-by-block .content-block>div>div table thead tr th.percentage {
+  width: 20%;
+  text-align: left;
+}
+
+.datepicker-options-wrps .options .options-selector .quantity-cstm select {
+  width: 100% !important;
+  left: 0 !important;
+}
+
+/* --------------QR-Code_Model-CSS-Start------------ */
+
+.qr-code-model .qr-model-content {
+  background-color: var(--white);
+}
+
+.large-modal {
+  max-width: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden;
+}
+
+.large-modal .modal-content {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.large-modal .modal-content .large-icon {
+  top: 16px;
+  color: #000000;
+  right: 16px;
+  position: absolute;
+  background: #DEDEDE;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.qr-model-content .large-icon .code-model-close-icon {
+  color: #767C83;
+}
+
+.qr-model-content .large-icon:hover .code-model-close-icon {
+  color: var(--black);
+  transition: 0.2s;
+}
+
+.qr-model-content .qrCodeWrap {
+  background-color: #F5F8FB;
+  border-radius: 16px;
+  padding: 15px;
+  position: relative;
+}
+
+.large-modal .modal-content .qrCodeImg {
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column;
+  padding: 20px;
+  max-width: calc(100% - 10px);
+  width: 360px;
+  padding: 0px;
+  margin: auto;
+}
+
+.qr-model-content .qrCodeImg .qr-code-embed {
+  width: 100%;
+  height: 100%;
+}
+
+.qr-model-content .qr-code-download-btn {
+  background-image: linear-gradient(133deg, var(--primary-green-1), var(--primary-green-2));
+  color: var(--white);
+  margin-top: 30px;
+  padding: 9px 73px;
+  font-size: 23px;
+  display: flex;
+}
+
+.qr-code-download-btn .qr-code-download-icon {
+  padding-right: 5px;
+  padding-top: 5px;
+}
+
+.qrCodeWrap .scanme-img-wrap {
+  background-image: url(../../images/scanme-logo-new.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 335px;
+  height: 239px;
+  top: 43%;
+  right: -345px;
+  z-index: 5;
+}
+
+.scan-me-text-wrap .scan-me-text {
+  font-size: 50px;
+  font-weight: 600;
+  display: block;
+  width: max-content;
+}
+
+.scan-me-text-wrap {
+  position: absolute;
+  top: 61%;
+  transform: translateY(-50%) rotate(323deg);
+  right: 14px;
+}
+
+/* ---------Qr-code-model-media-query-start---------- */
+
+@media(max-width:1266.98px) and (min-width:1101px) {
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-text-long:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-long:lang(fr){
+    display: none;
+  }
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-mobile:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-short:lang(fr){
+    display: block;
+  }
+}
+@media(max-width:931.98px) and (min-width:768px) {
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-text-long:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-long:lang(fr){
+    display: none;
+  }
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-mobile:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-short:lang(fr){
+    display: block;
+  }
+}
+@media(max-width:603.98px) {
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-text-long:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-long:lang(fr){
+    display: none;
+  }
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-mobile:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-short:lang(fr){
+    display: block;
+  }
+}
+@media(max-width:360px) {
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.reset-mobile:lang(fr),
+  .datepicker-options-wrps.scale-block .options .export-info .btn.export-btn span.text-short:lang(fr){
+    font-size: 13px;
+  }
+}
+@media(max-width:1100.98px) {
+  .qrCodeWrap .scanme-img-wrap {
+    display: none;
+  }
+}
+
+@media(max-width:578.98px) {
+  .large-modal .modal-content .qrCodeImg {
+    max-width: calc(100% - 10px);
+    margin: auto;
+    width: unset;
+    align-items: center;
+  }
+
+  .qr-model-content .qrCodeImg .qr-code-embed {
+    width: 295px;
+    height: 295px;
+  }
+
+  .qr-model-content .qrCodeWrap {
+    padding: 10px;
+  }
+
+}
+
+@media(max-width:375.98px) {
+  .qr-model-content .qr-code-download-btn {
+    padding: 8px 59px;
+  }
+}
+
+@media(max-width:350.98px) {
+  .qr-model-content .qrCodeImg .qr-code-embed {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ---------Qr-code-model-media-query-end---------- */
+
+/* --------------QR-Code_Model-CSS-End------------ */
+
+@media (min-width: 1300px) {
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+    /* max-width: 200px; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .qrDetail .detail-card .detail-inner .innerLeft {
+    width: auto;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+    /* max-width: 220px; */
+  }
+
+  .qrDetail .detail-card>.row {
+    position: relative;
+  }
+
+  .qrDetail .detail-card .qr-scans-info {
+    order: 1;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-info-block {
+    order: 2;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-code-block {
+    order: 3;
+    margin-left: auto;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    height: 100%;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerRight {
+    /* border-top: 2px solid rgb(234, 234, 236); */
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerRight .scan-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 180px;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+    /* max-width: 220px; */
+  }
+
+  /* .dropdown-group.datepicker-options-wrps.my-qr{
+         flex-direction: column;   
+        }
+        .dropdown-group.datepicker-options-wrps.my-qr .date-time{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .dropdown-group.datepicker-options-wrps.my-qr .exp.options{
+            display: flex;
+            width: 100%;
+            flex-direction: row-reverse;
+        }
+        .dropdown-group.datepicker-options-wrps.my-qr .exp.options .export-info button{
+            width: 100%; */
+  /* margin-left: 8px; */
+  /* height: 40px;
+        }
+        .datepicker-options-wrps .options .options-selector .quantity-cstm{
+            width: calc(100% - 8px) !important;
+        }
+        .dropdown-group.datepicker-options-wrps.my-qr .exp.options .options-selector.form-group,
+        .dropdown-group.datepicker-options-wrps.my-qr .exp.options .export-info{
+            width: 50% !important;
+        } */
+}
+
+@media (max-width: 767.98px) {
+  .qrDetail .detail-card .detail-inner .innerLeft {
+    width: auto;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-code-block {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .qrDetail .detail-card .scan-info {
+    display: flex;
+  }
+
+  .qrDetail .detail-card .scan-info span.text {
+    text-align: center;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 576px) {
+  .datepicker-options-wrps .date-time .dateItem {
+    min-width: 300px;
+    position: relative;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .datepicker-options-wrps .date-time .dateItem>div input {
+    padding-right: 40px;
+  }
+
+  .qr-detail-container>div>div:nth-child(2)>div>button,
+  .qr-detail-container>div>div:nth-child(2)>div>a {
+    height: 40px;
+    width: 40px;
+    min-height: unset;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft {
+    width: 100%;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailBox .badge {
+    width: 30px;
+    height: 30px;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailBox span span.act-btn-icon {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .datepicker-options-wrps .date-time .dateItem {
+    min-width: unset;
+    width: 100%;
+  }
+
+  #myQrCode .my-qr.datepicker-options-wrps {
+    position: relative;
+    margin-bottom: 60px;
+  }
+
+  #myQrCode .my-qr.datepicker-options-wrps .exp.options .form-group.options-selector {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+  }
+
+  .qrDetail .detail-card .scan-info {
+    width: 100%;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-code-block {
+    justify-content: center;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailBox .badge {
+    margin-right: 4px;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+    padding-left: 0;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer:last-child .detailBox:last-child {
+    padding-left: 6px;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer .detailBox {
+    padding-right: 1px;
+    min-width: unset;
+    /* max-width: 100%; */
+    width: 100%;
+    padding-left: 6px;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-info-block {
+    padding-left: 1px;
+    padding-right: 1px;
+    overflow-x: hidden;
+  }
+
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer:first-child .detailBox:first-child,
+  .qrDetail .detail-card .detail-inner .innerLeft .detailContainer:last-child .detailBox:first-child {
+    padding-left: 19px;
+  }
+
+  .qrDetail .detail-card .detail-inner.qr-info-block .innerLeft {
+    padding-left: 0;
+  }
+
+  .datepicker-options-wrps .date-time {
+    width: auto;
+  }
+
+  .datepicker-options-wrps .options {
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    /* margin-top: 8px; */
+  }
+
+  .datepicker-options-wrps .options .export-info .export-btn {
+    width: 100%;
+    height: 43px;
+  }
+
+  .text-short {
+    display: block;
+  }
+
+  .text-long {
+    display: none;
+  }
+
+  .qrDetail .my-qr .dropdown {
+    height: 45px;
+  }
+
+  .datepicker-options-wrps .options .options-selector .quantity-cstm button.dropdown-toggle {
+    height: 100%;
+  }
+
+  .datepicker-options-wrps .options .options-selector .quantity-cstm button.dropdown-toggle .filter-option {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 960px) {
+  .qr-details-date-input-wrp .pickdate {
+    position: absolute;
+    z-index: 4;
+    top: 50px;
+    right: 6%;
+  }
+}
+
+@media print {
+  body.dashboard-body .app-content {
+    background-color: #ffffff;
+  }
+
+  .qrDetail .detail-card {
+    box-shadow: 0;
+  }
+
+  .qrdetail-top-qr-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 320px;
+    z-index: 99999;
+  }
+
+  .qrDetail.qr-detail-container .custom-heading-wrp,
+  .qrDetail .detail-card .detail-inner.qr-info-block {
+    display: none;
+  }
+
+}
+
+/* @media (min-width: 768px) and (max-width: 991.98px) { 
+    .qrDetail .detail-card .detail-inner.qr-code-block {
+        display: none;
+    }
+  } */
+
+.welcome-screen .invalid_err {
+  margin-top: 0px !important;
+}
+
+.qrDetail .detail-card .detail-inner .innerLeft .detailBox label svg {
+  opacity: 0;
+  margin-left: 4px;
+  transition: all 0.2s ease-in-out;
+  color: #28c254;
+  margin-bottom: 3px;
+}

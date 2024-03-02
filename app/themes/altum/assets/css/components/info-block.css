@@ -1,0 +1,191 @@
+/* PDF Information Block Start */
+.pdf-info-main-wrp .collapse .collapseInner .step-form-group input {
+  border-radius: 4px;
+  /* background-color: #fe4256; */
+}
+
+.pdf-info-main-wrp .collapse .collapseInner .step-form-group>label {
+  color: var(--form-section-icon-color);
+}
+
+/* PDF Information Block End */
+
+/* Wifi Information Block Started */
+.info-block-main-wrp {}
+
+.info-block-main-wrp .collapse .collapseInner .step-form-group>label {
+  color: var(--form-section-icon-color);
+}
+
+.info-block-main-wrp .collapse .collapseInner .step-form-group input {
+  border-radius: 4px;
+}
+
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .form-fields-wrp .btn-url {
+  position: relative;
+}
+
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .form-fields-wrp .btn-url span.invalid_err {
+  position: absolute;
+  width: 60px !important;
+  bottom: -20px;
+  left: 2px;
+}
+
+.info-block-main-wrp .collapseInner .checkbox-wrapper {
+  background-color: #fff;
+  justify-content: flex-start;
+  margin-top: 21px;
+}
+
+
+.info-block-main-wrp .collapseInner .checkbox-wrapper .passwordlabel {
+  background-color: #f7f7f7;
+  color: #68676c;
+  font-size: 13px;
+  transition: color 0.2s ease-in-out;
+  /*    */
+  font-weight: 600;
+  line-height: 18px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .info-block-main-wrp .collapseInner .checkbox-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 8px
+  }
+}
+
+/* Wifi Information Block End */
+
+
+/* Images Information Block Start */
+
+.info-block-main-wrp.business-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+.info-block-main-wrp.video-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+.info-block-main-wrp.image-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon {
+  width: 50px;
+  height: 47px;
+  border: 1px solid #fe4256;
+  color: #fe4256;
+  margin-bottom: 2px;
+  border-radius: 4px;
+}
+
+.info-block-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon:hover {
+  background-color: rgba(254, 66, 86, 0.1);
+  transition: 0.3s;
+}
+
+.reapeterCloseIcon .remove-btn-icon {
+  display: flex;
+  place-content: center;
+  font-size: 25px;
+}
+
+.info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+.info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+.info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-text {
+  width: 75% !important;
+}
+
+.info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+.info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+.info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-url {
+  width: 100% !important;
+}
+
+.info-block-main-wrp.business-info-main-wrp .collapse .collapseInner .button-wrp,
+.info-block-main-wrp.video-info-main-wrp .collapse .collapseInner .button-wrp,
+.info-block-main-wrp.image-info-main-wrp .collapse .collapseInner .button-wrp,
+.info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 767px) {
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow .button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-text {
+    margin-bottom: 8px;
+    margin-right: 0 !important;
+    width: calc(100% + 40px) !important;
+    margin-left: 40px;
+  }
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow .button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-text,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-text {
+    margin-bottom: 33px !important;
+  }
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow .button-wrp .form-fields-wrp .btn-url,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-url {
+    /* width: 100% !important; */
+    margin-left: 0px;
+    /* flex: 0 0 90%; */
+    max-width: 97%;
+  }
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner .button-wrp>div,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner .button-wrp>div,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner .button-wrp>div,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp>div {
+    align-items: flex-end !important;
+  }
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow .button-wrp .form-fields-wrp,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp {
+    flex-direction: column;
+
+
+  }
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon,
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .reapeterCloseIcon {
+    /* width: 40px;
+    margin-left:8px; */
+    min-width: 50px;
+    margin-left: -5px;
+  }
+
+  /* --------mp3------- */
+  .info-block-main-wrp.mp3-info-main-wrp .collapse .collapseInner .button-wrp .form-fields-wrp .btn-url {
+    margin-right: 8px !important;
+    padding-right: 15px;
+  }
+
+  .button-wrp .mp3RemoveBtn {
+    margin-left: -10px !important;
+  }
+}
+
+@media(max-width:485.98px) {
+
+  .info-block-main-wrp.business-info-main-wrp .collapse .collapseInner div.addRow .button-wrp .form-fields-wrp .btn-url,
+  .info-block-main-wrp.video-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url,
+  .info-block-main-wrp.image-info-main-wrp .collapse .collapseInner div.addRow.button-wrp .form-fields-wrp .btn-url {
+    margin-left: 2px;
+    max-width: 95%;
+  }
+}
+
+/* Images Information Block End */

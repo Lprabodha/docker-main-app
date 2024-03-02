@@ -1,0 +1,88 @@
+.free-trial-full-wrap{
+    display: none;
+    border-bottom: 1px solid #d6d8db;
+}
+
+.free-trial-wrap{
+    padding: 10px 0px;
+    background-color: var(--white);
+}
+
+
+.free-trial-wrap .free-trial-text{
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    display: block;
+}
+
+.free-trial-text .trial-url-text{
+    color: var(--primary-green-1);
+    padding-left: 5px;
+    text-decoration: underline !important;
+}
+
+/* --------Responsive--------- */
+
+@media(max-width:768.98px){
+    .free-trial-full-wrap{
+        display: block;
+        padding: 0px;
+        border-bottom: 1px solid #d6d8db;
+    }
+    .free-trial-wrap .free-trial-text:not(:lang(en)){
+        /*Norwegian, Swedish, Turkish*/
+        font-size: 3.5vw;
+    }
+    
+    .free-trial-wrap .free-trial-text:lang(pt),
+    .free-trial-wrap .free-trial-text:lang(cs){
+        font-size: clamp(12px, 3.4vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(ro),
+    .free-trial-wrap .free-trial-text:lang(ko),
+    .free-trial-wrap .free-trial-text:lang(it),
+    .free-trial-wrap .free-trial-text:lang(id),
+    .free-trial-wrap .free-trial-text:lang(hu),
+    .free-trial-wrap .free-trial-text:lang(fi),
+    .free-trial-wrap .free-trial-text:lang(hr),
+    .free-trial-wrap .free-trial-text:lang(nl){
+        font-size: clamp(11px, 3.2vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(sv),
+    .free-trial-wrap .free-trial-text:lang(es),
+    .free-trial-wrap .free-trial-text:lang(sk),
+    .free-trial-wrap .free-trial-text:lang(da){
+        font-size: clamp(12px, 3.2vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(sl),
+    .free-trial-wrap .free-trial-text:lang(el),
+    .free-trial-wrap .free-trial-text:lang(fr){
+        font-size: clamp(10px, 3.2vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(bg),
+    .free-trial-wrap .free-trial-text:lang(uk),
+    .free-trial-wrap .free-trial-text:lang(pl),
+    .free-trial-wrap .free-trial-text:lang(ja){
+        font-size: clamp(9px, 2.8vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(sr){
+        font-size: clamp(9px, 2.7vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(de){
+        font-size: clamp(9px, 3vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(ms){
+        font-size: clamp(8px, 2.6vw, 18px);
+    }
+    .free-trial-wrap .free-trial-text:lang(th){
+        font-size: 15px;
+    }
+ 
+    @media(min-width:575.98px){
+        /* font-size: 3vw; */
+        .free-trial-wrap .free-trial-text:not(:lang(en)){
+            font-size: 15px;
+        }
+    }
+}

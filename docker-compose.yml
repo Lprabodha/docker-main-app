@@ -31,14 +31,14 @@ services:
 
   # MySQL Database Service
   mysql-db:
-    image: mysql:8.0
+    image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: ROOT_PASSWORD
       MYSQL_DATABASE: php-app
       MYSQL_USER: USER
       MYSQL_PASSWORD: PASS
     ports:
-      - "9906:3306"
+      - "3308:3306"
     networks:
       - qr_app_network 
 
@@ -50,6 +50,8 @@ services:
       - mysql-db
     environment:
       PMA_HOST: mysql-db
+      UPLOAD_LIMIT: 1000000000
+
     restart: always
     ports:
       - 8081:80
@@ -67,14 +69,14 @@ services:
   #     - qr_app_network
 
   #Scanned.page Services
-  # sacnned-page:
-  #   build:
-  #     context: ../test-react
-  #     dockerfile: Dockerfile
-  #   ports:
-  #     - "3000:3000" 
-  #   networks:
-  #     - qr_app_network
+  sacnned-page:
+    build:
+      context: ../test-react
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" 
+    networks:
+      - qr_app_network
 
 networks:
     qr_app_network:

@@ -1,0 +1,29 @@
+{
+  "short_name": "OQG",
+  "name": "Online QR Generator",
+  "description":"Online QR Code Generator with your logo, frame, colors & more. Create, manage and statistically track your QR codes. For URL, vCard, PDF and more",
+  "icons": [
+    {
+      "src": "images/logo_64x64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo_192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "images/logo_512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#28c254",
+  "background_color": "#06350b",
+  "display_override": [
+    "window-controls-overlay"
+  ]
+}

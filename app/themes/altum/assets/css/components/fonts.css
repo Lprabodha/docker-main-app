@@ -1,0 +1,147 @@
+/*CSS For Fonts Component*/
+
+.custom-accodian .btn .icon-qr {
+  font-size: 30px;
+  padding: 12px;
+  background-color: var(--primary-light-grey);
+  border-radius: 12px;
+}
+.custom-select-box-folder input,
+.custom-select-box input {
+  padding: 11px 8px 11px 24px;
+  font-size: 16px;
+}
+
+.custom-select-box-folder .dropdown,
+.custom-select-box .dropdown {
+  width: 100%;
+  position: absolute;
+  background-color: #fff;
+  padding: 0px;
+  z-index: 9999;
+  border-radius: 8px;
+  left: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: 0.5s ease-in-out;
+}
+.custom-select-box .dropdown {
+  box-shadow: 0px 18px 16px 1px rgb(0 0 0 / 15%);
+}
+.custom-select-box-folder .dropdown{
+  box-shadow: 0px -3px 16px 1px rgb(0 0 0 / 15%);
+
+}
+
+.custom-select-box-folder .select-box .drp-icon-btn-open,
+.custom-select-box-folder .select-box .drp-icon-btn-close,
+.custom-select-box .select-box .drp-icon-btn-open,
+.custom-select-box .select-box .drp-icon-btn-close {
+  color: var(--black);
+}
+
+.font-select-box .select-box .drp-icon-btn-open,
+.font-select-box .select-box .drp-icon-btn-close {
+  width: 100%;
+  height: 100%;
+}
+
+.drp-icon-btn-open .fa-angle-down,
+.drp-icon-btn-close .fa-angle-up{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.custom-select-box .dropdown.active {
+  max-height: 1000px;
+  transition: 0.5s ease-in-out;
+}
+
+.font-select-box .dropdown.active {
+  height: 250px !important;
+  max-height: 250px !important;
+  overflow-y: auto;
+}
+
+.custom-select-box-folder .dropdown .drp-btn,
+.custom-select-box .dropdown .drp-btn {
+  padding: 2px 8px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  height: 40px;
+  border-radius: 0px !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 480px) {
+    .custom-select-box .dropdown button.drp-btn 
+    .custom-select-box-folder .dropdown button.drp-btn{
+      -webkit-appearance: none;
+      border-radius: 0px !important;
+      background-color: #fff;
+    }
+    .custom-select-box .dropdown button.drp-btn:hover
+    .custom-select-box-folder .dropdown button.drp-btn:hover{
+      background-color: var(--primary-green-1);
+      color: var(--white);
+    }
+  }
+}
+
+.custom-select-box .dropdown .drp-btn:hover,
+.custom-select-box-folder .dropdown .drp-btn:hover{
+  background-color: var(--primary-green-1);
+  color: var(--white);
+}
+
+.custom-select-box .dropdown .drp-btn.btn-lato {
+  font-family: "Lato", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-open {
+  font-family: "Open Sans", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-robo {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-oswa {
+  font-family: "Oswald", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-mont {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-sour {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-slab {
+  font-family: "Slabo 27px", serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-rale {
+  font-family: "Raleway", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-merr {
+  font-family: "Merriweather", serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-noto {
+  font-family: "Noto Sans", sans-serif !important;
+}
+
+.custom-select-box .dropdown .drp-btn.btn-walsh {
+  font-family: "GT Walsheim Pro", sans-serif !important;
+}

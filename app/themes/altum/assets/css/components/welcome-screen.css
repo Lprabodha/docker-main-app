@@ -1,0 +1,157 @@
+.welcome-screen span {
+  color: var(--black);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  margin-bottom: 8px;
+  display: block;
+}
+.welcome-screen span.productsizeErrorMesg,
+.welcome-screen span#screensizeErrorMesg,
+.welcome-screen span#sizeErrorMesg {
+  font-size: 13px;
+  margin-top: 5px !important;
+}
+.menu-block-main-wrp .productAccodian .welcome-screen span.productsizeErrorMesg{
+  margin-top: -15px !important;
+
+}
+
+.custom-accodian .collapseInner .textarea-control {
+  padding: 5px 15px 0;
+
+}
+.custom-accodian .collapseInner .form-control {
+  padding: 8px 15px 8px;
+  min-height: 50px;
+  border-radius: 4px;
+  border: 2px solid #eaeaec;
+  box-shadow: none;
+  transition: background-color, border-color 0.25s ease-in-out;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  width: 100%;
+}
+.welcome-screen .screen-upload label:hover {
+  border: 1px dashed var(--primary-green-1);
+}
+
+.welcome-screen .screen-upload label {
+  color: #96949c;
+  width: 80px;
+  border: 1px dashed var(--primary-green-1);
+  cursor: pointer;
+  height: 80px;
+  outline: 0;
+  padding: 8px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 0 32px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-screen .screen-upload .upload-btn:disabled {
+  color: var(--white);
+  background-color: var(--disabled-grey-bg);
+  cursor: default;
+  pointer-events: none;
+  min-width: 140px;
+  height: 50px;
+  border-radius: 4px;
+  opacity: 0.5;
+}
+
+.welcome-screen .screen-upload .delete-btn {
+  height: 50px;
+  padding: 6px 16px;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  line-height: 1.75;
+  white-space: nowrap;
+  text-transform: none;
+  outline: 0;
+  color: var(--white);
+  background-color: var(--primary-red-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-screen .screen-upload .delete-btn > span {
+  margin-bottom: 0;
+  color: var(--white);
+  margin-right: 8px;
+  font-weight: 400;
+}
+
+.welcome-screen .screen-upload label .input-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 4px;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.welcome-screen .screen-upload label .input-image img {
+  max-width: 80px;
+  height: auto;
+  border-radius: 7px;
+}
+
+.welcome-screen .screen-upload label .input-image > span {
+  font-size: 48px;
+  color: var(--primary-green-1);
+  background-color: #f7f7f7;
+  font-weight: 400;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-screen .screen-upload .delete-btn:hover {
+  background-color: var(--primary-red-1);
+}
+
+.welcome-screen .screen-upload .upload-btn:not(:disabled) {
+  background: var(--primary-green-grad);
+  color: var(--white);
+}
+
+.welcome-screen .screen-upload .delete-btn,
+.welcome-screen .screen-upload .upload-btn {
+  height: 45px !important;
+  border-radius: 4px;
+  font-size: 15px !important;
+  min-width: 140px;
+}
+
+.welcome-screen #custom_preview{
+  font-weight: 700 !important;
+}
+
+@media (max-width: 575.5px) {
+  .screen-upload{
+    justify-content: space-between !important;
+  }
+  
+  .welcome-screen .screen-upload .delete-btn,
+  .welcome-screen .screen-upload .upload-btn {
+    margin-left: auto;
+  }
+  .step-form-group textarea::placeholder{
+    /* text-align: center; */
+  }
+
+  .screen-upload .upload-btn{
+    font-weight: 700 !important;
+  }
+}

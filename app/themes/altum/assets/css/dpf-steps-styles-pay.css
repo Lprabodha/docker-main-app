@@ -1,0 +1,743 @@
+/* ----------DPF header Cancel button start---------- */
+.dpf-header-wrap .billing-nav .dpf-cancel-btn-wrap{
+    border: 1px solid var(--hr-color);
+    width: 36px;
+    height: 36px;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    margin-top: 2px;
+    margin-left: 0px;
+}
+
+.dpf-header-wrap .billing-nav .dpf-cancel-btn-wrap .dpf-cancel-arrow{
+    display: flex;
+    place-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    color: #767C83;
+}
+
+/* ----------DPF header Cancel button end---------- */
+
+.pay-dpf .pay-dpf-title .pay-heading{
+    font-size: 36px;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+.pay-dpf .pay-dpf-subtitle .pay-subheading {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    color: #767C83;
+    line-height: 1.25;
+}
+
+.pay-dpf .stripe-pay-field .detail-form{
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+}
+
+.pay-dpf .dpf-pay-payment-wrap .dpf-pay-methods{
+    font-size: 22px;
+}
+
+.plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card,
+.pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card{
+    display: flex;
+    place-content: center;
+}
+
+.pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap{
+    margin-top: 20px;
+    border: 1px solid var(--hr-color);;
+    padding: 16px;
+    border-radius: 5px;
+}
+
+.plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .pay-card,
+.pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card{
+    border: 1px solid var(--hr-color);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.pay-dpf .stripe-pay-wrap{
+    border: 1px solid var(--pay-header-bg);
+    border-radius: 5px;
+}
+
+.pay-dpf .stripe-pay-wrap .stripe-header{
+    background-color: var(--pay-header-bg);
+    padding: 10px 15px;
+}
+
+.pay-dpf .stripe-pay-wrap .stripe-header .stripe-title{
+    font-size: 20px;
+}
+
+.pay-dpf .payment-policy-wrap{
+    border-top: 1px solid var(--hr-color);
+    padding: 16px;
+}
+
+.plan-dpf-main-wrapper .payment-policy-wrap .dpf-policy-text a{
+    color: #b5b5b5;
+}
+
+.plan-dpf-main-wrapper .payment-policy-wrap .dpf-policy-text,
+.pay-dpf .payment-policy-wrap .dpf-policy-text{
+    font-size: 13px;
+    color: #b5b5b5;
+    margin-top: 8px;
+    display: block;
+}
+
+.plan-dpf-main-wrapper.register-wrapper .dpf-qr-wrap .dpf-pay-qr-header .dpf-qr-title,
+.pay-dpf .dpf-qr-wrap .dpf-pay-qr-header .dpf-qr-title{
+    font-size: 36px;
+    color: black;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
+.pay-dpf .dpf-qr-wrap{
+    gap: 0px !important;
+    box-shadow: 20px -20px 40px rgba(232, 236, 238, 0.25), -20px 20px 30px rgba(232, 236, 238, 0.25);
+    border-radius: 5px;
+}
+
+.pay-dpf .dpf-qr-wrap .pay-qr{
+    display: flex;
+    place-content: center;
+}
+
+.pay-dpf .dpf-qr-feature .section-email-feature{
+    margin-top: 20px !important;
+}
+
+.pay-dpf .dpf-qr-feature{
+    border-top: 1px solid var(--hr-color);
+    border-bottom: 1px solid var(--hr-color);
+}
+
+.pay-dpf .pay-dpf-final-wrap .pay-dpf-price-title{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.pay-dpf .pay-dpf-final-wrap .pay-dpf-price-text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pay-dpf .pay-dpf-final-wrap .pay-dpf-price-title .pay-pdf-final-tile,
+.pay-dpf .pay-dpf-final-wrap .pay-dpf-price-text .pay-pdf-final-text {
+    font-size: 28px;
+    font-weight: 600;
+    display: block;
+}
+
+.pay-dpf .pay-method-card .pay-card .dpf-pay-methodbox{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pay-dpf .dpf-pay-payment-wrap .pay-method-card .pay-card.pdf-pay-radio-active{
+    border: 1px solid var(--primary-green-1);
+}
+
+.pay-dpf .-col-form{
+    width: 100% !important;
+}
+
+.pay-dpf .dpf-pay-btn:hover{
+    color: var(--white) !important;
+}
+
+.pay-dpf .dpf-pay-btn{
+    float: left !important;
+}
+
+.pay-dpf .form-wrap{
+    position: relative;
+    background-color: #ffffff;
+    box-shadow: 20px -20px 40px rgba(232, 236, 238, 0.25), -20px 20px 30px rgba(232, 236, 238, 0.25);
+    border-radius: 10px 10px 0 0;
+    padding-top: 53px;
+    padding-left: 30px;
+        padding-right: 30px;
+}
+
+ .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-text {
+     flex-direction: column;
+     align-items: flex-end;
+ }
+
+ .pay-dpf .dpf-qr-wrap .qr-wrap{
+    max-width: 350px !important;
+ }
+
+ .pay-dpf .stripe-pay-wrap #payment-form{
+    padding: 15px;
+ }
+
+ .stripe-pay-field #payment-element{
+    margin-bottom: -5px;
+ }
+
+ .stripe-pay-field .paymethod-btn-area{
+    margin-top: 16px;
+ }
+/* ------------Responsive Area------------- */
+@media(min-width:1200px){
+
+    .pay-dpf{
+        margin-top: 22px !important;
+        padding-top: 20px !important;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature,
+    .pay-dpf .dpf-qr-feature .section-email-feature {
+        flex-direction: column;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail .item-description,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .item-description{
+        font-size: 20px !important;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail{
+        width: 100%;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail .feature-icon-area i.dpf-plan-icon.text-success,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .feature-icon-area i.dpf-plan-icon.text-success{
+        font-size: 21px !important;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail .feature-icon-area,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .feature-icon-area{
+        margin-top: 3px;
+    }
+
+    .plan-dpf-main-wrapper.register-wrapper .dpf-section-desktop h2{
+        font-size: 22px;
+        max-width: 100%;
+    }
+
+    .plan-dpf-main-wrapper.register-wrapper .dpf-section-desktop .feature-detail .feature-icon-area i{
+        font-size: 15px !important;
+        margin-right: 5px;
+        padding: 4px !important;
+    }
+
+    .plan-dpf-main-wrapper.register-wrapper .section-email-feature .feature-detail{
+        margin-bottom: 5px;
+    }
+
+    .pay-dpf .pay-dpf-subtitle .pay-subheading{
+        padding: 0px 60px;
+    }
+
+    .pay-dpf .dpf-pay-btn{
+        width: 100%;
+    }
+
+    .plan-dpf-main-wrapper.pay-dpf .dpf-pay-qr-header {
+        margin-top: 25px;
+    }
+}
+
+
+@media(max-width:1199.98px){
+    .pay-dpf .dpf-qr-wrap{
+        display: block !important;
+        margin-top: 20px !important;
+    }
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .right-pad{
+        padding-right: 8px;
+        width: 100%;
+    }
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .left-pad {
+        padding-left: 8px;
+        width: 100%;
+        margin-top: 100px;
+    }
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .left-pad .col-qr-image.dpf-qr-wrap{
+
+    }
+
+    .pay-dpf{
+        margin-top: 0px  !important;
+        padding-top: 0px !important;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature{
+        flex-direction: column;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail{
+        width: 100%;
+    }
+
+    .pay-dpf .right-pad .stripe-pay-wrap .paymethod-btn-area{
+        position: unset;
+        padding: 0px;
+    }
+
+    .pay-dpf .right-pad .stripe-pay-wrap .paymethod-btn-area .payInfoBtn{
+        width: 100%;
+    }
+}
+
+@media(max-width:1200.98px) {
+    .pay-dpf .right-pad .stripe-pay-wrap .paymethod-btn-area {
+        position: unset;
+        padding: 0px;
+    }
+}
+
+@media(max-width:991.98px){
+    .pay-dpf .container{
+        max-width: 950px;
+    }
+}
+
+@media only screen and (max-width: 1199.98px) and (min-width: 900px) { 
+    .pay-dpf .container .-main-cols .-col-form {
+        margin-top: 125px !important;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .left-pad {
+        margin-top: 105px;
+    }
+
+    .pay-dpf .desktop-qr .dpf-pay-qr-header{
+        margin-top: 35px !important;
+    }
+
+    .pay-dpf .payment-pick .right-pad .pay-dpf-title{
+        margin-top: 10px;
+    }
+
+    .pay-dpf .payment-pick .right-pad .pay-dpf-title .pay-heading{
+        font-size: 29px;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail{
+        height: 40px !important;
+    }
+
+    .pay-dpf .left-pad .col-qr-image{
+        background: none;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card{
+        padding: 7px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap {
+        padding: 16px 0px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) and (min-width: 900px) {
+    .pay-dpf .pay-qr {
+        margin-top: 20px !important;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .dpf-pay-method-wrap,
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap{
+        justify-content: center;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap {
+        padding: 16px 0px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .image-card-wrap,
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .dpf-pay-method-wrap .pay-method-card .image-card-wrap{
+        width: 28px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .image-card-wrap{
+        width: 28px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card {
+        padding: 7px;
+    }
+
+    .pay-dpf .payment-pick .right-pad .pay-dpf-title .pay-heading {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 960.98px) and (min-width: 900px) {
+    .pay-dpf .container .-main-cols .-col-form {
+        margin-top: 145px !important;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .left-pad {
+        margin-top: 125px;
+    }
+}
+
+@media(max-width:900.98px){
+    .pay-dpf .dpf-qr-wrap{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .pay-dpf .-col-form {
+        background-color: var(--white) !important;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper .col-qr-image .heading-wrp p,
+    .dpf-pay-qr-header .dpf-qr-title {
+        font-size: 24px !important;
+    }
+
+    .check-icon-wrap .check-icon::after{
+        font-size: 17px !important;
+    }
+
+    .plan-dpf-main-wrapper .dpf-pay-qr-header,
+    .pay-dpf .dpf-pay-qr-header{
+        margin-bottom: 20px;
+    }
+}
+
+@media(min-width:900px){
+    .plan-dpf-main-wrapper.pay-dpf .dpf-qr-wrap{
+        padding-top: 28px !important;
+    }
+
+    .pay-dpf .left-pad .dpf-qr-wrap .pay-dpf-final-wrap{
+        display: none;
+    }
+
+    .pay-dpf .dpf-qr-feature {
+        border-bottom: none;
+    }
+}
+
+@media(max-width:899.98px){
+    .pay-dpf .dpf-qr-wrap .pay-dpf-final-wrap{
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        left: 0;
+        background-color: white;
+        padding: 10px 0px;
+        -webkit-box-shadow: -1px -12.5px 19px -8.5px #dddddd;
+        -moz-box-shadow: -1px -12.5px 19px -8.5px #dddddd;
+        box-shadow: -1px -12.5px 19px -8.5px #dddddd;
+        z-index: 100;
+    }
+
+    .pay-dpf .pay-dpf-final-wrap .dpf-qr-hr{
+        display: block !important;
+        width: 97%;
+        margin: auto;
+        border: 1px solid var(--hr-color);
+        margin-top: 5px;
+        height: 0px !important;
+    }
+
+    .pay-dpf .dpf-pay-mobile-btn{
+        background-color: var(--primary-green-1);
+        color: var(--white);
+        padding: 10px;
+        font-weight: 600;
+        width: 100%;
+        margin: auto;
+    }
+
+    .pay-dpf .right-pad .stripe-pay-wrap .paymethod-btn-area{
+        display: none;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .left-pad {
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper.pay-dpf .right-pad {
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 899.98px) and (min-width: 768px) {
+    .pay-dpf .left-pad .col-qr-image .section-email-feature{
+        padding-bottom: 120px;
+    }
+}
+
+@media(max-width:768.98px){
+    .pay-dpf .form-wrap {
+        padding-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .pay-dpf .-col-form form {
+        width: 100vw;
+        min-width: initial;
+    }
+}
+
+
+@media(max-width:576.98px) {
+    .pay-dpf .dpf-qr-feature .section-email-feature{
+        padding-left: 8px;
+    }
+
+    .pay-dpf .left-pad .col-qr-image.dpf-qr-wrap{
+        box-shadow: 20px -20px 40px rgba(232, 236, 238, .75), -20px 20px 30px rgba(232, 236, 238, .75);
+    }
+
+    .pay-dpf .form-wrap {
+            box-shadow: 20px -20px 40px rgba(232, 236, 238, 0.65), -20px 20px 30px rgba(232, 236, 238, 0.65);
+        }
+
+    .pay-dpf-subtitle .pay-subheading{
+        font-size: 14px;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .image-card-wrap,
+    .pay-dpf .dpf-pay-payment-wrap .pay-method-card .image-card-wrap{
+        max-width: 100%;
+    }
+
+    .dpf-pay-qr-header .dpf-qr-title{
+        font-size: 18px !important;
+    }
+
+    .pay-dpf .dpf-qr-wrap {
+        margin-right: 0%;
+        padding-top: 28px !important;
+    }
+
+    .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-title .pay-pdf-final-tile,
+    .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-text .pay-pdf-final-text {
+        font-size: 20px;
+        font-weight: 600;
+        display: block;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature{
+        margin: 16px auto !important;
+    }
+
+    .pay-dpf .payment-policy-wrap.payment-policy-wrap-mobile{
+        padding-bottom: 135px;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .pay-card .image-card-wrap img,
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card .image-card-wrap img{
+        width: 40px;
+        height: auto;
+        max-width: 40px;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .pay-card,
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card{
+        padding: 5px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-methods {
+        font-size: 16px;
+    }
+
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap {
+        padding: 12px 0px;
+    }
+    
+    .pay-dpf .stripe-pay-wrap .stripe-header .stripe-title {
+        font-size: 16px;
+    }
+
+    .pay-dpf .dpf-qr-feature{
+        margin-bottom: 25px;
+        margin-top: 25px !important;
+    }
+
+    .pay-dpf .payment-policy-wrap {
+        border-top: none;
+        margin-top: 0px !important;
+    }
+
+    .pay-dpf .form-wrap {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pay-dpf .pay-qr{
+        padding: 0px !important;
+        display: block !important;
+    }
+
+    .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-title {
+        align-items: center;
+    }
+
+    .plan-dpf-main-wrapper .dpf-hr.pay-dpf-hr{
+        display: block !important;
+        margin-top: 20px;
+        margin-bottom: 4px;
+        width: 97%;
+    }
+
+    .plan-dpf-main-wrapper.register-wrapper .section-email-feature .feature-detail,
+    .pay-dpf .-main-cols.plans-pick .section-email-feature .feature-detail {
+        /* height: 35px; */
+    }
+
+    .pay-dpf .dpf-pay-qr-header {
+        margin-top: 0px !important;
+    }
+
+    .plan-dpf-main-wrapper .container-fluid .-main-cols.plans-pick .-col-form form .-form-title {
+        line-height: 33px;
+    }
+
+    .pay-dpf .payment-policy-wrap {
+        padding: 0px 16px;
+    }
+
+    .pay-dpf .stripe-pay-field{
+        padding: 8px;
+    }
+
+    .pay-dpf .plans-pick {
+        padding-top: 0px;
+    }
+
+    .pay-dpf .pay-dpf-subtitle .pay-subheading {
+        padding: 0px 3px;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail .item-description,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .item-description{
+        font-size: 14px !important;
+    }
+
+    .pay-dpf .paymethod-btn-area{
+        display: none ;
+    }
+
+    @media(max-width:359.98px){
+        .section-login-signup.plan-dpf-main-wrapper .section-email-feature .feature-detail .feature-icon-area i.dpf-plan-icon.text-success{
+            font-size: 16px !important;
+        }
+    }
+
+    .stripe-pay-field #payment-element {
+        max-height: unset;
+        overflow: hidden;
+    }
+
+    .stripe-pay-field #payment-element {
+        margin-bottom: 10px;
+    }
+
+    .pay-dpf-local-currency{
+        font-size: 12px;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-title {
+        font-size: 24px !important;
+    }
+}
+
+@media(max-width:445px){
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .pay-card,
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card {
+        padding: 3px;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card .pay-card .image-card-wrap img
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card .pay-card .image-card-wrap img {
+        width: 35px;
+        height: auto;
+        max-width: 35px;
+    }
+}
+
+@media(max-width:400px){
+    .pay-dpf .dpf-qr-wrap{
+        padding: 24px 0px !important;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .feature-icon-area {
+        margin-top: 3px;
+    }
+
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail {
+        /* margin-bottom: 5px !important; */
+        /* height: unset !important; */
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-title .pay-pdf-final-tile, .pay-dpf .pay-dpf-final-wrap .pay-dpf-price-text .pay-pdf-final-text {
+        font-size: 17px;
+        font-weight: 600;
+        display: block;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-cards-wrap .pay-method-card,
+    .pay-dpf .dpf-pay-payment-wrap .dpf-pay-method-wrap .pay-method-card {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .plan-dpf-main-wrapper .section-email-feature .feature-detail .item-description,
+    .pay-dpf .dpf-qr-feature .section-email-feature .feature-detail .item-description {
+        font-size: 13px !important;
+    }
+
+    .section-login-signup.plan-dpf-main-wrapper .section-email-feature .feature-detail .feature-icon-area {
+        margin-top: 0 !important;
+    }
+
+    .plan-cards-main-wrap .plan-dpf-paymethod-title {
+        font-size: 20px !important;
+    }
+}
+
+@media(max-width:345px){
+   
+    .pay-dpf .stripe-pay-wrap .pay-info-btn-area .pay-btn {
+        font-size: 17px !important;
+    }
+
+    .pay-dpf .dpf-qr-feature {
+        margin-bottom: 35px;
+    }
+
+    .stripe-pay-field .payment{
+        font-size: 18px;
+    }
+}
+
+
+

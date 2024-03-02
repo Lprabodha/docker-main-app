@@ -1,0 +1,469 @@
+:root {
+  --field-border: #8c8c8c95;
+  --field-wrap-bg: #fafafa;
+}
+
+.pay-info {
+  padding: 25px;
+}
+
+.pay-info.container,
+.payment-full-wrap.container {
+  max-width: 1200px;
+}
+.payment-full-wrap.container {
+  overflow-x: hidden;
+}
+
+.pay-info .pay-info-wrap {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.pay-info .pay-info-wrap h1.h3{
+  padding:20px 20px 0;
+  margin-bottom: 0;
+}
+.pay-info .pay-info-wrap .text-muted{
+  padding-left: 20px;
+}
+.pay-info-wrap .info-area {
+  padding: 0px 20px;
+  margin: 0;
+}
+
+.info-area .pay-subheading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pay-form .contact-row {
+  margin-left: 1px;
+}
+
+.pay-form .gray-block-mobile {
+  background-color: var(--field-wrap-bg);
+}
+
+@media (min-width: 1200px) {
+  .pay-form .gray-block-mobile {
+    background-color: unset;
+  }
+}
+
+.pay-form .pay-detail-area {
+  /* margin: 0px 15px; */
+  padding: 7px 0px;
+  background-color: var(--field-wrap-bg);
+  border-radius: 5px;
+  margin-bottom: 26px;
+}
+
+.pay-form .gray-block-mobile .pay-detail-area {
+  margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+  .pay-form .gray-block-mobile .pay-detail-area {
+    margin-bottom: 26px;
+  }
+}
+
+.pay-detail-area .pay-label {
+  color: var(--grey-dark);
+}
+
+.pay-detail-area .pay-form-group {
+  padding-bottom: 12px;
+}
+
+.pay-form-group .input_field,
+.pay-form-group .input_icons_field {
+  background-color: var(--white);
+}
+
+.pay-form-group .input_field {
+  border-radius: 5px;
+  border: 1px solid var(--field-border);
+}
+
+.pay-form-group .input_icons_field {
+  padding: 5px 11px;
+  border-right: 1px solid var(--input-field-border);
+}
+
+.pay-form-group .input_field:hover {
+  border: 1px solid var(--input-field-border-hover);
+  transition: 0.5s;
+}
+
+.pay-form-group .input_icon {
+  font-size: 20px;
+  color: var(--input-field-icons);
+}
+
+.pay-form-group .form-control:focus-visible {
+  border: hidden;
+}
+
+.pay-form-group .pay-form-control {
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.9rem + 4px);
+  padding: 0.45rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--dark-black);
+  background-color: #fff;
+  background-clip: padding-box;
+}
+
+.pay-form-group .pay-select:focus-visible {
+  outline: none;
+}
+
+.pay-info-btn-area .pay-btn {
+  background-color: var(--primary-green-1);
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  border-radius: 4px;
+  height: 50px;
+  padding: 11px;
+  padding: 13.5px 40px;
+}
+
+.pay-info-btn-area {
+  margin-bottom: 15px;
+}
+
+.pay-btn .pay-arrow {
+  padding: 0px 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.pay-area-wrap {
+  padding: 0px 25px;
+}
+
+.pay-area {
+  background-color: var(--field-wrap-bg);
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 29px 20px;
+}
+
+.pay-area .pay-package-details {
+  background-color: var(--white);
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.pay-package-details .plan-price {
+  width: 100%;
+}
+
+.pay-package-details .pay-plan-detail {
+  padding-top: 0px;
+}
+
+.pay-plan-detail .plan-icon {
+  background-color: var(--pay-icon-bg);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.plan-icon .package-icon {
+  font-size: 26px;
+  color: var(--primary-green-1);
+  display: block;
+  /* margin-top: 4px; */
+}
+
+.pay-package-details .plan-name {
+  text-align: left;
+  color: var(--grey-dark);
+  font-size: 20px;
+}
+
+.pay-package-details .package-price {
+  text-align: right;
+  color: var(--grey-dark);
+  font-size: 18px;
+  display: block;
+}
+
+.pay-package-details .subprice {
+  text-align: right;
+  font-size: 14px;
+  color: var(--grey-dark);
+}
+
+.price-summery .summery-heading {
+  text-align: left;
+  color: var(--black);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.price-summery .summery-price-head {
+  text-align: right;
+  color: var(--black);
+  font-size: 22px;
+  font-weight: 600;
+  display: block;
+  white-space: nowrap;
+}
+
+.price-summery .sub-summery-price {
+  text-align: right;
+  font-size: 14px;
+  color: var(--black);
+  white-space: nowrap;
+}
+
+.plan-description-area .plan-subheading {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.plan-description-area .plan-description {
+  background-color: var(--white);
+  border-radius: 5px;
+}
+
+.plan-description .pay-plan-detail {
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.pay-plan-detail .plan-detail-icon {
+  color: var(--primary-green-1);
+  font-size: 16px;
+}
+
+.pay-plan-detail .detail-info-subhead {
+  color: var(--grey-dark);
+  font-size: 14px;
+  padding: 0px 10px;
+}
+
+.plan-description .all-description-wrap {
+  column-count: 2;
+}
+
+.plan-description-area .all-payment-method-wrap {
+  background-color: var(--white);
+  border: 1px solid var(--input-field-border);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.all-payment-method .img-area {
+  border: 1px solid var(--input-field-border);
+  padding: 10px 10px;
+  width: fit-content;
+}
+
+.pay-info .mobile-preview {
+  display: none;
+}
+
+.pay-info-btn-area .pay-btn {
+  width: 100%;
+}
+
+.pay-info-btn-area .btn-head {
+  justify-content: center;
+}
+.pay-user-info{
+  padding-top: 20px;
+}
+
+/* ------------------Pay-Info-Responsive-Start----------------- */
+
+@media (max-width: 1200px) {
+  .pay-user-info{
+    padding-top: 15px;
+  }
+  .pay-info-btn-area .pay-btn {
+    width: 100%;
+  }
+  .pay-info-wrap .info-area {
+    position: relative;
+  }
+
+  .pay-info .pay-info-wrap {
+    padding-bottom: 55px;
+  }
+
+  .pay-info-btn-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+    padding: 10px;
+    margin: 0;
+
+    background-color: #FFFFFF;
+  }
+
+  .pay-area-wrap {
+    padding: 0px 15px;
+  }
+
+  .info-area .pay-subheading {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pay-detail-area .city-row {
+    margin-bottom: 7px;
+  }
+
+  .pay-detail-area .city-fullrow {
+    padding-top: 10px;
+  }
+
+  .pay-detail-area .province {
+    padding: 0;
+  }
+
+  .pay-info {
+    padding: 20px 10px;
+  }
+
+  .pay-info-wrap .info-area {
+    padding: 0px 10px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 740px) {
+  .pay-info .pay-info-wrap {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: 655px) {
+  .pay-info .pay-info-wrap {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 647px) {
+  .pay-info .pay-info-wrap {
+    padding-bottom: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  .detail-form {
+    width: 100%;
+    min-width: initial;
+  }
+
+  .plan-description .all-description-wrap {
+    column-count: 1;
+  }
+
+  .pay-package-details .plan-name {
+    font-size: 19px;
+  }
+}
+
+/* @media (max-width: 577px) {
+  .pay-info .pay-info-wrap {
+    padding-bottom: 70px;
+  }
+
+  .pay-info-btn-area {
+    position: absolute;
+    bottom: -1130px;
+    left: 29px;
+    width: 91%;
+  }
+} */
+
+@media (max-width: 575.5px) {
+  .purchase-plan-price{
+    flex-direction: column;
+  }
+  .purchase-plan-price > div{
+    width: 100%;
+    max-width: 100%;
+  }
+  .purchase-plan-price > div:last-child{
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+  .purchase-plan-price .plan-price{
+    font-weight: 600;
+  }
+  .purchase-plan-price > div:last-child span.subprice{
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+}
+@media (max-width: 576px) {
+
+  .mobile-preview .btn-head {
+    justify-content: center;
+  }
+
+  .mobile-preview .pay-btn {
+    width: 100%;
+  }
+
+  .pay-info-wrap .info-area {
+    padding: 0px 0px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .pay-info-wrap .info-area {
+    padding: 0px;
+  }
+
+  .pay-info {
+    background-color: var(--light-bg);
+    padding: 10px;
+  }
+
+  .pay-area {
+    padding: 29px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .pay-package-details .plan-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 365px) {
+  .pay-info .pay-info-wrap {
+    padding-bottom: 80px;
+  }
+}
+
+
+/* Stripe Form Changes */
+
+#address-element > div > iframe > .p-Fade-item .p-Grid .p-GridCell{
+  padding: 15px 15px 15px 20px !important;
+    background-color: #c4b2b2 !important;
+
+}
+
+/* .p-FadeWrapper > div.p-Fade .p-Fade-item .p-Grid  */
